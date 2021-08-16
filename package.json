@@ -8,6 +8,7 @@
     "boosted": "^5.0.2"
   },
   "devDependencies": {
+    "posthtml-expressions": "^1.8.1",
     "posthtml-include": "^1.7.1",
     "sass": "^1.37.5"
   },

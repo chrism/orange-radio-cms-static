@@ -3,50 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Orange Radio CMS</title>
+    <title>Orange Radio CMS > Sign in</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/svg/orange-logo.svg" width="50" height="50" role="img" alt="Boosted" loading="lazy">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="me-2">
-              <h3 class="lh-sm" style="margin-bottom:0.75rem">Orange Radio<br>Back Office</h3>
-            </div>
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Radios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Podcasts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Userlists</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <include src="./components/navigation.html"></include>    
 
-    <main class="flex-shrink-0">
-      <section class="bg-dark border-top border-dark">
-        <div class="container">
-          <h1 class="pt-4 pb-3">Content</h1>
-        </div> 
-      </section>
+    <main class="flex-grow-1 bg-v-light d-flex align-items-center justify-content-center">
+      <div class="bg-white p-3 border border-light">
+        <h2>Sign in</h2>
+        <form class="row g-3">
+          <div class="col-12">
+            <label for="signInEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signInEmail" placeholder="name@orange.com">
+          </div>
+          <div class="col-12">
+            <label for="signInPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="signInPassword">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </div>
     </main>
-    <include src="footer.html"></include>
+
+    <include src="./components/footer.html"></include>
     <script src="./index.js"></script>
   </body>
 </html>
