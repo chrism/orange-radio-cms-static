@@ -1,3 +1,33 @@
 .bg-v-light {
   background: $gray-300;
 }
+
+.text-functional-red {
+  color: $functional-red;
+}
+
+.text-functional-green {
+  color: $functional-green;
+}
+
+.dropdown-toggle.table-header {
+  padding-right: 0;
+}
+
+.dropdown-toggle.table-header::after {
+  transform: translateY(-0.15rem);
+}
+
+.table-column-widest-possible {
+  width: 99%;
+}
+
+.dont-show {
+  visibility: hidden;
+}
+
+.table-thumbnail-image {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid $gray-300;
+}

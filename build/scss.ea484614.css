@@ -10850,3 +10850,33 @@ textarea.form-control-lg {
 .bg-v-light {
   background: #eee;
 }
+
+.text-functional-red {
+  color: #cd3c14;
+}
+
+.text-functional-green {
+  color: #32c832;
+}
+
+.dropdown-toggle.table-header {
+  padding-right: 0;
+}
+
+.dropdown-toggle.table-header::after {
+  transform: translateY(-0.15rem);
+}
+
+.table-column-widest-possible {
+  width: 99%;
+}
+
+.dont-show {
+  visibility: hidden;
+}
+
+.table-thumbnail-image {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #eee;
+}

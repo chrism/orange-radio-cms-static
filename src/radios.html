@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Sign in</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html" locals='{
+      "selected": "radios"
+    }'></include>    
+
+    <main class="flex-grow-1">
+      <section class="container mt-4 d-flex align-items-end">
+        <div class="flex-grow-1">
+          <h1 class="mb-0">XX radios</h1>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary btn-lg">
+            <svg width="1.25rem" height="1.25rem" fill="currentColor" aria-hidden="true" focusable="false" class="me-1 overflow-visible" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+              <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"/>
+            </svg>
+            Create a new radio
+          </button>
+        </div>
+      </section>
+      <section class="container mt-4">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Image<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th class="table-column-widest-possible" scope="col">
+                <a class="text-nowrap" href="#">Name<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Desc.<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Short<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Status<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Audience<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+              </th>
+              <th scope="col">
+                <a class="text-nowrap" href="#">Last Modified<span class="dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+            </tr>
+          </thead>
+          <tbody>
+            <include src="./components/radio_table_row.html" locals='{
+              "id": "34033",
+              "image": "http://images.radio.orange.com/radios/large_forum.png",
+              "name": "Forum en francais",
+              "desc": "tick",
+              "short": "tick",
+              "status": "tick",
+              "audience": "3278",
+              "modified": "16 oct. 2020"
+            }'></include>
+            <include src="./components/radio_table_row.html" locals='{
+              "id": "8604",
+              "image": "http://images.radio.orange.com/radios/large_vibration_france.png",
+              "name": "Vibration - France",
+              "desc": "tick",
+              "short": "tick",
+              "status": "cross",
+              "audience": "87",
+              "modified": "29 sept. 2020"
+            }'></include>
+            <include src="./components/radio_table_row.html" locals='{
+              "id": "11703",
+              "image": "http://images.radio.orange.com/radios/large_chante_france.png",
+              "name": "Chante France",
+              "desc": "tick",
+              "short": "tick",
+              "status": "tick",
+              "audience": "1298",
+              "modified": "9 sept. 2020"
+            }'></include>
+            <include src="./components/radio_table_row.html" locals='{
+              "id": "35304",
+              "image": "http://images.radio.orange.com/radios/large_wit_fm.png",
+              "name": "Wit en francais",
+              "desc": "tick",
+              "short": "tick",
+              "status": "tick",
+              "audience": "4598",
+              "modified": "7 mai 2020"
+            }'></include>
+            <include src="./components/radio_table_row.html" locals='{
+              "id": "35305",
+              "image": "http://images.radio.orange.com/radios/large_vibration_en_francais.png",
+              "name": "Vibration en francais",
+              "desc": "tick",
+              "short": "cross",
+              "status": "tick",
+              "audience": "1209",
+              "modified": "7 mai 2020"
+            }'></include>
+          </tbody>
+        </table>
+      </section>
+      <section class="container mt-5 mb-5">
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true" aria-label="Previous"></a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#" aria-label="Next"></a></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -3,6 +3,8 @@
     "posthtml-include": {
       "root": "src"
     },
-    "posthtml-expressions": {}    
+    "posthtml-expressions": {
+      strictMode: false
+    }    
   }
 }
