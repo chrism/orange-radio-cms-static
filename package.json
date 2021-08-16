@@ -7,7 +7,9 @@
     "@popperjs/core": "^2.9.3",
     "boosted": "^5.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.37.5"
+  },
   "scripts": {
     "dev": "parcel ./src/index.html",
     "prebuild": "npx rimraf build",
