@@ -1,0 +1,15 @@
+{
+  "name": "orange-radio-cms-static",
+  "version": "0.0.1",
+  "description": "Static screens for Orange Radio CMS using boosted",
+  "main": "index.js",
+  "dependencies": {
+    "boosted": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Masters",
+  "license": "ISC"
+}
