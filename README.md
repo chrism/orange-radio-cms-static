@@ -17,7 +17,10 @@ Alternatively these are links to the individual screens and their current progre
 - [x] [Sign In](http://chrismasters.net/orange-radio-cms-static/sign_in.html)
 - [x] [Radios > Default](http://chrismasters.net/orange-radio-cms-static/radios.html)
 - [x] [Radios > Searching for "france"](http://chrismasters.net/orange-radio-cms-static/radios_france.html)
-- [ ] Create a radio screen
+- [ ] Create a radio
+  - [ ] Add Stream modal
+  - [ ] Add Genre modal
+  - [ ] Add Location modal
 
 ## Build Tooling
 
