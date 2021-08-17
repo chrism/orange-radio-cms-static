@@ -33,4 +33,24 @@ Any CSS which isn't included directly as part of Boosted is located in the `/cus
 
 My recommendation would be to take the HTML where possible from the source files `/src` as they are the original code without any pre-processing.
 
+## Installation
 
+If you want to run this locally assuming you have [NPM](https://www.npmjs.com/) and [Parcel](https://parceljs.org/) installed already it should be as straightforward as
+
+```
+git clone git@github.com:chrism/orange-radio-cms-static.git
+cd orange-radio-cms-static
+npm install
+```
+
+Then to run the development server
+
+```
+npm run dev
+```
+
+And to build the final version to `/docs`
+
+```
+npm run build
+```
