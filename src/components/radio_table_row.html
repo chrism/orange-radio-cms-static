@@ -1,10 +1,14 @@
 <tr>
-  <th scope="row">{{ id }}</th>
-  <td>
-    <img class="table-thumbnail-image" src="{{ image }}" alt="{{ name }} image">
+  <td class="text-center">
+    <if condition="image === 'cross'">
+      <include src="./icons/cross.html"></include>
+    </if>
+    <if condition="image !== 'cross'">
+      <img class="table-thumbnail-image" src="{{ image }}" alt="{{ name }} image">
+    </if>
   </td>
-  <td>{{ name }}</td>
-  <td>
+  <td><a href="#">{{ name }}</a></td>
+  <td class="text-center">
     <if condition="desc === 'tick'">
       <include src="./icons/tick.html"></include>
     </if>
@@ -12,15 +16,15 @@
       <include src="./icons/cross.html"></include>
     </if>    
   </td>
-  <td>
-    <if condition="short === 'tick'">
+  <td class="text-center">
+    <if condition="baseline === 'tick'">
       <include src="./icons/tick.html"></include>
     </if>
-    <if condition="short === 'cross'">
+    <if condition="baseline === 'cross'">
       <include src="./icons/cross.html"></include>
     </if> 
   </td>
-  <td>
+  <td class="text-center">
     <if condition="status === 'tick'">
       <include src="./icons/tick.html"></include>
     </if>
@@ -28,6 +32,6 @@
       <include src="./icons/cross.html"></include>
     </if> 
   </td>
-  <td>{{ audience }}</td>
-  <td>{{ modified }}</td>
+  <td class="text-center">{{ audience }}</td>
+  <td class="text-center">{{ modified }}</td>
 </tr>

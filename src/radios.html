@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Orange Radio CMS > Sign in</title>
+    <title>Orange Radio CMS > Radios</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
@@ -29,7 +29,6 @@
         <table class="table align-middle">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">
                 <a class="text-nowrap" href="#">Image<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
@@ -37,10 +36,10 @@
                 <a class="text-nowrap" href="#">Name<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
               <th scope="col">
-                <a class="text-nowrap" href="#">Desc.<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+                <a class="text-nowrap" href="#">Description<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
               <th scope="col">
-                <a class="text-nowrap" href="#">Short<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+                <a class="text-nowrap" href="#">Baseline<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
               <th scope="col">
                 <a class="text-nowrap" href="#">Status<span class="dont-show dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
@@ -53,56 +52,7 @@
             </tr>
           </thead>
           <tbody>
-            <include src="./components/radio_table_row.html" locals='{
-              "id": "34033",
-              "image": "http://images.radio.orange.com/radios/large_forum.png",
-              "name": "Forum en francais",
-              "desc": "tick",
-              "short": "tick",
-              "status": "tick",
-              "audience": "3278",
-              "modified": "16 oct. 2020"
-            }'></include>
-            <include src="./components/radio_table_row.html" locals='{
-              "id": "8604",
-              "image": "http://images.radio.orange.com/radios/large_vibration_france.png",
-              "name": "Vibration - France",
-              "desc": "tick",
-              "short": "tick",
-              "status": "cross",
-              "audience": "87",
-              "modified": "29 sept. 2020"
-            }'></include>
-            <include src="./components/radio_table_row.html" locals='{
-              "id": "11703",
-              "image": "http://images.radio.orange.com/radios/large_chante_france.png",
-              "name": "Chante France",
-              "desc": "tick",
-              "short": "tick",
-              "status": "tick",
-              "audience": "1298",
-              "modified": "9 sept. 2020"
-            }'></include>
-            <include src="./components/radio_table_row.html" locals='{
-              "id": "35304",
-              "image": "http://images.radio.orange.com/radios/large_wit_fm.png",
-              "name": "Wit en francais",
-              "desc": "tick",
-              "short": "tick",
-              "status": "tick",
-              "audience": "4598",
-              "modified": "7 mai 2020"
-            }'></include>
-            <include src="./components/radio_table_row.html" locals='{
-              "id": "35305",
-              "image": "http://images.radio.orange.com/radios/large_vibration_en_francais.png",
-              "name": "Vibration en francais",
-              "desc": "tick",
-              "short": "cross",
-              "status": "tick",
-              "audience": "1209",
-              "modified": "7 mai 2020"
-            }'></include>
+            <include src="./components/radio_table_rows_default.html"></include>
           </tbody>
         </table>
       </section>
