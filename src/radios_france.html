@@ -13,13 +13,13 @@
 
     <include src="./components/search.html" locals='{
       "placeholder": "Search for a radio...",
-      "searchTerm": ""
+      "searchTerm": "france"
     }'></include>     
 
     <main class="flex-grow-1">
       <section class="container mt-4 d-flex align-items-end">
         <div class="flex-grow-1">
-          <h1 class="mb-0">28,795 radios</h1>
+          <h1 class="mb-0">385 radios</h1>
         </div>
         <div>
           <include src="./components/create_button.html" locals='{
@@ -30,13 +30,11 @@
       <section class="container mt-4">
         <table class="table align-middle">
           <thead>
-            <include src="./components/radio_table_headers.html" locals='{
-              "selected": "Last Modified"
-            }'></include>
+            <include src="./components/radio_table_headers.html"></include>
           </thead>
           <tbody>
             <!-- from this endpoint browsing/radios/all/all/all/all?page=1&size=20&catalog=all&sort=date -->
-            <include src="./components/radio_table_rows_default.html"></include>
+            <include src="./components/radio_table_rows_france.html"></include>
           </tbody>
         </table>
       </section>
