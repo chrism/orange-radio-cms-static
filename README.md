@@ -15,12 +15,17 @@ They can be [viewed online from an index screen here](http://chrismasters.net/or
 Alternatively these are links to the individual screens and their current progress
 
 - [x] [Sign In](http://chrismasters.net/orange-radio-cms-static/sign_in.html)
-- [x] [Radios > Default](http://chrismasters.net/orange-radio-cms-static/radios.html)
-- [x] [Radios > Searching for "france"](http://chrismasters.net/orange-radio-cms-static/radios_france.html)
-- [x] [Create a radio](http://chrismasters.net/orange-radio-cms-static/create_radio.html)
-  - [ ] Add Stream modal
-  - [ ] Add Genre modal
-  - [ ] Add Location modal
+- [x] Radios
+  - [x] [Default](http://chrismasters.net/orange-radio-cms-static/radios.html)
+  - [x] [Searching for "france"](http://chrismasters.net/orange-radio-cms-static/radios_france.html)
+- [x] Create a radio
+  - [x] [Default](http://chrismasters.net/orange-radio-cms-static/create_radio.html)
+  - [x] [Completed](http://chrismasters.net/orange-radio-cms-static/create_radio_completed.html)
+  - [x] [Error](http://chrismasters.net/orange-radio-cms-static/create_radio_error.html)
+  - [x] [Streams modal](http://chrismasters.net/orange-radio-cms-static/create_radio_streams_modal.html)
+  - [x] [Genres modal](http://chrismasters.net/orange-radio-cms-static/create_radio_genres_modal.html)
+  - [x] [Locations modal](http://chrismasters.net/orange-radio-cms-static/create_radio_locations_modal.html)
+
 
 ## Build Tooling
 
