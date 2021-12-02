@@ -46,19 +46,28 @@
         </div>
       </section>
       <section class="container pt-4">
+        <div class="alert alert-danger" role="alert">
+          <span class="alert-icon"><span class="visually-hidden">Error</span></span>
+          <p>6 errors prevented this radio from being created.</p>
+        </div>
+      </section>
+      <section class="container">
         <h1>Essential information</h1>
         <div class="row g-3">
           <div class="col-md-6">
             <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name">
+            <input type="text" class="form-control is-valid" id="Name" value="Radio Station">
           </div>
           <div class="col-md-6">
             <label for="Short-Description" class="form-label">Short Description</label>
-            <input type="text" class="form-control" id="Short-Description">
+            <input type="text" class="form-control is-valid" id="Short-Description" value="This is a radio station description.">
           </div>
           <div class="col-md-6">
             <label for="Contact" class="form-label">Contact</label>
-            <input type="email" class="form-control" id="Contact">
+            <input type="email" class="form-control is-invalid" id="Contact" aria-describedby="validationContact" required="">
+            <div id="validationContact" class="invalid-feedback">
+              Must include a contact email address.
+            </div>
             <div class="row align-items-center">
               <div class="col-md-4 pt-3">
                 <label for="Radio-Catalogues" class="form-label">Radio Catalogues</label>
@@ -98,7 +107,10 @@
           </div>
           <div class="col-md-6">
             <label for="Description" class="form-label">Description</label>
-            <textarea class="form-control" id="Description" rows="8"></textarea>
+            <textarea class="form-control is-invalid" id="Description" rows="8" aria-describedby="validationDescription"></textarea>
+            <div id="validationDescription" class="invalid-feedback">
+              Must include a description.
+            </div>
           </div>
         </div>
       </section>
@@ -111,6 +123,12 @@
 </svg>
   Add an audio stream 
 </button>
+        </div>
+        <div class="pt-3">
+          <input type="hidden" class="form-control is-invalid" id="Streams" aria-describedby="validationStreams" required="">
+          <div id="validationStreams" class="invalid-feedback">
+            Must include at least one stream.
+          </div>
         </div>
       </section>
       <section class="container pt-4">
@@ -153,6 +171,12 @@
   Add image 
 </button>
         </div>
+        <div class="pt-3">
+          <input type="hidden" class="form-control is-invalid" id="Images" aria-describedby="validationImages" required="">
+          <div id="validationImages" class="invalid-feedback">
+            Must include a cover image.
+          </div>
+        </div>
       </section>
       <section class="container pt-4">
         <div class="row">
@@ -166,6 +190,12 @@
   Add a genre 
 </button>
             </div>
+            <div class="pt-3">
+              <input type="hidden" class="form-control is-invalid" id="Genres" aria-describedby="validationGenres" required="">
+              <div id="validationGenres" class="invalid-feedback">
+                Must include at least one genre.
+              </div>
+            </div>
           </div>
           <div class="col-md-6">
             <h1>Locations</h1>
@@ -176,6 +206,12 @@
 </svg>
   Add a location 
 </button>
+            </div>
+            <div class="pt-3">
+              <input type="hidden" class="form-control is-invalid" id="Locations" aria-describedby="validationLocations" required="">
+              <div id="validationLocations" class="invalid-feedback">
+                Must include at least one location.
+              </div>
             </div>
           </div>
         </div>
