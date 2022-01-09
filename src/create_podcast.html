@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Create a new radio</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html" locals='{
+      "selected": "podcasts"
+    }'></include>    
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Create a new podcast</h1>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <h1>Essential information</h1>
+        <div class="mb-3">
+          <include src="./components/create_button.html" locals='{
+            "buttonText": "Add RSS feed URL",
+            "buttonType": "",
+            "buttonSize": "",
+            "buttonAction": "parent.location=\"create_podcast_RSS_feed.html\""
+          }'></include>
+          <p class="mt-2">Adding an RSS feed will update the metadata and the episode list automatically.</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" disabled>
+          </div>
+          <div class="col-md-6">
+            <label for="Cover-Image-Url" class="form-label">Cover image URL</label>
+            <input type="text" class="form-control" id="Cover-Image-Url" disabled>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="Website-Url" class="form-label">Website URL</label>
+              <input type="text" class="form-control" id="Website-Url" disabled>  
+            </div>
+            <div class="mb-3">
+              <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
+              <input type="text" class="form-control" id="Keywords" disabled>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Automatically include this information from the RSS feed
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="Description" class="form-label">Description</label>
+            <textarea class="form-control" id="Description" rows="8" disabled></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Genres</h1>
+            <div>
+              <include src="./components/create_button.html" locals='{
+                "buttonText": "Add a genre",
+                "buttonType": "",
+                "buttonSize": "",
+                "buttonAction": "parent.location=\"create_radio_genres_modal.html\""
+              }'></include>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1>Locations</h1>
+            <div>
+              <include src="./components/create_button.html" locals='{
+                "buttonText": "Add a location",
+                "buttonType": "",
+                "buttonSize": "",
+                "buttonAction": "parent.location=\"create_radio_locations_modal.html\""
+              }'></include>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <h1>Optional information</h1>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="Associated-Radio" class="form-label">Associated radio station</label>
+            <input class="form-control" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+              <option value="France Culture">
+              <option value="France Inter">
+            </datalist>
+            <div class="form-text">
+              The radio must have been added and available to select in the datalist.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="Facebook-Address" class="form-label">Facebook Address</label>
+              <input type="text" class="form-control" id="Facebook-Address">
+            </div>
+            <div>
+              <label for="Twitter-Address" class="form-label">Twitter Address</label>
+              <input type="text" class="form-control" id="Twitter-Address">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row py-4">
+          <div class="col-auto">
+            <include src="./components/create_button.html" locals='{
+              "buttonText": "Create podcast",
+              "buttonType": "primary",
+              "buttonSize": "large",
+              "buttonAction": "parent.location=\"podcasts.html\""
+            }'></include>
+          </div>
+        </div>
+      </section>
+    </main>
+    <include src="./components/footer.html"></include>
+    <nav aria-label="Fixed back to top example" class="back-to-top">
+      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+        <span class="visually-hidden">Back to top</span>
+      </a>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
