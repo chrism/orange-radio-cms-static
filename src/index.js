@@ -1,22 +1,12 @@
 import * as boosted from 'boosted';
 
-var streamsModalEl = document.getElementById('streamsModal');
+const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal']
 
-if (streamsModalEl) {
-  var streamsModal = new boosted.Modal(streamsModalEl);
-  streamsModal.show();
-}
+modals.forEach(modal => {
+  const modalEl = document.getElementById(modal)
 
-var genresModalEl = document.getElementById('genresModal');
-
-if (genresModalEl) {
-  var genresModal = new boosted.Modal(genresModalEl);
-  genresModal.show();
-}
-
-var locationsModalEl = document.getElementById('locationsModal');
-
-if (locationsModalEl) {
-  var locationsModal = new boosted.Modal(locationsModalEl);
-  locationsModal.show();
-}
+  if (!modalEl) return
+  
+  const boostedModal = new boosted.Modal(modalEl)
+  boostedModal.show()
+})
