@@ -39,6 +39,33 @@
   </nav>
 </header>    
 
+    <div class="modal fade" id="rssModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add RSS feed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt-3">
+          <label for="RSS-URL" class="form-label">RSS URL</label>
+          <input type="text" class="form-control" id="RSS-URL">
+        </div>
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+          <label class="form-check-label" for="flexCheckChecked">
+            Use the metadata from this feed to pre-fill the form
+          </label>
+        </div>
+        <p class="mt-2">The episode list will automatically be generated.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='create_podcast_with_rss.html'">Add RSS feed</button>
+      </div>
+    </div>
+  </div>
+</div>
     <main class="flex-grow-1">
   <section class="bg-dark border-top border-dark border-1">
     <div class="container pt-4 pb-1">
