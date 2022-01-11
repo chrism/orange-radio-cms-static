@@ -1,7 +1,7 @@
 <tr>
   <td class="text-center">
     <if condition="image === 'cross'">
-      <include src="./icons/cross.html"></include>
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if>
     <if condition="image !== 'cross'">
       <img class="table-thumbnail-image" src="{{ image }}" alt="{{ name }} image">
@@ -10,26 +10,26 @@
   <td><a href="#">{{ name }}</a></td>
   <td class="text-center">
     <if condition="desc === 'tick'">
-      <include src="./icons/tick.html"></include>
+      <include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>
     </if>
     <if condition="desc === 'cross'">
-      <include src="./icons/cross.html"></include>
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if>    
   </td>
   <td class="text-center">
     <if condition="baseline === 'tick'">
-      <include src="./icons/tick.html"></include>
+      <include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>
     </if>
     <if condition="baseline === 'cross'">
-      <include src="./icons/cross.html"></include>
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if> 
   </td>
   <td class="text-center">
     <if condition="status === 'tick'">
-      <include src="./icons/tick.html"></include>
+      <include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>
     </if>
     <if condition="status === 'cross'">
-      <include src="./icons/cross.html"></include>
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if> 
   </td>
   <td class="text-center">{{ audience }}</td>

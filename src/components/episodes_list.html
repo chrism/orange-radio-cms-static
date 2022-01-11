@@ -7,76 +7,75 @@
     </h2>
     <!-- Add collapse class to close once done -->
     <div id="collapseOneLarge" class="accordion-collapse collapse" aria-labelledby="headingOneLarge" data-bs-parent="#accordionExampleLarge">
-            <table class="table align-middle">
-              <thead>
-                <tr>
-                  <th scope="col">
-                    ID
-                  </th>
-                  <th class="table-column-widest-possible" scope="col">
-                    Title
-                  </th>
-                  <th class="text-nowrap" scope="col">
-                    Published
-                  </th>
-                  <th scope="col">
-                    Duration
-                  </th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "60566607",
-                  "title": "423: What We Learned in 2021",
-                  "published": "16 Dec 2021",
-                  "duration": "48 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "57912648",
-                  "title": "422: The Complainisode",
-                  "published": "9 Dec 2021",
-                  "duration": "52 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "33342114",
-                  "title": "421: The Future of Remote Design Teams",
-                  "published": "2 Dec 2021",
-                  "duration": "38 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "05406611",
-                  "title": "420: The Pointer Cursor Debate",
-                  "published": "17 Nov 2021",
-                  "duration": "31 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "43482908",
-                  "title": "419: Teaching Design at Work",
-                  "published": "10 Nov 2021",
-                  "duration": "34 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "05383554",
-                  "title": "418: Fictional User Interfaces",
-                  "published": "3 Nov 2021",
-                  "duration": "31 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "59952164",
-                  "title": "417: The Side Project Prophecy",
-                  "published": "27 Oct 2021",
-                  "duration": "37 min"
-                }'></include>
-                <include src="./components/episode_table_row.html" locals='{
-                  "id": "30480397",
-                  "title": "416: UI Reviews and QA",
-                  "published": "20 Oct 2021",
-                  "duration": "22 min",
-                  "last": "border-bottom-0"
-                }'></include>
-              </tbody>
-            </table>     
+      <table class="table align-middle">
+        <thead>
+          <tr>
+            <th scope="col">
+              ID
+            </th>
+            <th class="table-column-widest-possible" scope="col">
+              Title
+            </th>
+            <th class="text-nowrap" scope="col">
+              Published
+            </th>
+            <th scope="col">
+              Duration
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="episode-list">
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "60566607",
+            "title": "423: What We Learned in 2021",
+            "published": "16 Dec 2021",
+            "duration": "48 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "57912648",
+            "title": "422: The Complainisode",
+            "published": "9 Dec 2021",
+            "duration": "52 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "33342114",
+            "title": "421: The Future of Remote Design Teams",
+            "published": "2 Dec 2021",
+            "duration": "38 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "05406611",
+            "title": "420: The Pointer Cursor Debate",
+            "published": "17 Nov 2021",
+            "duration": "31 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "43482908",
+            "title": "419: Teaching Design at Work",
+            "published": "10 Nov 2021",
+            "duration": "34 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "05383554",
+            "title": "418: Fictional User Interfaces",
+            "published": "3 Nov 2021",
+            "duration": "31 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "59952164",
+            "title": "417: The Side Project Prophecy",
+            "published": "27 Oct 2021",
+            "duration": "37 min"
+          }'></include>
+          <include src="./components/episode_table_row.html" locals='{
+            "id": "30480397",
+            "title": "416: UI Reviews and QA",
+            "published": "20 Oct 2021",
+            "duration": "22 min"
+          }'></include>
+        </tbody>
+      </table>     
     </div>
   </div>
 </div>

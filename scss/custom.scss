@@ -46,6 +46,10 @@
   box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
 }
 
+.table .episode-list tr:last-child {
+  border-bottom: 0;
+}
+
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 1.25em;

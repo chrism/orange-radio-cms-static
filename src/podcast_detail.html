@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Podcasts > Design Details</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html" locals='{
+      "selected": "podcasts"
+    }'></include>
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Podcast detail</h1>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <section class="d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <div class="me-4">
+              <h6 class="fw-normal mb-1">Date Created</h6>
+              <h4 class="mb-0">11 Jun 2014</h4>
+            </div>
+            <div class="me-4">
+              <h6 class="fw-normal mb-1">Last modified</h6>
+              <h4 class="mb-0">23 Sep 2021</h4>
+            </div>
+            <div class="me-4">
+              <h6 class="fw-normal mb-1">Last updated</h6>
+              <h4 class="mb-0">11 Jan 2022</h4>
+            </div>
+          </div>
+          <div>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary"><include src="./icons/pencil.html"></include>&nbsp;Edit</button>
+              <button type="button" class="btn btn-secondary"><include src="./icons/cross.html"></include>&nbsp;Delete</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="pt-4 row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="d-flex">
+              <div class="ratio ratio-1x1 bg-dark">
+                <img class="p-4" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
+              </div>
+              <div class="ratio ratio-1x1">
+                <img class="p-4 border border-light border-1" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h1>Les Grosses Têtes</h1>
+            <h4><a href="RTL">RTL</a></h4>
+            <div class="row">
+              <div class="col-md-6">
+                <table class="table align-middle">
+                  <tbody>
+                    <tr>
+                      <td scope="col">
+                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">Comedy</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <table class="table align-middle">
+                  <tbody>
+                    <tr>
+                      <td scope="col">
+                        <span class="text-muted">Europe &rsaquo;</span> <span class="fw-bold">France</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3>Les Grosses Têtes</h3>
+            <p>Du lundi au vendredi de 15h30 à 18h, retrouvez Laurent Ruquier, chef d'orchestre de l'émission. Entouré de ses fidèles Grosses Têtes, il imprime sa marque à ce programme culte de la radio tout en restant fidèle à ses fondamentaux.</p>
+            <p><a href="https://www.rtl.fr/emission/les-grosses-tetes">https://www.rtl.fr/emission/les-grosses-tetes</a></p>
+            <div class="my-3">
+              <span class="badge rounded-pill bg-light">Divertissement</span>
+              <span class="badge rounded-pill bg-light">RTL</span>
+              <span class="badge rounded-pill bg-light">Laurent Ruquier</span>
+              <span class="badge rounded-pill bg-light">humour</span>
+              <span class="badge rounded-pill bg-light">rire</span>
+              <span class="badge rounded-pill bg-light">actualité</span>
+              <span class="badge rounded-pill bg-light">blague</span>
+              <span class="badge rounded-pill bg-light">insolite</span>
+              <span class="badge rounded-pill bg-light">culture</span>
+            </div>
+            <a href="#" class="btn btn-icon btn-social btn-twitter"><span class="visually-hidden">Twitter</span></a>
+            <a href="#" class="btn btn-icon btn-social btn-facebook"><span class="visually-hidden">Facebook</span></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th class="table-column-widest-possible" scope="col">
+                    RSS Feed URL
+                  </th>
+                  <th class="text-nowrap" scope="col">
+                    Last scraped
+                  </th>
+                  <th scope="col">
+                    Uptime
+                  </th>
+                  <th scope="col">
+                    History
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-column-widest-possible" scope="col">
+                    https://www.rtl.fr/podcast/les-grosses-tetes.xml
+                  </td>
+                  <td class="text-nowrap" scope="col">
+                    11 Jan 2022
+                  </td>
+                  <td scope="col">
+                    100%
+                  </td>
+                  <td scope="col">
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td scope="col" class="text-end">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary text-nowrap">Scrape now</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h1>Episodes</h1>
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th scope="col">
+                ID
+              </th>
+              <th class="table-column-widest-possible" scope="col">
+                Title
+              </th>
+              <th class="text-nowrap" scope="col">
+                Published
+              </th>
+              <th scope="col">
+                Duration
+              </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="episode-list">
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17358930",
+              "title": "INÉDIT - La blague du mardi 11 janvier 2022",
+              "published": "11 Jan 2022",
+              "duration": "1 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355900",
+              "title": "INÉDIT - Le débrief de l’émission par Chantal Ladesou",
+              "published": "10 Jan 2022",
+              "duration": "1 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355617",
+              "title": "L’INTÉGRALE - Émission du lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "1 h 39 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355618",
+              "title": "PÉPITE - Chantal Ladesou revient après avoir eu la Covid-19",
+              "published": "10 Jan 2022",
+              "duration": "4 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355619",
+              "title": "LES COUPS DE FIL DE L’ACTU - Lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "6 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355620",
+              "title": "FAKE NEWS - Lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "7 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355621",
+              "title": "LE LIVRE DU JOUR - Lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "7 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355622",
+              "title": "QUI EST QUI, QUI FAIT QUOI - Lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "7 min"
+            }'></include>
+            <include src="./components/episode_table_row.html" locals='{
+              "id": "17355623",
+              "title": "INVITÉ MYSTÈRE - Lundi 10 janvier 2022",
+              "published": "10 Jan 2022",
+              "duration": "12 min"
+            }'></include>
+          </tbody>
+        </table>   
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <nav aria-label="Fixed back to top example" class="back-to-top">
+      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+        <span class="visually-hidden">Back to top</span>
+      </a>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
