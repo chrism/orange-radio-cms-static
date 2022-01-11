@@ -10,6 +10,10 @@
   color: $functional-green;
 }
 
+.text-v-muted {
+  color: $gray-600;
+}
+
 .dropdown-toggle.table-header {
   padding-right: 0;
   color: $gray-400;
@@ -46,7 +50,7 @@
   box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
 }
 
-.table .episode-list tr:last-child {
+.table .episode-list tr:last-child, .table .userlist-list tr:last-child, .table .podcast-list tr:last-child {
   border-bottom: 0;
 }
 
