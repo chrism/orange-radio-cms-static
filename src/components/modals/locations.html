@@ -7,13 +7,13 @@
       </div>
       <div class="modal-body">
         <div class="pt-3">
-          <label for="Continent" class="form-label">Continent</label>
+          <label for="Continent" class="form-label is-required">Continent</label>
           <select class="form-select" aria-label="Continent">
             <option selected>Choose a continent</option>
           </select>          
         </div>
         <div class="pt-3">
-          <label for="Country" class="form-label">Country</label>
+          <label for="Country" class="form-label is-required">Country</label>
           <select class="form-select" aria-label="Country" disabled>
             <option selected>Choose a country</option>
           </select>          
@@ -30,6 +30,14 @@
           </div>
           <div class="col-auto flex-grow-1">
             <input type="text" id="add-City" class="form-control" placeholder="Name of city" disabled>
+          </div>
+        </div>
+        <div class="row pt-3 g-3 align-items-center">
+          <div class="col-auto">
+            <label for="Frequency" class="col-form-label">Frequency</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <input type="password" id="Frequency" class="form-control" placeholder="100.0 FM">
           </div>
         </div>
       </div>
