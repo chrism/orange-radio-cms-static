@@ -1,6 +1,6 @@
 import * as boosted from 'boosted';
 
-const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal', 'deleteConfirmationModal']
+const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal', 'deleteConfirmationModal', 'episodeStreamsModal']
 
 modals.forEach(modal => {
   const modalEl = document.getElementById(modal)
