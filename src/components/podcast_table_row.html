@@ -24,13 +24,16 @@
       <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if> 
   </td>
-  <td class="text-center">
-    <if condition="status === 'tick'">
-      <include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>
+  <td class="text-center fw-bold">
+    <if condition="uptime > 80">
+      <span class="text-functional-green">{{ uptime }}%</span>
     </if>
-    <if condition="status === 'cross'">
-      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
-    </if> 
+    <elseif condition="uptime > 50">
+      <span class="text-functional-yellow">{{ uptime }}%</span>
+    </elseif>
+    <else>
+      <span class="text-functional-red">{{ uptime }}%</span>
+    </else>
   </td>
   <td class="text-center">{{ audience }}</td>
   <td class="text-center">{{ modified }}</td>
