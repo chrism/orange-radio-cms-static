@@ -40,101 +40,47 @@
       </div>
     </div>
 
+    <h1>Streams</h1>
+    <h3>With playlist</h3>
+    <include src="components/playlist_item.html" locals='{
+      "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
+      "lastUpdated": "17 Aug 2020",
+      "withEdit": 0,
+      "withRefresh": 0
+    }'></include>
     <div class="row">
       <div class="col-md-12">
         <table class="table align-middle">
-          <thead>
-            <tr>
-              <th scope="col">
-                ID
-              </th>
-              <th scope="col">
-                Transport
-              </th>
-              <th scope="col">
-                RSS Feed URL
-              </th>
-              <th scope="col">
-                Bitrate
-              </th>
-              <th scope="col">
-                Container
-              </th>
-              <th scope="col">
-                Codec
-              </th>
-              <th scope="col">
-                Channels
-              </th>
-              <th scope="col">
-                Uptime
-              </th>
-              <th scope="col">
-                History
-              </th>
-            </tr>
-          </thead>
+          <include src="components/episode_stream_table_header.html"></include>
           <tbody>
-            <tr>
-              <td scope="col">
-                16965878
-              </td>
-              <td scope="col">
-                http
-              </td>
-              <td class="text-break" scope="col">
-                https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/c8c8ee28-8bd3-423d-8b22-6f0039b7a273/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=c8c8ee28-8bd3-423d-8b22-6f0039b7a273&feed=BqbsxVfO
-              </td>
-              <td scope="col">
-                128
-              </td>
-              <td scope="col">
-                mp3
-              </td>
-              <td scope="col">
-                mp3
-              </td>
-              <td scope="col">
-                2
-              </td>
-              <td scope="col">
-                <span class="text-functional-green fw-bold">100%</span>
-              </td>
-              <td scope="col">
-                <div class="d-flex flex-wrap">
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                  <div class="text-functional-green">■</div>
-                </div>
-              </td>
-            </tr>
+            <include src="components/episode_stream_table_row.html" locals='{
+              "transport": "http",
+              "url": "http://www.url.com/somethingelse/streamaddress_from_playlist.mp3",
+              "bitrate": "128",
+              "codec": "mp3",
+              "container": "mp3",
+              "channels": 2,
+              "uptime": 0
+            }'></include>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h3>Without playlist</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table align-middle">
+          <include src="components/episode_stream_table_header.html"></include>
+          <tbody>
+            <include src="components/episode_stream_table_row.html" locals='{
+              "transport": "http",
+              "url": "https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/c8c8ee28-8bd3-423d-8b22-6f0039b7a273/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=c8c8ee28-8bd3-423d-8b22-6f0039b7a273&feed=BqbsxVfO",
+              "bitrate": "128",
+              "codec": "mp3",
+              "container": "mp3",
+              "channels": 2,
+              "uptime": 100
+            }'></include>
           </tbody>
         </table>
       </div>

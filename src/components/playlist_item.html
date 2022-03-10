@@ -4,7 +4,9 @@
     <p>Last updated: <span class="fw-bold">{{ lastUpdated }}</span></p>
   </div>
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary">Refresh</button>
+    <if condition="withRefresh === 1">
+      <button type="button" class="btn btn-secondary">Refresh</button>
+    </if>
     <if condition="withEdit === 1">
       <button type="button" class="btn btn-secondary">Add a stream</button>
       <button type="button" class="btn btn-secondary">Edit</button>
