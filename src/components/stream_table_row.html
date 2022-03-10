@@ -1,0 +1,47 @@
+<tr>
+  <td class="text-center" scope="col">
+    {{ transport }}
+  </td>
+  <td scope="col">
+    {{ url }}
+  </td>
+  <td class="text-center" scope="col">
+    {{ bitrate }}
+  </td>
+  <td class="text-center" scope="col">
+    {{ codec }}
+  </td>
+  <td class="text-center fw-bold">
+    <if condition="uptime > 80">
+      <span class="text-functional-green">{{ uptime }}%</span>
+    </if>
+    <elseif condition="uptime > 50">
+      <span class="text-functional-yellow">{{ uptime }}%</span>
+    </elseif>
+    <else>
+      <span class="text-functional-red">{{ uptime }}%</span>
+    </else>
+  </td>
+  <td scope="col">
+    <div class="d-flex flex-wrap">
+      <each loop="item, index in history">
+        <if condition="item === 1">
+          <div class="text-functional-green">■</div>
+        </if>
+        <else>
+          <div class="text-functional-red">■</div>
+        </else>
+      </each>
+    </div>
+  </td>
+  <td class="text-nowrap" scope="col">
+    {{ lastChecked }}
+  </td>
+  <td scope="col" class="text-end">
+    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Refresh</button>
+      <button type="button" class="btn btn-secondary">Edit</button>
+      <button type="button" class="btn btn-secondary">Delete</button>
+    </div>
+  </td>
+</tr>
