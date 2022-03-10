@@ -32,6 +32,17 @@
       <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
     </if> 
   </td>
+  <td class="text-center fw-bold">
+    <if condition="uptime > 80">
+      <span class="text-functional-green">{{ uptime }}%</span>
+    </if>
+    <elseif condition="uptime > 50">
+      <span class="text-functional-yellow">{{ uptime }}%</span>
+    </elseif>
+    <else>
+      <span class="text-functional-red">{{ uptime }}%</span>
+    </else>
+  </td>
   <td class="text-center">{{ audience }}</td>
   <td class="text-center">{{ modified }}</td>
 </tr>
