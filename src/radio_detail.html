@@ -153,95 +153,47 @@
 
         <section class="container pt-4">
           <h1>Streams</h1>
+          <h3>With playlist</h3>
+          <include src="components/playlist_item.html" locals='{
+            "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
+            "lastUpdated": "17 Aug 2020",
+            "withEdit": 0
+          }'></include>
           <div class="row">
             <div class="col-md-12">
               <table class="table align-middle">
-                <thead>
-                  <tr>
-                    <th scope="col">
-                      Transport
-                    </th>
-                    <th scope="col">
-                      URL
-                    </th>
-                    <th scope="col">
-                      Bitrate
-                    </th>
-                    <th scope="col">
-                      Codec
-                    </th>
-                    <th scope="col">
-                      Uptime
-                    </th>
-                    <th scope="col">
-                      History
-                    </th>
-                    <th class="text-nowrap" scope="col">
-                      Last checked
-                    </th>
-                    <th></th>
-                  </tr>
-                </thead>
+                <include src="components/stream_table_header.html"></include>
                 <tbody>
-                  <tr>
-                    <td scope="col">
-                      http
-                    </td>
-                    <td scope="col">
-                      http://icecast.rtl.fr/rtl-1-44-128?listen=webBAIOCwsGDQQBAgsBBAUHAQ
-                    </td>
-                    <td scope="col">
-                      128
-                    </td>
-                    <td scope="col">
-                      mp3
-                    </td>
-                    <td scope="col">
-                      <span class="text-functional-green fw-bold">94%</span>
-                    </td>
-                    <td scope="col">
-                      <div class="d-flex flex-wrap">
-                        <div class="text-functional-red">■</div>
-                        <div class="text-functional-red">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-red">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                        <div class="text-functional-green">■</div>
-                      </div>
-                    </td>
-                    <td scope="col">
-                      24 Feb 2022
-                    </td>
-                    <td scope="col" class="text-end">
-                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary text-nowrap">Refresh</button>
-                      </div>
-                    </td>
-                  </tr>
+                  <include src="components/stream_table_row.html" locals='{
+                    "transport": "http",
+                    "url": "http://www.url.com/somethingelse/streamaddress_from_playlist.mp3",
+                    "bitrate": "128",
+                    "codec": "mp3",
+                    "uptime": 0,
+                    "history": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    "lastChecked": "10 Jan 2022",
+                    "withEdit": 0
+                  }'></include>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h3>Without playlist</h3>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table align-middle">
+                <include src="components/stream_table_header.html"></include>
+                <tbody>
+                  <include src="components/stream_table_row.html" locals='{
+                    "transport": "http",
+                    "url": "http://icecast.rtl.fr/rtl-1-44-128?listen=webBAIOCwsGDQQBAgsBBAUHAQ",
+                    "bitrate": "128",
+                    "codec": "mp3",
+                    "uptime": 94,
+                    "history": [0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1],
+                    "lastChecked": "24 Feb 2022",
+                    "withEdit": 0
+                  }'></include>
                 </tbody>
               </table>
             </div>

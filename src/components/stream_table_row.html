@@ -40,8 +40,10 @@
   <td scope="col" class="text-end">
     <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-secondary">Refresh</button>
-      <button type="button" class="btn btn-secondary">Edit</button>
-      <button type="button" class="btn btn-secondary">Delete</button>
+      <if condition="withEdit === 1">
+        <button type="button" class="btn btn-secondary">Edit</button>
+        <button type="button" class="btn btn-secondary">Delete</button>
+      </if>
     </div>
   </td>
 </tr>

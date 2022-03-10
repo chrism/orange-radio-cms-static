@@ -5,8 +5,10 @@
   </div>
   <div class="btn-group" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-secondary">Refresh</button>
-    <button type="button" class="btn btn-secondary">Add a stream</button>
-    <button type="button" class="btn btn-secondary">Edit</button>
-    <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+    <if condition="withEdit === 1">
+      <button type="button" class="btn btn-secondary">Add a stream</button>
+      <button type="button" class="btn btn-secondary">Edit</button>
+      <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+    </if>
   </div>
 </div>
