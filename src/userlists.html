@@ -19,7 +19,7 @@
     <main class="flex-grow-1">
       <section class="container mt-4 d-flex align-items-end">
         <div class="flex-grow-1">
-          <h1 class="mb-0">300 userlists</h1>
+          <h1 class="mb-0">43 userlists</h1>
         </div>
         <div>
           <include src="./components/create_button.html" locals='{
@@ -43,7 +43,9 @@
         </table>
       </section>
       <section class="container mt-5 mb-5">
-        <include src="./components/pagination.html"></include>
+        <include src="./components/pagination.html" locals='{
+          "pages": [1,2,3]
+        }'></include>
       </section>
     </main>
 

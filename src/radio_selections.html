@@ -12,14 +12,14 @@
     }'></include>    
 
     <include src="./components/search.html" locals='{
-      "placeholder": "Search for a userlist...",
+      "placeholder": "Search for a radio selection...",
       "searchTerm": ""
     }'></include>     
 
     <main class="flex-grow-1">
       <section class="container mt-4 d-flex align-items-end">
         <div class="flex-grow-1">
-          <h1 class="mb-0">300 radio selections</h1>
+          <h1 class="mb-0">89 radio selections</h1>
         </div>
         <div>
           <include src="./components/create_button.html" locals='{
@@ -43,7 +43,9 @@
         </table>
       </section>
       <section class="container mt-5 mb-5">
-        <include src="./components/pagination.html"></include>
+        <include src="./components/pagination.html" locals='{
+          "pages": [1,2,3,4,5]
+        }'></include>
       </section>
     </main>
 

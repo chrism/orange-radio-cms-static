@@ -12,18 +12,18 @@
     }'></include>    
 
     <include src="./components/search.html" locals='{
-      "placeholder": "Search for a userlist...",
+      "placeholder": "Search for a podcast selection...",
       "searchTerm": ""
     }'></include>     
 
     <main class="flex-grow-1">
       <section class="container mt-4 d-flex align-items-end">
         <div class="flex-grow-1">
-          <h1 class="mb-0">300 userlists</h1>
+          <h1 class="mb-0">89 podcast selections</h1>
         </div>
         <div>
           <include src="./components/create_button.html" locals='{
-            "buttonText": "Create a new userlist",
+            "buttonText": "Create a new podcast selection",
             "buttonType": "primary",
             "buttonSize": "large",
             "buttonAction": "parent.location=\"create_radio.html\""
@@ -33,17 +33,19 @@
       <section class="container mt-4">
         <table class="table align-middle">
           <thead>
-            <include src="./components/userlist_table_headers.html" locals='{
+            <include src="./components/radio_selection_table_headers.html" locals='{
               "selected": "Last Modified"
             }'></include>
           </thead>
           <tbody>
-            <include src="./components/userlist_table_rows.html"></include>
+            <include src="./components/podcast_selection_table_rows.html"></include>
           </tbody>
         </table>
       </section>
       <section class="container mt-5 mb-5">
-        <include src="./components/pagination.html"></include>
+        <include src="./components/pagination.html" locals='{
+          "pages": [1,2,3,4,5]
+        }'></include>
       </section>
     </main>
 
