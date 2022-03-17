@@ -1,0 +1,19 @@
+<tr>
+  <td class="move-item"><include src="./icons/move.html" locals='{"color": "text-v-muted"}'></include></td>
+  <td class="text-center">{{ type }}</td>
+  <td class="text-center">
+    <if condition="image === 'cross'">
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
+    </if>
+    <if condition="image !== 'cross'">
+      <img class="table-thumbnail-image" src="{{ image }}" alt="{{ name }} image">
+    </if>
+  </td>
+  <td><a href="radio_detail.html">{{ name }}</a></td>
+  <td class="text-center text-nowrap">{{ modified }}</td>
+  <td scope="col" class="text-end">
+    <div class="btn-group btn-group-sm" role="group">
+      <button type="button" class="btn btn-secondary">Remove</button>
+    </div>
+  </td>
+</tr>

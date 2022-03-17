@@ -81,3 +81,7 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 input[type="search"].form-control-dark::-webkit-search-cancel-button {
   filter: invert(1);
 }
+
+.move-item {
+  cursor: grab;
+}
