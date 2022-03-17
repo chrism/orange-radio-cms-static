@@ -1,0 +1,30 @@
+<div class="modal fade" id="addItemModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add an item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="pt-3">
+          <label for="Continent" class="form-label">Type</label>
+          <select class="form-select" aria-label="Continent">
+            <option selected>Radio</option>
+          </select>          
+        </div>
+        <div class="pt-3">
+          <label for="Name" class="form-label">Name</label>
+          <input class="form-control" list="datalistOptions" id="Name" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="France Culture">
+            <option value="France Inter">
+          </datalist>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" onClick="parent.location='userlist_detail_extra.html'">Add item</button>
+      </div>
+    </div>
+  </div>
+</div>

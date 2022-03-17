@@ -1,0 +1,72 @@
+<main class="flex-grow-1">
+  <section class="bg-dark border-top border-dark border-1">
+    <div class="container pt-4 pb-1">
+      <h1 id="top" class="display-2">Userlist detail</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="pt-4 col d-flex justify-content-center justify-content-lg-start">
+        <div class="d-flex">
+          <div class="me-4">
+            <h6 class="fw-normal mb-1">Date Created</h6>
+            <h4 class="mb-0 text-nowrap">12 Sep 2013</h4>
+          </div>
+          <div class="me-4">
+            <h6 class="fw-normal mb-1">Last modified</h6>
+            <h4 class="mb-0 text-nowrap">24 Aug 2021</h4>
+          </div>
+          <div class="me-4">
+            <h6 class="fw-normal mb-1">Identifier</h6>
+            <h4 class="mb-0 text-nowrap">065b2b2b-054b-8d42-b27e-64eef8ddff26</h4>
+          </div>
+        </div>            
+      </div>
+      <div class="pt-4 col d-flex justify-content-center justify-content-lg-end">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-secondary"><include src="./icons/pencil.html"></include>&nbsp;Edit</button>
+          <button type="button" class="btn btn-secondary"><include src="./icons/cross.html"></include>&nbsp;Delete</button>
+        </div>      
+      </div>
+    </div>
+
+    <div class="row pt-4">
+      <h1>orangeradio-tv-varietejazzclassique</h1>
+    </div>
+
+    <div class="d-flex align-items-end">
+      <div class="flex-grow-1">
+        <h2 class="mb-0">16 items</h2>
+      </div>
+      <div>
+        <include src="./components/create_button.html" locals='{
+          "buttonText": "Add an item",
+          "buttonType": "primary",
+          "buttonSize": "large",
+          "buttonAction": "parent.location=\"userlist_detail_add_item_modal.html\""
+        }'></include>
+      </div>
+    </div>
+
+    <div class="mt-4 pb-5">
+      <table class="table align-middle">
+        <thead>
+          <include src="./components/userlist_detail_table_headers.html"></include>
+        </thead>
+        <tbody>
+          <if condition="typeof extra !== 'undefined'">
+            <include src="./components/userlist_detail_table_row.html" locals='{
+              "type": "Radio",
+              "image": "http://images.radio.orange.com/radios/large_france_inter.png",
+              "name": "France Inter",
+              "modified": "12 Mar 2019"
+            }'></include>            
+          </if> 
+          <include src="./components/userlist_detail_table_rows.html"></include>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+</main>
