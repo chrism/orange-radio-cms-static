@@ -54,14 +54,10 @@
 
         <div class="pt-4 row row-cols-1 row-cols-md-2">
           <div class="col mb-3">
-            <div class="d-flex">
-              <div class="ratio ratio-1x1 bg-dark">
-                <img class="p-4" src="http://images.radio.orange.com/radios/large_rtl.png" alt="RTL Logo">
-              </div>
-              <div class="ratio ratio-1x1">
-                <img class="p-4 border border-light border-1" src="http://images.radio.orange.com/radios/large_rtl.png" alt="RTL Logo">
-              </div>
-            </div>
+            <include src="./components/image_grid.html" locals='{
+              "type": "radios",
+              "imageName": "rtl"
+            }'></include>
           </div>
           <div class="col">
             <h1>RTL</h1>
