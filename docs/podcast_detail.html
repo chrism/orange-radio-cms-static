@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Orange Radio CMS > Podcasts > Design Details</title>
-    <link rel="stylesheet" href="scss.b1749923.css">
+    <link rel="stylesheet" href="scss.09115bbf.css">
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -48,7 +48,7 @@
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
         <div class="container pt-4 pb-1">
-          <h1 id="top" class="display-2">Podcast detail</h1>
+          <h1 id="top" class="display-2">Podcast details</h1>
         </div>
       </section>
 
@@ -85,13 +85,23 @@
         <div class="pt-4 row row-cols-1 row-cols-md-2">
           <div class="col mb-3">
             <div class="d-flex">
-              <div class="ratio ratio-1x1 bg-dark">
-                <img class="p-4" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
-              </div>
-              <div class="ratio ratio-1x1">
-                <img class="p-4 border border-light border-1" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
-              </div>
-            </div>
+  <div class="bg-dark p-4">
+    <img class="ratio ratio-1x1" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-light">Large (256x256)</p>
+    <img class="" src="http://images.radio.orange.com/podcasts/medium_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-light">Medium (128x128)</p>
+    <img class="" src="http://images.radio.orange.com/podcasts/small_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-light">Small (64x64)</p>
+  </div>
+  <div class="border border-light border-1 p-4">
+    <img class="ratio ratio-1x1" src="http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-muted">Large (256x256)</p>
+    <img class="" src="http://images.radio.orange.com/podcasts/medium_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-muted">Medium (128x128)</p>
+    <img class="" src="http://images.radio.orange.com/podcasts/small_les-grosses-tetes.png" alt="">
+    <p class="pt-2 text-muted">Small (64x64)</p>
+  </div>
+</div>
           </div>
           <div class="col">
             <h1>Les Grosses Têtes</h1>
@@ -164,7 +174,10 @@
               </div>
             </div>
             <h3>Les Grosses Têtes</h3>
-            <p>Du lundi au vendredi de 15h30 à 18h, retrouvez Laurent Ruquier, chef d'orchestre de l'émission. Entouré de ses fidèles Grosses Têtes, il imprime sa marque à ce programme culte de la radio tout en restant fidèle à ses fondamentaux.</p>
+            <div id="detailDescription" class="mb-3">
+              <p class="collapse" id="showMoreToggle" aria-expanded="false">Du lundi au vendredi de 15h30 à 18h, retrouvez Laurent Ruquier, chef d'orchestre de l'émission. Entouré de ses fidèles Grosses Têtes, il imprime sa marque à ce programme culte de la radio tout en restant fidèle à ses fondamentaux.</p>
+              <button class="btn btn-secondary btn-sm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#showMoreToggle" aria-expanded="false" aria-controls="showMoreToggle"></button>
+            </div>
             <p><a href="https://www.rtl.fr/emission/les-grosses-tetes">https://www.rtl.fr/emission/les-grosses-tetes</a></p>
             <div class="my-3">
               <span class="badge rounded-pill bg-light">Divertissement</span>
@@ -263,13 +276,13 @@
           <thead>
             <tr>
               <th class="table-column-widest-possible" scope="col">
-                Title
+                <a class="text-nowrap text-decoration-none" href="#">Title<span class="dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
               <th class="text-nowrap" scope="col">
-                Published
+                <a class="text-nowrap text-decoration-none" href="#">Published<span class="dropdown-toggle table-header active" href="#" role="button" aria-expanded="false"></span></a>
               </th>
               <th scope="col">
-                Duration
+                <a class="text-nowrap text-decoration-none" href="#">Duration<span class="dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
               </th>
             </tr>
           </thead>
@@ -374,7 +387,40 @@
   </td>
 </tr>
           </tbody>
-        </table>   
+        </table>
+        <div class="mt-3 mb-5">
+          <nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true" aria-label="Previous"></a></li>
+    
+      
+        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">7</a></li>
+      
+      
+        <li class="page-item"><a class="page-link" href="#">8</a></li>
+      
+    <li class="page-item"><a class="page-link" href="#" aria-label="Next"></a></li>
+  </ul>
+</nav>
+        </div> 
       </section>
     </main>
 
