@@ -85,3 +85,22 @@ input[type="search"].form-control-dark::-webkit-search-cancel-button {
 .move-item {
   cursor: grab;
 }
+
+#detailDescription p.collapse:not(.show) {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#detailDescription p.collapsing {
+  height: 42px !important;
+}
+
+#detailDescription button.collapsed::after  {
+  content: 'Show More';
+}
+
+#detailDescription button:not(.collapsed)::after {
+  content: 'Show Less';
+}
