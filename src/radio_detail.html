@@ -163,7 +163,9 @@
           <div class="row">
             <div class="col-md-12">
               <table class="table align-middle">
-                <include src="components/stream_table_header.html"></include>
+                <include src="components/stream_table_header.html" locals='{
+                  "withUptimeHistory": 1
+                }'></include>
                 <tbody>
                   <include src="components/stream_table_row.html" locals='{
                     "transport": "http",
@@ -173,7 +175,8 @@
                     "uptime": 0,
                     "history": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     "lastChecked": "10 Jan 2022",
-                    "withEdit": 0
+                    "withEdit": 0,
+                    "withUptimeHistory": 1
                   }'></include>
                 </tbody>
               </table>
@@ -183,7 +186,9 @@
           <div class="row">
             <div class="col-md-12">
               <table class="table align-middle">
-                <include src="components/stream_table_header.html"></include>
+                <include src="components/stream_table_header.html" locals='{
+                  "withUptimeHistory": 1
+                }'></include>
                 <tbody>
                   <include src="components/stream_table_row.html" locals='{
                     "transport": "http",
@@ -193,7 +198,8 @@
                     "uptime": 94,
                     "history": [0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1],
                     "lastChecked": "24 Feb 2022",
-                    "withEdit": 0
+                    "withEdit": 0,
+                    "withUptimeHistory": 1
                   }'></include>
                 </tbody>
               </table>

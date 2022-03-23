@@ -79,14 +79,15 @@
         <h3>With playlist</h3>
         <include src="components/playlist_item.html" locals='{
           "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
-          "lastUpdated": "17 Aug 2020",
           "withEdit": 1,
           "withRefresh": 1
         }'></include>
         <div class="row">
           <div class="col-md-12">
             <table class="table align-middle">
-              <include src="components/stream_table_header.html"></include>
+              <include src="components/stream_table_header.html" locals='{
+                "withUptimeHistory": 0
+              }'></include>
               <tbody>
                 <include src="components/stream_table_row.html" locals='{
                   "transport": "http",
@@ -96,7 +97,8 @@
                   "uptime": 0,
                   "history": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                   "lastChecked": "10 Jan 2022",
-                  "withEdit": 1
+                  "withEdit": 1,
+                  "withUptimeHistory": 0
                 }'></include>
               </tbody>
             </table>
@@ -106,7 +108,9 @@
         <div class="row">
           <div class="col-md-12">
             <table class="table align-middle">
-              <include src="components/stream_table_header.html"></include>
+              <include src="components/stream_table_header.html" locals='{
+                "withUptimeHistory": 0
+              }'></include>
               <tbody>
                 <include src="components/stream_table_row.html" locals='{
                   "transport": "http",
@@ -116,7 +120,8 @@
                   "uptime": 100,
                   "history": [1],
                   "lastChecked": "10 Jan 2022",
-                  "withEdit": 1
+                  "withEdit": 1,
+                  "withUptimeHistory": 0
                 }'></include>
               </tbody>
             </table>

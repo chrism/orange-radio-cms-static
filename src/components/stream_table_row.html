@@ -11,29 +11,31 @@
   <td class="text-center" scope="col">
     {{ codec }}
   </td>
-  <td class="text-center fw-bold">
-    <if condition="uptime > 80">
-      <span class="text-functional-green">{{ uptime }}%</span>
-    </if>
-    <elseif condition="uptime > 50">
-      <span class="text-functional-yellow">{{ uptime }}%</span>
-    </elseif>
-    <else>
-      <span class="text-functional-red">{{ uptime }}%</span>
-    </else>
-  </td>
-  <td scope="col">
-    <div class="d-flex flex-wrap">
-      <each loop="item, index in history">
-        <if condition="item === 1">
-          <div class="text-functional-green">■</div>
-        </if>
-        <else>
-          <div class="text-functional-red">■</div>
-        </else>
-      </each>
-    </div>
-  </td>
+  <if condition="withUptimeHistory === 1">
+    <td class="text-center fw-bold">
+      <if condition="uptime > 80">
+        <span class="text-functional-green">{{ uptime }}%</span>
+      </if>
+      <elseif condition="uptime > 50">
+        <span class="text-functional-yellow">{{ uptime }}%</span>
+      </elseif>
+      <else>
+        <span class="text-functional-red">{{ uptime }}%</span>
+      </else>
+    </td>
+    <td scope="col">
+      <div class="d-flex flex-wrap">
+        <each loop="item, index in history">
+          <if condition="item === 1">
+            <div class="text-functional-green">■</div>
+          </if>
+          <else>
+            <div class="text-functional-red">■</div>
+          </else>
+        </each>
+      </div>
+    </td>
+  </if>
   <td class="text-nowrap" scope="col">
     {{ lastChecked }}
   </td>
