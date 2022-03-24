@@ -33,29 +33,24 @@
       <section class="container mt-4">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="userlists.html">No country (41)</a>
+            <a class="nav-link" href="userlists.html">No country (41)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="userlists_egypt.html">Egypt (2)</a>
+            <a class="nav-link active" aria-current="page" href="userlists_egypt.html">Egypt (2)</a>
           </li>
         </ul>
       </section>
       <section class="container">
         <table class="table align-middle">
           <thead>
-            <include src="./components/userlist_table_headers.html" locals='{
+            <include src="./components/userlist_egypt_table_headers.html" locals='{
               "selected": "Last Modified"
             }'></include>
           </thead>
           <tbody>
-            <include src="./components/userlist_table_rows.html"></include>
+            <include src="./components/userlist_egypt_table_rows.html"></include>
           </tbody>
         </table>
-      </section>
-      <section class="container mt-5 mb-5">
-        <include src="./components/pagination.html" locals='{
-          "pages": [1,2,3]
-        }'></include>
       </section>
     </main>
 
