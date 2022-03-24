@@ -1,4 +1,6 @@
 import * as boosted from 'boosted';
+import Sortable from 'sortablejs';
+
 
 const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal', 'deleteConfirmationModal', 'episodeStreamsModal', 'addItemModal']
 
@@ -10,3 +12,11 @@ modals.forEach(modal => {
   const boostedModal = new boosted.Modal(modalEl)
   boostedModal.show()
 })
+
+var sortableEl = document.getElementById('sortableItems')
+
+if (!!sortableEl) {
+  Sortable.create(sortableEl, {
+    animation: 150
+  })
+}

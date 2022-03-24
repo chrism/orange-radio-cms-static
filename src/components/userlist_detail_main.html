@@ -54,7 +54,7 @@
         <thead>
           <include src="./components/userlist_detail_table_headers.html"></include>
         </thead>
-        <tbody>
+        <tbody id="sortableItems">
           <if condition="typeof extra !== 'undefined'">
             <include src="./components/userlist_detail_table_row.html" locals='{
               "type": "Radio",
