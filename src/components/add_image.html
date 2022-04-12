@@ -1,0 +1,40 @@
+<section class="mb-3">
+  <div class="row g-3 align-items-center">
+    <div class="col-md-2">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Remote URL
+        </label>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <label for="Image-URL" class="form-label">Image URL</label>
+      <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
+      <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+    </div>
+  </div>
+  <div class="row g-3 align-items-center pt-3">
+    <div class="col-md-2">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Local file
+        </label>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled>
+      <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+    </div>
+  </div>
+  
+  <div class="pt-3">
+    <include src="./components/create_button.html" locals='{
+      "buttonText": "Add image",
+      "buttonType": "",
+      "buttonSize": "",
+      "buttonDisabled": "disabled"
+    }'></include>
+  </div>
+</section>
