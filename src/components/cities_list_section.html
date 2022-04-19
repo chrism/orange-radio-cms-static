@@ -1,0 +1,30 @@
+<section class="mb-4">
+  <if condition="typeof title !== 'undefined'">
+    <h2 class="mb-0">{{title}}</h2>
+  </if>  
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th class="table-column-widest-possible" scope="col">Name</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longtitude</th>
+      </tr>
+    </thead>
+    <tbody>
+      <each loop="item in localisations">
+        <tr>
+          <td>
+            <if condition="typeof link !== 'undefined'">
+              <a href="{{link}}">{{item.name}}</a>
+            </if>
+            <else>
+              {{item.name}}
+            </else>
+          </td>
+          <td>{{item.lat}}</td>
+          <td>{{item.long}}</td>
+        </tr>
+      </each>
+    </tbody>
+  </table>
+</section>

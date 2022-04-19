@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Cities / France</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html"></include>
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Cities</h1>
+        </div>
+      </section>
+
+      <section class="container mt-4 d-flex align-items-end">
+        <div class="flex-grow-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="localisations-continents.html">Continents</a></li>
+              <li class="breadcrumb-item"><a href="localisations-europe.html">Europe</a></li>
+              <li class="breadcrumb-item active" aria-current="page">France</li>
+            </ol>
+          </nav>
+
+          <include src="./components/cities_list_section.html" locals='{
+            "localisations": [
+              {"name": "Agen", "lat": "44.203142", "long": "0.616363"},
+              {"name": "Aigues-Mortes", "lat": "43.567172", "long": "4.1925869"},
+              {"name": "Aire Sur La lys", "lat": "50.638757", "long": "2.396187"},
+              {"name": "Aix en Provence", "lat": "43.529742", "long": "5.447427"},
+              {"name": "Ajaccio", "lat": "41.919229", "long": "8.738635"},
+              {"name": "Albertville", "lat": "45.675535", "long": "6.392726"},
+              {"name": "Alençon", "lat": "48.432856", "long": "0.091266"},
+              {"name": "Alès", "lat": "", "long": ""},
+              {"name": "Alpes", "lat": "45.1695797", "long": "5.4502821"},
+              {"name": "Altkirch", "lat": "47.620391", "long": "7.243036"},
+              {"name": "Ambazac", "lat": "45.958196", "long": "1.4019219"},
+              {"name": "Amiens", "lat": "49.894067", "long": "2.295753"},
+              {"name": "Andernos les Bains", "lat": "44.743536", "long": "-1.102449"},
+              {"name": "Anger", "lat": "47.478419", "long": "-0.563166"},
+              {"name": "Angers", "lat": "47.478419", "long": "-0.563166"},
+              {"name": "Annecy", "lat": "45.899247", "long": "6.129384"},
+              {"name": "Antibes", "lat": "", "long": ""},
+              {"name": "Antilles - Guadeloupe", "lat": "", "long": ""},
+              {"name": "Antilles - Guyane", "lat": "-1", "long": "-1"},
+              {"name": "Arcachon", "lat": "", "long": ""},
+              {"name": "Argenteuil", "lat": "48.9472096", "long": "2.2466847"},
+              {"name": "Arles", "lat": "43.676647", "long": "4.6277769"},
+              {"name": "Arras", "lat": "50.291002", "long": "2.777535"}
+            ]
+          }'></include>
+        </div>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <script src="./index.js"></script>
+  </body>
+</html>

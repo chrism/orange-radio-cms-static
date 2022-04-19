@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Continents</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html"></include>
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Continents</h1>
+        </div>
+      </section>
+
+      <section class="container mt-4 d-flex align-items-end">
+        <div class="flex-grow-1">
+          <include src="./components/localisations_list_section.html" locals='{
+            "link": "localisations-europe.html",
+            "localisations": [
+              {"code": "AF", "name": "Africa"},
+              {"code": "AS", "name": "Asia"},
+              {"code": "EU", "name": "Europe"},
+              {"code": "NA", "name": "North America"},
+              {"code": "SA", "name": "South America"},
+              {"code": "OC", "name": "Australasia"},
+              {"code": "AN", "name": "Antarctica"}
+            ]
+          }'></include>
+        </div>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Countries / Europe</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html"></include>
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Countries</h1>
+        </div>
+      </section>
+
+      <section class="container mt-4 d-flex align-items-end">
+        <div class="flex-grow-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="localisations-continents.html">Continents</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Europe</li>
+            </ol>
+          </nav>
+
+          <include src="./components/localisations_list_section.html" locals='{
+            "link": "localisations-france.html",
+            "localisations": [
+              {"code": "AL", "name": "Albania"},
+              {"code": "AD", "name": "Andorra"},
+              {"code": "AM", "name": "Armenia"},
+              {"code": "AT", "name": "Austria"},
+              {"code": "AZ", "name": "Azerbaijan"},
+              {"code": "BY", "name": "Belarus"},
+              {"code": "BE", "name": "Belgium"},
+              {"code": "BA", "name": "Bosnia and Herzegovina"},
+              {"code": "BG", "name": "Bulgaria"},
+              {"code": "HR", "name": "Croatia"},
+              {"code": "CY", "name": "Cyprus"},
+              {"code": "CZ", "name": "Czech Republic"},
+              {"code": "DK", "name": "Denmark"},
+              {"code": "EE", "name": "Estonia"},
+              {"code": "FI", "name": "Finland"},
+              {"code": "FR", "name": "France"},
+              {"code": "GE", "name": "Georgia"},
+              {"code": "DE", "name": "Germany"},
+              {"code": "GR", "name": "Greece"},
+              {"code": "HU", "name": "Hungary"},
+              {"code": "IS", "name": "Iceland"},
+              {"code": "IE", "name": "Ireland"},
+              {"code": "IT", "name": "Italy"},
+              {"code": "KZ", "name": "Kazakhstan"},
+              {"code": "LV", "name": "Latvia"},
+              {"code": "LI", "name": "Liechtenstein"},
+              {"code": "LT", "name": "Lithuania"},
+              {"code": "LU", "name": "Luxembourg"},
+              {"code": "MK", "name": "Macedonia"},
+              {"code": "MT", "name": "Malta"},
+              {"code": "MD", "name": "Moldova"},
+              {"code": "MC", "name": "Monaco"},
+              {"code": "ME", "name": "Montenegro"},
+              {"code": "NL", "name": "Netherlands"}
+            ]
+          }'></include>
+        </div>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <script src="./index.js"></script>
+  </body>
+</html>
