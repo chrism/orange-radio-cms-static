@@ -74,68 +74,7 @@
           </div>
         </div>
       </section>
-      <section class="container pt-4">
-        <h1>Streams</h1>
-        <h3>With playlist</h3>
-        <include src="components/playlist_item.html" locals='{
-          "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
-          "withEdit": 1,
-          "withRefresh": 1
-        }'></include>
-        <div class="row">
-          <div class="col-md-12">
-            <table class="table align-middle">
-              <include src="components/stream_table_header.html" locals='{
-                "withUptimeHistory": 0
-              }'></include>
-              <tbody>
-                <include src="components/stream_table_row.html" locals='{
-                  "transport": "http",
-                  "url": "http://www.url.com/somethingelse/streamaddress_from_playlist.mp3",
-                  "bitrate": "128",
-                  "codec": "mp3",
-                  "uptime": 0,
-                  "history": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-                  "lastChecked": "10 Jan 2022",
-                  "withEdit": 1,
-                  "withUptimeHistory": 0
-                }'></include>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <h3>Without playlist</h3>
-        <div class="row">
-          <div class="col-md-12">
-            <table class="table align-middle">
-              <include src="components/stream_table_header.html" locals='{
-                "withUptimeHistory": 0
-              }'></include>
-              <tbody>
-                <include src="components/stream_table_row.html" locals='{
-                  "transport": "http",
-                  "url": "http://www.url.com/somethingelse/streamaddress.mp3",
-                  "bitrate": "128",
-                  "codec": "mp3",
-                  "uptime": 100,
-                  "history": [1],
-                  "lastChecked": "10 Jan 2022",
-                  "withEdit": 1,
-                  "withUptimeHistory": 0
-                }'></include>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="pt-3">
-          <include src="./components/create_button.html" locals='{
-            "buttonText": "Add an audio stream",
-            "buttonType": "",
-            "buttonSize": "",
-            "buttonAction": "parent.location=\"create_radio_streams_modal.html\""
-          }'></include>
-        </div>
-      </section>
+      <include src="./components/update_radio_streams.html"></include>
       <section class="container pt-4">
         <h1>Cover images</h1>
         <div class="row g-3 align-items-center">
