@@ -28,4 +28,19 @@
       <span class="text-functional-red">{{ uptime }}%</span>
     </else>
   </td>
+  <td scope="col">
+    <div class="d-flex flex-wrap">
+      <each loop="item, index in history">
+        <if condition="item === 1">
+          <div class="text-functional-green">■</div>
+        </if>
+        <else>
+          <div class="text-functional-red">■</div>
+        </else>
+      </each>
+    </div>
+  </td>
+  <td class="text-nowrap" scope="col">
+    {{ lastChecked }}
+  </td>
 </tr>
