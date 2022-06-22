@@ -2,7 +2,7 @@ import * as boosted from 'boosted';
 import Sortable from 'sortablejs';
 
 
-const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal', 'deleteConfirmationModal', 'episodeStreamsModal', 'addItemModal']
+const modals = ['streamsModal', 'genresModal', 'locationsModal', 'rssModal', 'deleteConfirmationModal', 'episodeStreamsModal', 'addItemModal', 'addCoverModal']
 
 modals.forEach(modal => {
   const modalEl = document.getElementById(modal)
