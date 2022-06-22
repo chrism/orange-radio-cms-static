@@ -74,14 +74,13 @@
   </section>
   <section class="container pt-4">
     <h1>Cover image</h1>
-    <div>
-      <include src="./components/create_button.html" locals='{
-        "buttonText": "Add an image",
-        "buttonType": "",
-        "buttonSize": "",
-        "buttonAction": "parent.location=\"create_radio_cover_modal.html\""
+    <div class="mb-3">
+      <include src="./components/image_grid_horizontal.html" locals='{
+        "type": "radios",
+        "imageName": "france_inter"
       }'></include>
     </div>
+    <button type="button" class="btn btn-secondary large" onClick="parent.location='create_radio.html'">Remove image</button>
   </section>
   <section class="container pt-4">
     <div class="row">
