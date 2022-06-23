@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Orange Radio CMS > Create a new radio</title>
+    <title>Orange Radio CMS > Create a new userlist</title>
     <link rel="stylesheet" href="scss.09115bbf.css">
   </head>
   <body class="d-flex flex-column h-100">
@@ -28,10 +28,10 @@
             <a class="nav-link " href="radios.html">Radios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="podcasts.html">Podcasts</a>
+            <a class="nav-link " href="podcasts.html">Podcasts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="userlists.html">Userlists</a>
+            <a class="nav-link active" href="userlists.html">Userlists</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="radio_selections.html">Radio selections</a>
@@ -43,32 +43,42 @@
       </div>
     </div>
   </nav>
-</header>    
+</header>
 
-    <div class="modal fade" id="genresModal" tabindex="-1">
+    <div class="modal fade" id="addCoverModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Add a genre</h5>
+        <h5 class="modal-title">Add an image</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
-        <div class="pt-3">
-          <label for="Genre" class="form-label">Genre</label>
-          <select class="form-select" aria-label="Genre">
-            <option selected="">Choose a genre</option>
-          </select>          
+        <p>Please choose either a remote URL or local file.</p>
+        <p>Image dimensions should be <strong>1280px by 720px</strong>.</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioRemote" checked="">
+          <label class="form-check-label" for="flexRadioRemote">
+            Remote URL
+          </label>
         </div>
-        <div class="pt-3">
-          <label for="Sub-Genre" class="form-label">Sub-Genre</label>
-          <select class="form-select" aria-label="Sub-Genre" disabled="">
-            <option selected="">Choose a sub genre (optional)</option>
-          </select>          
+        <div class="my-2">
+          <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
+          <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLocal">
+          <label class="form-check-label" for="flexRadioLocal">
+            Local file
+          </label>
+        </div>
+        <div class="mt-2">
+          <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled="">
+          <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Add genre</button>
+        <button type="button" class="btn btn-primary" onClick="parent.location='create_userlist_with_cover.html'">Add image</button>
       </div>
     </div>
   </div>
@@ -76,123 +86,92 @@
     <main class="flex-grow-1">
   <section class="bg-dark border-top border-dark border-1">
     <div class="container pt-4 pb-1">
-      <h1 id="top" class="display-2">Create a new podcast</h1>
+      <h1 id="top" class="display-2">Create a new userlist</h1>
     </div>
   </section>
   <section class="container pt-4">
     <h1>Essential information</h1>
-    <div class="mb-3">
-      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_rss_modal.html&quot;" undefined="">
-  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
-</svg>
-  &nbsp;
-  Add RSS feed URL 
-</button>
-    </div>
     <div class="row g-3">
-      <div class="col-md-6">
+      <div>
         <label for="Name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="Name" disabled="">
+        <input type="text" class="form-control" id="Name">
       </div>
-      <div class="col-md-6">
-        <label for="Short-Description" class="form-label">Short Description</label>
-        <input type="text" class="form-control" id="Short-Description" disabled="">
-      </div>
-      <div class="col-md-6">
-        <div class="mb-3">
-          <label for="Website-Url" class="form-label">Website URL</label>
-          <input type="text" class="form-control" id="Website-Url" disabled="">  
-        </div>
-        <div class="mb-3">
-          <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
-          <input type="text" class="form-control" id="Keywords" disabled="">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <label for="Description" class="form-label">Description</label>
-        <textarea class="form-control" id="Description" rows="8" disabled=""></textarea>
-      </div>
-    </div>
-    <h1>Cover image</h1>
-    <div class="row g-3 align-items-center">
-      <div class="col-md-2">
-        <label for="Image-URL" class="form-label">Image URL</label>
-      </div>
-      <div class="col-md-10">        
-        <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" disabled="">     
-      </div>
-    </div>
-    <div class="form-check mt-4">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="" onchange="parent.location='create_podcast_manual.html'">
-      <label class="form-check-label" for="flexCheckChecked">
-        Keep this information updated via the RSS feed
-      </label>
-    </div>
-  </section>
-  <section class="container pt-4">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Genres</h1>
-        <div>
-          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_genres_modal.html&quot;" undefined="">
-  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
-</svg>
-  &nbsp;
-  Add a genre 
-</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h1>Locations</h1>
-        <div>
-          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_locations_modal.html&quot;" undefined="">
-  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
-</svg>
-  &nbsp;
-  Add a location 
-</button>
-        </div>
+      <div>
+        <label for="Identifier" class="form-label">Identifier</label>
+        <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
       </div>
     </div>
   </section>
   <section class="container pt-4">
     <h1>Optional information</h1>
-    <div class="row g-3">
+    <p class="lead">Adding this optional information creates an editorial-type userlist. Both a country and cover image are required.</p>
+    <div class="row g-3 align-items-top">
       <div class="col-md-6">
-        <label for="Associated-Radio" class="form-label">Associated radio station</label>
-        <input class="form-control" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
-        <datalist id="datalistOptions">
-          <option value="France Culture">
-          </option><option value="France Inter">
-        </option></datalist>
-        <div class="form-text">
-          The radio must have been added and available to select in the datalist.
-        </div>
-      </div>
+        <h3>Country</h3>
+        <select class="form-select" aria-label="Default select example">
+          <option selected="">Choose a country</option>
+          <optgroup label="Europe">
+            <option value="Albania">Albania</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Finland">Finland</option>
+            <option value="...continued...">...continued...</option>
+          </optgroup>
+          <optgroup label="Africa">
+            <option value="Algeria">Algeria</option>
+            <option value="Angola">Angola</option>
+            <option value="Benin">Benin</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Cape Verde">Cape Verde</option>
+            <option value="Central African Republic">Central African Republic</option>
+            <option value="Chad">Chad</option>
+            <option value="Congo">Congo</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="DR Congo">DR Congo</option>
+            <option value="Egypt">Egypt</option>
+            <option value="...continued...">...continued...</option>
+          </optgroup>
+        </select>
+      </div>          
       <div class="col-md-6">
-        <div class="mb-3">
-          <label for="Facebook-Address" class="form-label">Facebook Address</label>
-          <input type="text" class="form-control" id="Facebook-Address">
-        </div>
+        <h3>Cover image</h3>
         <div>
-          <label for="Twitter-Address" class="form-label">Twitter Address</label>
-          <input type="text" class="form-control" id="Twitter-Address">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="row py-4">
-      <div class="col-auto">
-        <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;podcasts.html&quot;" undefined="">
+          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_cover_modal.html&quot;" undefined="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
   &nbsp;
-  Create podcast 
+  Add image 
+</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="container">
+    <div class="row py-4">
+      <div class="col-auto">
+        <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;create_userlist.html&quot;" undefined="">
+  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
+</svg>
+  &nbsp;
+  Create userlist 
 </button>
       </div>
     </div>

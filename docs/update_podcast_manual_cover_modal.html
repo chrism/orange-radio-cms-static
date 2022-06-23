@@ -45,6 +45,43 @@
   </nav>
 </header>
 
+    <div class="modal fade" id="addCoverModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add an image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Please choose either a remote URL or local file.</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioRemote" checked="">
+          <label class="form-check-label" for="flexRadioRemote">
+            Remote URL
+          </label>
+        </div>
+        <div class="my-2">
+          <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
+          <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLocal">
+          <label class="form-check-label" for="flexRadioLocal">
+            Local file
+          </label>
+        </div>
+        <div class="mt-2">
+          <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled="">
+          <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" onClick="parent.location=&quot;update_podcast_manual_with_cover.html&quot;">Add image</button>
+      </div>
+    </div>
+  </div>
+</div>
     <main class="flex-grow-1">
   <section class="bg-dark border-top border-dark border-1">
     <div class="container pt-4 pb-1">
