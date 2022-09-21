@@ -32,14 +32,33 @@
             <input type="text" id="add-City" class="form-control" placeholder="Name of city" disabled>
           </div>
         </div>
-        <div class="row pt-3 g-3 align-items-center">
-          <div class="col-auto">
-            <label for="Frequency" class="col-form-label">Frequency</label>
+        <div class="row g-3 align-items-center">
+          <div class="col">
+            <div class="col-auto">
+              <label for="Latitude" class="col-form-label">Latitude</label>
+            </div>
+            <div class="col-auto flex-grow-1">
+              <input type="text" id="Latitude" class="form-control" placeholder="-35.28" disabled>
+            </div>
           </div>
-          <div class="col-auto flex-grow-1">
-            <input type="text" id="Frequency" class="form-control" placeholder="100.0 FM">
+          <div class="col">
+            <div class="col-auto">
+              <label for="Longtitude" class="col-form-label">Longtitude</label>
+            </div>
+            <div class="col-auto flex-grow-1">
+              <input type="text" id="Longtitude" class="form-control" placeholder="149.12" disabled>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-auto">
+              <label for="Frequency" class="col-form-label">Frequency</label>
+            </div>
+            <div class="col-auto flex-grow-1">
+              <input type="text" id="Frequency" class="form-control" placeholder="100.0 FM" disabled>
+            </div>
           </div>
         </div>
+        <div class="form-text pt-1">When adding a city latitude and longtitude are required. Frequency is optional.</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
