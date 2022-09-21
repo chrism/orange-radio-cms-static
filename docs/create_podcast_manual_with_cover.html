@@ -45,56 +45,6 @@
   </nav>
 </header>    
 
-    <div class="modal fade" id="locationsModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Add a location</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
-      </div>
-      <div class="modal-body">
-        <div class="pt-3">
-          <label for="Continent" class="form-label is-required">Continent</label>
-          <select class="form-select" aria-label="Continent">
-            <option selected="">Choose a continent</option>
-          </select>          
-        </div>
-        <div class="pt-3">
-          <label for="Country" class="form-label is-required">Country</label>
-          <select class="form-select" aria-label="Country" disabled="">
-            <option selected="">Choose a country</option>
-          </select>          
-        </div>
-        <div class="pt-3">
-          <label for="City" class="form-label">City</label>
-          <select class="form-select" aria-label="City" disabled="">
-            <option selected="">Choose a city</option>
-          </select>      
-        </div>
-        <div class="row pt-2 g-3 align-items-center">
-          <div class="col-auto">
-            <label for="add-City" class="col-form-label">or add one</label>
-          </div>
-          <div class="col-auto flex-grow-1">
-            <input type="text" id="add-City" class="form-control" placeholder="Name of city" disabled="">
-          </div>
-        </div>
-        <div class="row pt-3 g-3 align-items-center">
-          <div class="col-auto">
-            <label for="Frequency" class="col-form-label">Frequency</label>
-          </div>
-          <div class="col-auto flex-grow-1">
-            <input type="text" id="Frequency" class="form-control" placeholder="100.0 FM">
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Add location</button>
-      </div>
-    </div>
-  </div>
-</div>
     <main class="flex-grow-1">
   <section class="bg-dark border-top border-dark border-1">
     <div class="container pt-4 pb-1">
@@ -115,38 +65,73 @@
     <div class="row g-3">
       <div class="col-md-6">
         <label for="Name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="Name" disabled="">
+        <input type="text" class="form-control" id="Name">
       </div>
       <div class="col-md-6">
         <label for="Short-Description" class="form-label">Short Description</label>
-        <input type="text" class="form-control" id="Short-Description" disabled="">
+        <input type="text" class="form-control" id="Short-Description">
       </div>
       <div class="col-md-6">
         <div class="mb-3">
           <label for="Website-Url" class="form-label">Website URL</label>
-          <input type="text" class="form-control" id="Website-Url" disabled="">  
+          <input type="text" class="form-control" id="Website-Url">  
         </div>
         <div class="mb-3">
           <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
-          <input type="text" class="form-control" id="Keywords" disabled="">
+          <input type="text" class="form-control" id="Keywords">
         </div>
       </div>
       <div class="col-md-6">
         <label for="Description" class="form-label">Description</label>
-        <textarea class="form-control" id="Description" rows="8" disabled=""></textarea>
+        <textarea class="form-control" id="Description" rows="8"></textarea>
       </div>
     </div>
     <h1>Cover image</h1>
-    <div class="row g-3 align-items-center">
-      <div class="col-md-2">
-        <label for="Image-URL" class="form-label">Image URL</label>
-      </div>
-      <div class="col-md-10">        
-        <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" disabled="">     
-      </div>
+    <div class="mb-3">
+      <div class="bg-dark p-4 d-flex justify-content-around">
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/large_design_details.png" alt="">
     </div>
+    <p class="pt-2 text-light">Large (256x256)</p>
+  </div>
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/medium_design_details.png" alt="">
+    </div>
+    <p class="pt-2 text-light">Medium (128x128)</p>
+  </div>
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/small_design_details.png" alt="">
+    </div>
+    <p class="pt-2 text-light">Small (64x64)</p>
+  </div>
+</div>
+<div class="border border-light border-1 p-4 d-flex justify-content-around">
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/large_design_details.png" alt="">
+    </div>
+    <p class="pt-2 text-muted">Large (256x256)</p>
+  </div>
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/medium_design_details.png" alt="">
+    </div>
+    <p class="pt-2 text-muted">Medium (128x128)</p>
+  </div>
+  <div class="align-self-stretch d-flex flex-column align-items-center">
+    <div class="flex-fill d-flex align-items-center">
+      <img src="http://images.radio.orange.com/podcasts/small_design_details.png" alt="">
+    </div>
+    <p class="pt-2 text-muted">Small (64x64)</p>
+  </div>
+</div>
+    </div>
+    <button type="button" class="btn btn-secondary large" onClick="parent.location='create_podcast_manual.html'">Remove image</button>
     <div class="form-check mt-4">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="" onchange="parent.location='create_podcast_manual.html'">
+      <input class="form-check-input" type="checkbox" id="flexCheckChecked" onchange="parent.location='create_podcast.html'">
       <label class="form-check-label" for="flexCheckChecked">
         Keep this information updated via the RSS feed
       </label>

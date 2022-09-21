@@ -96,9 +96,6 @@
             </table>
           </div>
         </div>
-
-        <include src="./components/add_image.html"></include>    
-
         <div class="row g-3">
           <div class="col-md-6">
             <label for="Name" class="form-label">Name</label>
@@ -117,17 +114,25 @@
               <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
               <input type="text" class="form-control" id="Keywords" value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock">
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Keep this information updated via the RSS feed
-              </label>
-            </div>
           </div>
           <div class="col-md-6">
             <label for="Description" class="form-label">Description</label>
             <textarea class="form-control" id="Description" rows="8">A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea>
           </div>
+        </div>
+        <h1>Cover image</h1>
+        <div class="mb-3">
+          <include src="./components/image_grid_horizontal.html" locals='{
+            "type": "podcasts",
+            "imageName": "design_details"
+          }'></include>
+        </div>
+        <button type="button" class="btn btn-secondary large mb-3" onClick="parent.location='update_podcast_manual_no_image.html'">Remove image</button>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" onClick="parent.location='update_podcast.html'">
+          <label class="form-check-label" for="flexCheckChecked">
+            Keep this information updated via the RSS feed
+          </label>
         </div>
       </section>
       <section class="container pt-4">
