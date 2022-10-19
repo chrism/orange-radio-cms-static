@@ -30,6 +30,27 @@
           <option value="French">French</option>
         </select>
         <h2 class="pt-4">Countries</h2>
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th class="table-column-widest-possible" scope="col">
+                <a class="text-nowrap text-decoration-none" href="#">Country</a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="col">
+                <span class="fw-bold">France</span>
+              </td>
+              <td scope="col" class="text-end">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div>
           <include src="./components/create_button.html" locals='{
             "buttonText": "Add country",
@@ -37,19 +58,10 @@
             "buttonSize": "",
             "buttonAction": "parent.location=\"create_userlist_country_modal.html\""
           }'></include>
-        </div>      
-        <h2 class="pt-4">Genres</h2>
-        <div>
-          <include src="./components/create_button.html" locals='{
-            "buttonText": "Add genre",
-            "buttonType": "",
-            "buttonSize": "",
-            "buttonAction": "parent.location=\"create_userlist_genre_modal.html\""
-          }'></include>
-        </div>  
+        </div>          
       </div>          
       <div class="col-md-6">
-        <h2>Cover image</h2>
+        <h3>Cover image</h3>
         <div>
           <include src="./components/create_button.html" locals='{
             "buttonText": "Add image",
