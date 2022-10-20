@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Create a new podcast selection</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html" locals='{
+      "selected": "podcast selections"
+    }'></include>
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Create a new podcast selection</h1>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <div class="alert alert-danger" role="alert">
+          <span class="alert-icon"><span class="visually-hidden">Error</span></span>
+          <p>1 error prevented this podcast selection from being created.</p>
+        </div>
+      </section>
+      <section class="container">
+        <h1>Essential information</h1>
+        <h3>Country</h3>
+        <div class="row g-3 align-items-top">
+          <div class="col-md-6">
+            <select class="form-select is-invalid" aria-label="Default select example" required>
+              <option>Choose a country</option>
+              <optgroup label="Europe">
+                <option value="Albania">Albania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="...continued...">...continued...</option>
+              </optgroup>
+              <optgroup label="Africa">
+                <option value="Algeria">Algeria</option>
+                <option value="Angola">Angola</option>
+                <option value="Benin">Benin</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cameroon" selected>Cameroon</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Congo">Congo</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="DR Congo">DR Congo</option>
+                <option value="Egypt">Egypt</option>
+                <option value="...continued...">...continued...</option>
+              </optgroup>
+            </select>
+            <div id="" class="invalid-feedback">
+              This country selection already exists.
+            </div>
+          </div>
+
+        </div>
+        <div class="row g-3 mt-2">
+          <div>
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" aria-describedby="Name-Help" value="TOP Podcasts CM" disabled>
+            <div id="Name-Help" class="form-text">This name is automatically generated from the country.</div>
+          </div>
+          <div>
+            <label for="Identifier" class="form-label">Identifier</label>
+            <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row py-4">
+          <div class="col-auto">
+            <include src="./components/create_button.html" locals='{
+              "buttonText": "Create podcast selection",
+              "buttonType": "primary",
+              "buttonSize": "large",
+              "buttonAction": "parent.location=\"create_podcast_selection.html\""
+            }'></include>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <nav aria-label="Fixed back to top example" class="back-to-top">
+      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+        <span class="visually-hidden">Back to top</span>
+      </a>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
