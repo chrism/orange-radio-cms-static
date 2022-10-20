@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Orange Radio CMS > Create a new userlist</title>
+    <title>Orange Radio CMS > Create a new podcast selection</title>
     <link rel="stylesheet" href="scss.09115bbf.css">
   </head>
   <body class="d-flex flex-column h-100">
@@ -31,13 +31,13 @@
             <a class="nav-link " href="podcasts.html">Podcasts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="userlists.html">Userlists</a>
+            <a class="nav-link " href="userlists.html">Userlists</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="radio_selections.html">Radio selections</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="podcast_selections.html">Podcast selections</a>
+            <a class="nav-link active" href="podcast_selections.html">Podcast selections</a>
           </li>
         </ul>
       </div>
@@ -48,18 +48,59 @@
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
         <div class="container pt-4 pb-1">
-          <h1 id="top" class="display-2">Create a new userlist</h1>
+          <h1 id="top" class="display-2">Create a new podcast selection</h1>
         </div>
       </section>
       <section class="container pt-4">
-        <p class="lead fw-bold">Userlists are useful for grouping editorial content together.</p>
-<p class="lead">If you want to create or update a specific country selection use <a href="radio_selections.html">Radio selections</a> or <a href="podcast_selections.html">Podcast selections</a>.</p>
-    
         <h1>Essential information</h1>
-        <div class="row g-3">
+        <h3>Country</h3>
+        <div class="row g-3 align-items-top">
+          <div class="col-md-6">
+            <select class="form-select" aria-label="Default select example">
+              <option selected="">Choose a country</option>
+              <optgroup label="Europe">
+                <option value="Albania">Albania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="...continued...">...continued...</option>
+              </optgroup>
+              <optgroup label="Africa">
+                <option value="Algeria">Algeria</option>
+                <option value="Angola">Angola</option>
+                <option value="Benin">Benin</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Congo">Congo</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="DR Congo">DR Congo</option>
+                <option value="Egypt">Egypt</option>
+                <option value="...continued...">...continued...</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
           <div>
             <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name">
+            <input type="text" class="form-control" id="Name" aria-describedby="Name-Help" disabled="">
+            <div id="Name-Help" class="form-text">This name is automatically generated from the country.</div>
           </div>
           <div>
             <label for="Identifier" class="form-label">Identifier</label>
@@ -67,58 +108,15 @@
           </div>
         </div>
       </section>
-      <section class="container pt-4">
-        <h1>Optional information</h1>
-        <div class="row g-3 align-items-top">
-          <div class="col-md-6">
-            <h2>Language</h2>
-            <select class="form-select" aria-label="Default select example">
-              <option selected="">Choose a country</option>
-              <option value="English">English</option>
-              <option value="French">French</option>
-            </select>
-            <h2 class="pt-4">Countries</h2>
-            <div>
-              <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_country_modal.html&quot;" undefined="">
-  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
-</svg>
-  &nbsp;
-  Add country 
-</button>
-            </div>
-            <h2 class="pt-4">Genres</h2>
-            <div>
-              <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_genre_modal.html&quot;" undefined="">
-  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
-</svg>
-  &nbsp;
-  Add genre 
-</button>
-            </div>       
-          </div>          
-          <div class="col-md-6">
-            <h3>Cover image</h3>
-            <img class="w-100 h-auto border border-1 border-light" src="userlist-cover.ea5ba93c.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
-            <p class="pt-3">Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>, Filesize: <strong>825kb</strong></p>
-            <div class="pt-3">
-              <button type="button" class="btn btn-secondary large" onClick="parent.location='create_userlist.html'">Remove image</button>
-            </div>
-          </div>
-        </div>
-    
-    
-      </section>
       <section class="container">
         <div class="row py-4">
           <div class="col-auto">
-            <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;create_userlist.html&quot;" undefined="">
+            <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;create_podcast_selection_error.html&quot;" undefined="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
   &nbsp;
-  Create userlist 
+  Create podcast selection 
 </button>
           </div>
         </div>

@@ -45,85 +45,117 @@
   </nav>
 </header>
 
-    <main class="flex-grow-1">
-      <section class="bg-dark border-top border-dark border-1">
-        <div class="container pt-4 pb-1">
-          <h1 id="top" class="display-2">Create a new userlist</h1>
+    <div class="modal fade" id="genresModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add a genre</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="pt-3">
+          <label for="Genre" class="form-label">Genre</label>
+          <select class="form-select" aria-label="Genre">
+            <option selected="">Choose a genre</option>
+          </select>          
         </div>
-      </section>
-      <section class="container pt-4">
-        <p class="lead fw-bold">Userlists are useful for grouping editorial content together.</p>
+        <div class="pt-3">
+          <label for="Sub-Genre" class="form-label">Sub-Genre</label>
+          <select class="form-select" aria-label="Sub-Genre" disabled="">
+            <option selected="">Choose a sub genre (optional)</option>
+          </select>          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" onClick="parent.location='create_userlist_with_genre.html'">Add genre</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <main class="flex-grow-1">
+  <section class="bg-dark border-top border-dark border-1">
+    <div class="container pt-4 pb-1">
+      <h1 id="top" class="display-2">Create a new userlist</h1>
+    </div>
+  </section>
+  <section class="container pt-4">
+    <p class="lead fw-bold">Userlists are useful for grouping editorial content together.</p>
 <p class="lead">If you want to create or update a specific country selection use <a href="radio_selections.html">Radio selections</a> or <a href="podcast_selections.html">Podcast selections</a>.</p>
     
-        <h1>Essential information</h1>
-        <div class="row g-3">
-          <div>
-            <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name">
-          </div>
-          <div>
-            <label for="Identifier" class="form-label">Identifier</label>
-            <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
-          </div>
-        </div>
-      </section>
-      <section class="container pt-4">
-        <h1>Optional information</h1>
-        <div class="row g-3 align-items-top">
-          <div class="col-md-6">
-            <h2>Language</h2>
-            <select class="form-select" aria-label="Default select example">
-              <option selected="">Choose a country</option>
-              <option value="English">English</option>
-              <option value="French">French</option>
-            </select>
-            <h2 class="pt-4">Countries</h2>
-            <div>
-              <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_country_modal.html&quot;" undefined="">
+    <h1>Essential information</h1>
+    <div class="row g-3">
+      <div>
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="Name">
+      </div>
+      <div>
+        <label for="Identifier" class="form-label">Identifier</label>
+        <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
+      </div>
+    </div>
+  </section>
+  <section class="container pt-4">
+    <h1>Optional information</h1>
+    <div class="row g-3 align-items-top">
+      <div class="col-md-6">
+        <h2>Language</h2>
+        <select class="form-select" aria-label="Default select example">
+          <option selected="">Choose a country</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+        </select>
+        <h2 class="pt-4">Countries</h2>
+        <div>
+          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_country_modal.html&quot;" undefined="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
   &nbsp;
   Add country 
 </button>
-            </div>
-            <h2 class="pt-4">Genres</h2>
-            <div>
-              <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_genre_modal.html&quot;" undefined="">
+        </div>      
+        <h2 class="pt-4">Genres</h2>
+        <div>
+          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_genre_modal.html&quot;" undefined="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
   &nbsp;
   Add genre 
 </button>
-            </div>       
-          </div>          
-          <div class="col-md-6">
-            <h3>Cover image</h3>
-            <img class="w-100 h-auto border border-1 border-light" src="userlist-cover.ea5ba93c.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
-            <p class="pt-3">Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>, Filesize: <strong>825kb</strong></p>
-            <div class="pt-3">
-              <button type="button" class="btn btn-secondary large" onClick="parent.location='create_userlist.html'">Remove image</button>
-            </div>
-          </div>
+        </div>  
+      </div>          
+      <div class="col-md-6">
+        <h2>Cover image</h2>
+        <div>
+          <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_userlist_cover_modal.html&quot;" undefined="">
+  <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
+</svg>
+  &nbsp;
+  Add image 
+</button>
         </div>
-    
-    
-      </section>
-      <section class="container">
-        <div class="row py-4">
-          <div class="col-auto">
-            <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;create_userlist.html&quot;" undefined="">
+      </div>
+    </div>
+
+
+  </section>
+  <section class="container">
+    <div class="row py-4">
+      <div class="col-auto">
+        <button type="button" class="btn btn-primary btn-lg" onClick="parent.location=&quot;create_userlist.html&quot;" undefined="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
   &nbsp;
   Create userlist 
 </button>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
+</main>
 
     <footer class="bd-footer py-3 py-md-4 bg-dark mt-auto">
   <div class="container py-1">
