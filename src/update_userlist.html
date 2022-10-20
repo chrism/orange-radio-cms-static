@@ -32,50 +32,61 @@
       </section>
       <section class="container pt-4">
         <h1>Optional information</h1>
-        <p class="lead">Adding this optional information creates an editorial-type userlist.<br />Language, cover image and at least one country is then required.</p>
         <div class="row g-3 align-items-top">
           <div class="col-md-6">
-            <h3>Country</h3>
+            <h2>Language</h2>
             <select class="form-select" aria-label="Default select example">
               <option>Choose a country</option>
-              <optgroup label="Europe">
-                <option value="Albania">Albania</option>
-                <option value="Andorra">Andorra</option>
-                <option value="Armenia">Armenia</option>
-                <option value="Austria">Austria</option>
-                <option value="Azerbaijan">Azerbaijan</option>
-                <option value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
-                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                <option value="Bulgaria">Bulgaria</option>
-                <option value="Croatia">Croatia</option>
-                <option value="Cyprus">Cyprus</option>
-                <option value="Czech Republic">Czech Republic</option>
-                <option value="Denmark">Denmark</option>
-                <option value="Estonia">Estonia</option>
-                <option value="Finland">Finland</option>
-                <option value="France" selected>France</option>
-                <option value="...continued...">...continued...</option>
-              </optgroup>
-              <optgroup label="Africa">
-                <option value="Algeria">Algeria</option>
-                <option value="Angola">Angola</option>
-                <option value="Benin">Benin</option>
-                <option value="Botswana">Botswana</option>
-                <option value="Burkina Faso">Burkina Faso</option>
-                <option value="Burundi">Burundi</option>
-                <option value="Cameroon">Cameroon</option>
-                <option value="Cape Verde">Cape Verde</option>
-                <option value="Central African Republic">Central African Republic</option>
-                <option value="Chad">Chad</option>
-                <option value="Congo">Congo</option>
-                <option value="Djibouti">Djibouti</option>
-                <option value="DR Congo">DR Congo</option>
-                <option value="Egypt">Egypt</option>
-                <option value="...continued...">...continued...</option>
-              </optgroup>
+              <option value="English">English</option>
+              <option value="French" selected>French</option>
             </select>
-          </div>          
+            <h2 class="pt-4">Countries</h2>
+            <table class="table align-middle">
+              <tbody>
+                <tr>
+                  <td scope="col">
+                    <span class="fi fi-fr"></span> <span class="fw-bold">France</span>
+                  </td>
+                  <td scope="col" class="text-end">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div>
+              <include src="./components/create_button.html" locals='{
+                "buttonText": "Add country",
+                "buttonType": "",
+                "buttonSize": "",
+                "buttonAction": "parent.location=\"create_userlist_country_modal.html\""
+              }'></include>
+            </div>      
+            <h2 class="pt-4">Genres</h2>
+            <table class="table align-middle">
+              <tbody>
+                <tr>
+                  <td scope="col">
+                    <span class="text-muted">All Music Radios &rsaquo;</span> <span class="fw-bold">Dance & Electro</span>
+                  </td>
+                  <td scope="col" class="text-end">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div>
+              <include src="./components/create_button.html" locals='{
+                "buttonText": "Add genre",
+                "buttonType": "",
+                "buttonSize": "",
+                "buttonAction": "parent.location=\"create_userlist_genre_modal.html\""
+              }'></include>
+            </div>
+          </div>     
           <div class="col-md-6">
             <h3>Cover image</h3>
             <img class="w-100 h-auto border border-1 border-light" src="../img/covers/userlist-cover.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
