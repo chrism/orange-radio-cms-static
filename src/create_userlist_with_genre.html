@@ -50,8 +50,22 @@
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_userlist_country_modal.html\""
               }'></include>
-            </div>
+            </div>      
             <h2 class="pt-4">Genres</h2>
+            <table class="table align-middle">
+              <tbody>
+                <tr>
+                  <td scope="col">
+                    <span class="text-muted">All Music Radios &rsaquo;</span> <span class="fw-bold">Dance & Electro</span>
+                  </td>
+                  <td scope="col" class="text-end">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <div>
               <include src="./components/create_button.html" locals='{
                 "buttonText": "Add genre",
@@ -59,14 +73,17 @@
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_userlist_genre_modal.html\""
               }'></include>
-            </div>       
+            </div>  
           </div>          
           <div class="col-md-6">
-            <h3>Cover image</h3>
-            <img class="w-100 h-auto border border-1 border-light" src="../img/covers/userlist-cover.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
-            <p class="pt-3">Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>, Filesize: <strong>825kb</strong></p>
-            <div class="pt-3">
-              <button type="button" class="btn btn-secondary large" onClick="parent.location='create_userlist.html'">Remove image</button>
+            <h2>Cover image</h2>
+            <div>
+              <include src="./components/create_button.html" locals='{
+                "buttonText": "Add image",
+                "buttonType": "",
+                "buttonSize": "",
+                "buttonAction": "parent.location=\"create_userlist_cover_modal.html\""
+              }'></include>
             </div>
           </div>
         </div>
