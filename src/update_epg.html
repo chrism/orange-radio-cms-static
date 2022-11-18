@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orange Radio CMS > Update EPG</title>
+    <link rel="stylesheet" href="../scss/index.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <include src="./components/navigation.html" locals='{
+      "selected": "epgs"
+    }'></include>    
+
+    <main class="flex-grow-1">
+      <section class="bg-dark border-top border-dark border-1">
+        <div class="container pt-4 pb-1">
+          <h1 id="top" class="display-2">Update EPG</h1>
+        </div>
+      </section>
+      <section class="container pt-4">
+        <h1>Essential information</h1>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="Associated-Radio" class="form-label">Associated radio station</label>
+              <input class="form-control" value="RTL" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="RTL">
+                <option value="France Culture">
+                <option value="France Inter">
+              </datalist>
+              <div class="form-text">
+                The radio must have been added and available to select in the datalist.
+              </div>
+            </div>
+            <h6>Days</h6>
+            <div class="mb-3 d-inline-flex">
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Mon">
+                <label class="form-check-label" for="Mon">Mon</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Tue">
+                <label class="form-check-label" for="Tue">Tue</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Wed">
+                <label class="form-check-label" for="Wed">Wed</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Thu">
+                <label class="form-check-label" for="Thu">Thu</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Fri">
+                <label class="form-check-label" for="Fri">Fri</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Sat">
+                <label class="form-check-label" for="Sat">Sat</label>
+              </div>
+              <div class="form-check me-3">
+                <input class="form-check-input" type="checkbox" value="" id="Sun" checked>
+                <label class="form-check-label" for="Sun">Sun</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Start time</h6>
+                <div class="d-inline-flex align-items-center">
+                  <select class="form-select" aria-label="Start-time-hours">
+                    <option>00</option>
+                    <option selected>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                  </select>
+                  <span class="mx-2 fw-bold">:</span>
+                  <select class="form-select" aria-label="Start-time-minutes">
+                    <option selected>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                    <option>47</option>
+                    <option>48</option>
+                    <option>49</option>
+                    <option>50</option>
+                    <option>51</option>
+                    <option>52</option>
+                    <option>53</option>
+                    <option>54</option>
+                    <option>55</option>
+                    <option>56</option>
+                    <option>57</option>
+                    <option>58</option>
+                    <option>59</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6>End time</h6>
+                <div class="d-inline-flex align-items-center">
+                  <select class="form-select" aria-label="End-time-hours">
+                    <option>00</option>
+                    <option>01</option>
+                    <option selected>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                  </select>
+                  <span class="mx-2 fw-bold">:</span>
+                  <select class="form-select" aria-label="End-time-minutes">
+                    <option selected>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                    <option>47</option>
+                    <option>48</option>
+                    <option>49</option>
+                    <option>50</option>
+                    <option>51</option>
+                    <option>52</option>
+                    <option>53</option>
+                    <option>54</option>
+                    <option>55</option>
+                    <option>56</option>
+                    <option>57</option>
+                    <option>58</option>
+                    <option>59</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="Name" class="form-label">Name</label>
+              <input value="Les Essentiels de..." class="form-control" list="nameOptions" id="Name" placeholder="Type to search...">
+              <datalist id="nameOptions">
+                <option value="Les Essentiels de...">
+                <option value="L’heure du crime">
+                <option value="Les Grosses Têtes">
+                <option value="RTL Petit Matin">
+                <option value="RTL Matin">
+                <option value="RTL Week-end">
+                <option value="Ca peut vous arriver">
+                <option value="Stop ou Encore">
+                <option value="À la Bonne Heure !">
+              </datalist>
+              <div class="form-text">
+                Either choose an existing name for the episode or create a new one.
+              </div>
+            </div>
+            <label for="Description" class="form-label">Description</label>
+            <textarea class="form-control" id="Description" rows="8"></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row py-4">
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary large">Update EPG</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <nav aria-label="Fixed back to top example" class="back-to-top">
+      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+        <span class="visually-hidden">Back to top</span>
+      </a>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
