@@ -1,0 +1,13 @@
+<tr>
+  <td class="text-center">
+    <if condition="image === 'cross'">
+      <include src="./icons/cross.html" locals='{"color": "text-functional-red"}'></include>
+    </if>
+    <if condition="image !== 'cross'">
+      <img class="table-thumbnail-image" src="{{ image }}" alt="{{ name }} image">
+    </if>
+  </td>
+  <td><a href="epg_detail.html">{{ name }}</a></td>
+  <td class="text-center">{{ audience }}</td>
+  <td class="text-center">{{ modified }}</td>
+</tr>
