@@ -1,19 +1,28 @@
 <section class="container pt-4">
   <h1>Streams</h1>
   <h3>With playlist</h3>
-  <include src="components/playlist_item.html" locals='{
+  <include
+    src="components/playlist_item.html"
+    locals='{
     "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
+    "lastUpdated": "",
     "withEdit": 1,
     "withRefresh": 1
-  }'></include>
+  }'
+  ></include>
   <div class="row">
     <div class="col-md-12">
       <table class="table align-middle">
-        <include src="components/stream_table_header.html" locals='{
+        <include
+          src="components/stream_table_header.html"
+          locals='{
           "withUptimeHistory": 1
-        }'></include>
+        }'
+        ></include>
         <tbody>
-          <include src="components/stream_table_row.html" locals='{
+          <include
+            src="components/stream_table_row.html"
+            locals='{
             "transport": "http",
             "url": "http://www.url.com/somethingelse/streamaddress_from_playlist.mp3",
             "bitrate": "128",
@@ -23,7 +32,8 @@
             "lastChecked": "10 Jan 2022",
             "withEdit": 1,
             "withUptimeHistory": 1
-          }'></include>
+          }'
+          ></include>
         </tbody>
       </table>
     </div>
@@ -32,11 +42,16 @@
   <div class="row">
     <div class="col-md-12">
       <table class="table align-middle">
-        <include src="components/stream_table_header.html" locals='{
+        <include
+          src="components/stream_table_header.html"
+          locals='{
           "withUptimeHistory": 1
-        }'></include>
+        }'
+        ></include>
         <tbody>
-          <include src="components/stream_table_row.html" locals='{
+          <include
+            src="components/stream_table_row.html"
+            locals='{
             "transport": "http",
             "url": "http://www.url.com/somethingelse/streamaddress.mp3",
             "bitrate": "128",
@@ -46,17 +61,22 @@
             "lastChecked": "10 Jan 2022",
             "withEdit": 1,
             "withUptimeHistory": 1
-          }'></include>
+          }'
+          ></include>
         </tbody>
       </table>
     </div>
   </div>
   <div class="pt-3">
-    <include src="./components/create_button.html" locals='{
+    <include
+      src="./components/create_button.html"
+      locals='{
       "buttonText": "Add an audio stream",
       "buttonType": "",
       "buttonSize": "",
+      "buttonDisabled": "",
       "buttonAction": "parent.location=\"create_radio_streams_modal.html\""
-    }'></include>
+    }'
+    ></include>
   </div>
 </section>

@@ -53,7 +53,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Add an image</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+          <span class="visually-hidden">Close</span>
+        </button>
       </div>
       <div class="modal-body">
         <p>Please choose either a remote URL or local file.</p>
@@ -65,7 +67,10 @@
         </div>
         <div class="my-2">
           <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
-          <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+          <div id="Image-URL-Help" class="form-text">
+            Max filesize 3MB, JPG or PNG formats, transparency supported for
+            PNG.
+          </div>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioLocal">
@@ -75,16 +80,24 @@
         </div>
         <div class="mt-2">
           <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled="">
-          <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+          <div id="Local-File-Help" class="form-text">
+            Max filesize 3MB, JPG or PNG formats, transparency supported for
+            PNG.
+          </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onClick="parent.location=&quot;update_podcast_manual_with_cover.html&quot;">Add image</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button type="button" class="btn btn-primary" onClick="parent.location=&quot;update_podcast_manual_with_cover.html&quot;">
+          Add image
+        </button>
       </div>
     </div>
   </div>
 </div>
+
     <main class="flex-grow-1">
   <section class="bg-dark border-top border-dark border-1">
     <div class="container pt-4 pb-1">
@@ -98,26 +111,16 @@
         <table class="table align-middle">
           <thead>
             <tr>
-              <th scope="col">
-                RSS Feed URL
-              </th>
-              <th scope="col">
-                Uptime
-              </th>
-              <th scope="col">
-                History
-              </th>
-              <th class="text-nowrap" scope="col">
-                Last updated
-              </th>
+              <th scope="col">RSS Feed URL</th>
+              <th scope="col">Uptime</th>
+              <th scope="col">History</th>
+              <th class="text-nowrap" scope="col">Last updated</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="col">
-                https://feeds.simplecast.com/eew_vyNL
-              </td>
+              <td scope="col">https://feeds.simplecast.com/eew_vyNL</td>
               <td scope="col">
                 <span class="text-functional-green fw-bold">100%</span>
               </td>
@@ -155,14 +158,16 @@
                   <div class="text-functional-green">■</div>
                 </div>
               </td>
-              <td class="text-nowrap" scope="col">
-                10 Jan 2022
-              </td>
+              <td class="text-nowrap" scope="col">10 Jan 2022</td>
               <td scope="col" class="text-end">
                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary text-nowrap">Scrape now</button>
+                  <button type="button" class="btn btn-secondary text-nowrap">
+                    Scrape now
+                  </button>
                   <button type="button" class="btn btn-secondary">Edit</button>
-                  <button type="button" class="btn btn-secondary">Delete</button>
+                  <button type="button" class="btn btn-secondary">
+                    Delete
+                  </button>
                 </div>
               </td>
             </tr>
@@ -182,27 +187,29 @@
       <div class="col-md-6">
         <div class="mb-3">
           <label for="Website-Url" class="form-label">Website URL</label>
-          <input type="text" class="form-control" id="Website-Url" value="https://designdetails.fm">  
+          <input type="text" class="form-control" id="Website-Url" value="https://designdetails.fm">
         </div>
         <div class="mb-3">
-          <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
+          <label for="Keywords" class="form-label">Keywords (separated by ",")
+          </label>
           <input type="text" class="form-control" id="Keywords" value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock">
         </div>
       </div>
       <div class="col-md-6">
         <label for="Description" class="form-label">Description</label>
-        <textarea class="form-control" id="Description" rows="8">A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea>
+        <textarea class="form-control" id="Description" rows="8">
+A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea>
       </div>
     </div>
     <h1>Cover image</h1>
     <div>
-      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;update_podcast_manual_cover_modal.html&quot;" undefined="">
+      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;update_podcast_manual_cover_modal.html&quot;" =""="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
-  &nbsp;
-  Add an image 
+  &nbsp; Add an image
 </button>
+
     </div>
   </section>
   <section class="container pt-4">
@@ -211,7 +218,8 @@
       <tbody>
         <tr>
           <td scope="col">
-            <span class="text-muted">All Arts & Culture Podcasts &rsaquo;</span> <span class="fw-bold">Art & entertainment</span>
+            <span class="text-muted">All Arts & Culture Podcasts &rsaquo;</span>
+            <span class="fw-bold">Art & entertainment</span>
           </td>
           <td scope="col" class="text-end">
             <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
@@ -222,13 +230,13 @@
       </tbody>
     </table>
     <div>
-      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_genres_modal.html&quot;" undefined="">
+      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_genres_modal.html&quot;" =""="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
-  &nbsp;
-  Add a genre 
+  &nbsp; Add a genre
 </button>
+
     </div>
   </section>
   <section class="container pt-4">
@@ -242,13 +250,13 @@
   <section class="container pt-4">
     <h1>Locations</h1>
     <div>
-      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_locations_modal.html&quot;" undefined="">
+      <button type="button" class="btn btn-secondary " onClick="parent.location=&quot;create_podcast_locations_modal.html&quot;" =""="">
   <svg class="undefined" width="1.25rem" height="1.25rem" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <path class="cls-1" d="M850,400H600V150a50,50,0,0,0-50-50H450a50,50,0,0,0-50,50V400H150a50,50,0,0,0-50,50V550a50,50,0,0,0,50,50H400V850a50,50,0,0,0,50,50H550a50,50,0,0,0,50-50V600H850a50,50,0,0,0,50-50V450A50,50,0,0,0,850,400Z"></path>
 </svg>
-  &nbsp;
-  Add a location 
+  &nbsp; Add a location
 </button>
+
     </div>
   </section>
   <section class="container pt-4">
@@ -281,95 +289,71 @@
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">423: What We Learned in 2021</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    16 Dec 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    48 min
-  </td>
+  <td class="text-nowrap" scope="col">16 Dec 2021</td>
+  <td class="text-nowrap" scope="col">48 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">422: The Complainisode</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    9 Dec 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    52 min
-  </td>
+  <td class="text-nowrap" scope="col">9 Dec 2021</td>
+  <td class="text-nowrap" scope="col">52 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">421: The Future of Remote Design Teams</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    2 Dec 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    38 min
-  </td>
+  <td class="text-nowrap" scope="col">2 Dec 2021</td>
+  <td class="text-nowrap" scope="col">38 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">420: The Pointer Cursor Debate</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    17 Nov 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    31 min
-  </td>
+  <td class="text-nowrap" scope="col">17 Nov 2021</td>
+  <td class="text-nowrap" scope="col">31 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">419: Teaching Design at Work</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    10 Nov 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    34 min
-  </td>
+  <td class="text-nowrap" scope="col">10 Nov 2021</td>
+  <td class="text-nowrap" scope="col">34 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">418: Fictional User Interfaces</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    3 Nov 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    31 min
-  </td>
+  <td class="text-nowrap" scope="col">3 Nov 2021</td>
+  <td class="text-nowrap" scope="col">31 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">417: The Side Project Prophecy</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    27 Oct 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    37 min
-  </td>
+  <td class="text-nowrap" scope="col">27 Oct 2021</td>
+  <td class="text-nowrap" scope="col">37 min</td>
 </tr>
+
           <tr>
   <td class="table-column-widest-possible" scope="col">
     <a href="/episode_detail.html">416: UI Reviews and QA</a>
   </td>
-  <td class="text-nowrap" scope="col">
-    20 Oct 2021
-  </td>
-  <td class="text-nowrap" scope="col">
-    22 min
-  </td>
+  <td class="text-nowrap" scope="col">20 Oct 2021</td>
+  <td class="text-nowrap" scope="col">22 min</td>
 </tr>
+
         </tbody>
       </table>     
     </div>
   </div>
-</div>        
+</div>
   </section>
   <section class="container pt-4">
     <h1>Optional information</h1>
@@ -378,20 +362,18 @@
         <table class="table align-middle">
           <thead>
             <tr>
-              <th scope="col">
-                Associated radio station
-              </th>
+              <th scope="col">Associated radio station</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="col">
-                Example station
-              </td>
+              <td scope="col">Example station</td>
               <td scope="col" class="text-end">
                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">Delete</button>
+                  <button type="button" class="btn btn-secondary">
+                    Delete
+                  </button>
                 </div>
               </td>
             </tr>
@@ -413,11 +395,14 @@
   <section class="container">
     <div class="row py-4">
       <div class="col-auto">
-        <button type="button" class="btn btn-primary large">Update podcast</button>
+        <button type="button" class="btn btn-primary large">
+          Update podcast
+        </button>
       </div>
     </div>
   </section>
 </main>
+
 
     <footer class="bd-footer py-3 py-md-4 bg-dark mt-auto">
   <div class="container py-1">

@@ -11,26 +11,16 @@
         <table class="table align-middle">
           <thead>
             <tr>
-              <th scope="col">
-                RSS Feed URL
-              </th>
-              <th scope="col">
-                Uptime
-              </th>
-              <th scope="col">
-                History
-              </th>
-              <th class="text-nowrap" scope="col">
-                Last updated
-              </th>
+              <th scope="col">RSS Feed URL</th>
+              <th scope="col">Uptime</th>
+              <th scope="col">History</th>
+              <th class="text-nowrap" scope="col">Last updated</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="col">
-                https://feeds.simplecast.com/eew_vyNL
-              </td>
+              <td scope="col">https://feeds.simplecast.com/eew_vyNL</td>
               <td scope="col">
                 <span class="text-functional-green fw-bold">100%</span>
               </td>
@@ -68,14 +58,20 @@
                   <div class="text-functional-green">■</div>
                 </div>
               </td>
-              <td class="text-nowrap" scope="col">
-                10 Jan 2022
-              </td>
+              <td class="text-nowrap" scope="col">10 Jan 2022</td>
               <td scope="col" class="text-end">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary text-nowrap">Scrape now</button>
+                <div
+                  class="btn-group btn-group-sm"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn btn-secondary text-nowrap">
+                    Scrape now
+                  </button>
                   <button type="button" class="btn btn-secondary">Edit</button>
-                  <button type="button" class="btn btn-secondary">Delete</button>
+                  <button type="button" class="btn btn-secondary">
+                    Delete
+                  </button>
                 </div>
               </td>
             </tr>
@@ -86,35 +82,60 @@
     <div class="row g-3">
       <div class="col-md-6">
         <label for="Name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="Name" value="Design Details">
+        <input
+          type="text"
+          class="form-control"
+          id="Name"
+          value="Design Details"
+        />
       </div>
       <div class="col-md-6">
-        <label for="Short-Description" class="form-label">Short Description</label>
-        <input type="text" class="form-control" id="Short-Description">
+        <label for="Short-Description" class="form-label"
+          >Short Description</label
+        >
+        <input type="text" class="form-control" id="Short-Description" />
       </div>
       <div class="col-md-6">
         <div class="mb-3">
           <label for="Website-Url" class="form-label">Website URL</label>
-          <input type="text" class="form-control" id="Website-Url" value="https://designdetails.fm">  
+          <input
+            type="text"
+            class="form-control"
+            id="Website-Url"
+            value="https://designdetails.fm"
+          />
         </div>
         <div class="mb-3">
-          <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
-          <input type="text" class="form-control" id="Keywords" value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock">
+          <label for="Keywords" class="form-label"
+            >Keywords (separated by ",")
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="Keywords"
+            value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock"
+          />
         </div>
       </div>
       <div class="col-md-6">
         <label for="Description" class="form-label">Description</label>
-        <textarea class="form-control" id="Description" rows="8">A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea>
+        <textarea class="form-control" id="Description" rows="8">
+A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea
+        >
       </div>
     </div>
     <h1>Cover image</h1>
     <div>
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add an image",
         "buttonType": "",
         "buttonSize": "",
+        "buttonDisabled": "",
         "buttonAction": "parent.location=\"update_podcast_manual_cover_modal.html\""
-      }'></include>
+      }'
+      ></include>
     </div>
   </section>
   <section class="container pt-4">
@@ -123,10 +144,15 @@
       <tbody>
         <tr>
           <td scope="col">
-            <span class="text-muted">All Arts & Culture Podcasts &rsaquo;</span> <span class="fw-bold">Art & entertainment</span>
+            <span class="text-muted">All Arts & Culture Podcasts &rsaquo;</span>
+            <span class="fw-bold">Art & entertainment</span>
           </td>
           <td scope="col" class="text-end">
-            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <div
+              class="btn-group btn-group-sm"
+              role="group"
+              aria-label="Basic example"
+            >
               <button type="button" class="btn btn-secondary">Delete</button>
             </div>
           </td>
@@ -134,17 +160,27 @@
       </tbody>
     </table>
     <div>
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add a genre",
         "buttonType": "",
         "buttonSize": "",
+        "buttonDisabled": "",
         "buttonAction": "parent.location=\"create_podcast_genres_modal.html\""
-      }'></include>
+      }'
+      ></include>
     </div>
   </section>
   <section class="container pt-4">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" onClick="parent.location='update_podcast.html'">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        onClick="parent.location='update_podcast.html'"
+      />
       <label class="form-check-label" for="flexCheckChecked">
         Keep this information automatically updated via the RSS feed
       </label>
@@ -153,16 +189,20 @@
   <section class="container pt-4">
     <h1>Locations</h1>
     <div>
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add a location",
         "buttonType": "",
         "buttonSize": "",
+        "buttonDisabled": "",
         "buttonAction": "parent.location=\"create_podcast_locations_modal.html\""
-      }'></include>
+      }'
+      ></include>
     </div>
   </section>
   <section class="container pt-4">
-    <include src="./components/episodes_list.html"></include>        
+    <include src="./components/episodes_list.html"></include>
   </section>
   <section class="container pt-4">
     <h1>Optional information</h1>
@@ -171,20 +211,22 @@
         <table class="table align-middle">
           <thead>
             <tr>
-              <th scope="col">
-                Associated radio station
-              </th>
+              <th scope="col">Associated radio station</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="col">
-                Example station
-              </td>
+              <td scope="col">Example station</td>
               <td scope="col" class="text-end">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">Delete</button>
+                <div
+                  class="btn-group btn-group-sm"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn btn-secondary">
+                    Delete
+                  </button>
                 </div>
               </td>
             </tr>
@@ -193,12 +235,16 @@
       </div>
       <div class="col-md-6">
         <div class="mb-3">
-          <label for="Facebook-Address" class="form-label">Facebook Address</label>
-          <input type="text" class="form-control" id="Facebook-Address">
+          <label for="Facebook-Address" class="form-label"
+            >Facebook Address</label
+          >
+          <input type="text" class="form-control" id="Facebook-Address" />
         </div>
         <div>
-          <label for="Twitter-Address" class="form-label">Twitter Address</label>
-          <input type="text" class="form-control" id="Twitter-Address">
+          <label for="Twitter-Address" class="form-label"
+            >Twitter Address</label
+          >
+          <input type="text" class="form-control" id="Twitter-Address" />
         </div>
       </div>
     </div>
@@ -206,7 +252,9 @@
   <section class="container">
     <div class="row py-4">
       <div class="col-auto">
-        <button type="button" class="btn btn-primary large">Update podcast</button>
+        <button type="button" class="btn btn-primary large">
+          Update podcast
+        </button>
       </div>
     </div>
   </section>

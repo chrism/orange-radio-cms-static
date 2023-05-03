@@ -96,6 +96,7 @@
           src="components/playlist_item.html"
           locals='{
           "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
+          "lastUpdated": "",
           "withEdit": 1,
           "withRefresh": 1
         }'
@@ -164,6 +165,7 @@
             "buttonText": "Add an audio stream",
             "buttonType": "",
             "buttonSize": "",
+            "buttonDisabled": "",
             "buttonAction": "parent.location=\"create_radio_streams_modal.html\""
           }'
           ></include>
@@ -237,7 +239,8 @@
             "buttonText": "Add image",
             "buttonType": "",
             "buttonSize": "",
-            "buttonDisabled": "disabled"
+            "buttonDisabled": "",
+            "buttonAction": ""
           }'
           ></include>
         </div>
@@ -300,6 +303,7 @@
                 "buttonText": "Add a genre",
                 "buttonType": "",
                 "buttonSize": "",
+                "buttonDisabled": "",
                 "buttonAction": "parent.location=\"create_radio_genres_modal.html\""
               }'
               ></include>
@@ -361,6 +365,7 @@
                 "buttonText": "Add a location",
                 "buttonType": "",
                 "buttonSize": "",
+                "buttonDisabled": "",
                 "buttonAction": "parent.location=\"create_radio_locations_modal.html\""
               }'
               ></include>
@@ -434,6 +439,7 @@
               "buttonText": "Create radio",
               "buttonType": "primary",
               "buttonSize": "large",
+              "buttonDisabled": "",
               "buttonAction": "parent.location=\"create_radio.html\""
             }'
             ></include>

@@ -7,7 +7,9 @@
 
   <section class="container">
     <div class="row row-cols-1 row-cols-lg-2">
-      <div class="pt-4 col d-flex justify-content-center justify-content-lg-start">
+      <div
+        class="pt-4 col d-flex justify-content-center justify-content-lg-start"
+      >
         <div class="d-flex">
           <div class="me-4">
             <h6 class="fw-normal mb-1">Date Created</h6>
@@ -19,19 +21,35 @@
           </div>
           <div class="me-4">
             <h6 class="fw-normal mb-1">Identifier</h6>
-            <h4 class="mb-0 text-nowrap">065b2b2b-054b-8d42-b27e-64eef8ddff26</h4>
+            <h4 class="mb-0 text-nowrap">
+              065b2b2b-054b-8d42-b27e-64eef8ddff26
+            </h4>
           </div>
           <div class="me-4">
             <h6 class="fw-normal mb-1">Language</h6>
             <h4 class="mb-0 text-nowrap">French</h4>
           </div>
-        </div>            
+        </div>
       </div>
-      <div class="pt-4 col d-flex justify-content-center justify-content-lg-end">
-        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary" onClick="parent.location='update_userlist.html'"><include src="./icons/pencil.html"></include>&nbsp;Edit</button>
-          <button type="button" class="btn btn-secondary"><include src="./icons/cross.html"></include>&nbsp;Delete</button>
-        </div>      
+      <div
+        class="pt-4 col d-flex justify-content-center justify-content-lg-end"
+      >
+        <div
+          class="btn-group btn-group-lg"
+          role="group"
+          aria-label="Basic example"
+        >
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onClick="parent.location='update_userlist.html'"
+          >
+            <include src="./icons/pencil.html"></include>&nbsp;Edit
+          </button>
+          <button type="button" class="btn btn-secondary">
+            <include src="./icons/cross.html"></include>&nbsp;Delete
+          </button>
+        </div>
       </div>
     </div>
 
@@ -41,8 +59,19 @@
 
     <div class="row g-3 align-items-top">
       <div class="col-md-6">
-        <img class="w-100 h-auto border border-1 border-light" src="../img/covers/userlist-cover.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
-        <p class="pt-3">Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>, Filesize: <strong>825kb</strong></p>
+        <img
+          class="w-100 h-auto border border-1 border-light"
+          src="../img/covers/userlist-cover.png"
+          width="1280"
+          height="720"
+          role="img"
+          alt="Example French Editorial Userlist cover"
+          loading="lazy"
+        />
+        <p class="pt-3">
+          Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>,
+          Filesize: <strong>825kb</strong>
+        </p>
       </div>
       <div class="col-md-6">
         <h3>Countries</h3>
@@ -50,7 +79,8 @@
           <tbody>
             <tr>
               <td scope="col">
-                <span class="fi fi-fr"></span> <span class="fw-bold">France</span>
+                <span class="fi fi-fr"></span>
+                <span class="fw-bold">France</span>
               </td>
             </tr>
           </tbody>
@@ -60,12 +90,13 @@
           <tbody>
             <tr>
               <td scope="col">
-                <span class="text-muted">All Music Radios &rsaquo;</span> <span class="fw-bold">Dance & Electro</span>
+                <span class="text-muted">All Music Radios &rsaquo;</span>
+                <span class="fw-bold">Dance & Electro</span>
               </td>
             </tr>
           </tbody>
-        </table>       
-      </div>          
+        </table>
+      </div>
     </div>
 
     <div class="d-flex align-items-end">
@@ -73,33 +104,41 @@
         <h2 class="mb-0">9 items</h2>
       </div>
       <div>
-        <include src="./components/create_button.html" locals='{
+        <include
+          src="./components/create_button.html"
+          locals='{
           "buttonText": "Add an item",
           "buttonType": "primary",
           "buttonSize": "large",
+          "buttonDisabled": "",
           "buttonAction": "parent.location=\"userlist_detail_add_item_modal.html\""
-        }'></include>
+        }'
+        ></include>
       </div>
     </div>
 
     <div class="mt-4 pb-5">
       <table class="table align-middle">
         <thead>
-          <include src="./components/userlist_detail_table_headers.html"></include>
+          <include
+            src="./components/userlist_detail_table_headers.html"
+          ></include>
         </thead>
         <tbody id="sortableItems">
           <if condition="typeof extra !== 'undefined'">
-            <include src="./components/userlist_detail_table_row.html" locals='{
+            <include
+              src="./components/userlist_detail_table_row.html"
+              locals='{
               "type": "Radio",
               "image": "http://images.radio.orange.com/radios/large_france_inter.png",
               "name": "France Inter",
               "modified": "12 Mar 2019"
-            }'></include>            
-          </if> 
+            }'
+            ></include>
+          </if>
           <include src="./components/userlist_detail_table_rows.html"></include>
         </tbody>
       </table>
-
     </div>
   </section>
 </main>

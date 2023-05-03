@@ -4,7 +4,10 @@
       "root": "src"
     },
     "posthtml-expressions": {
-      strictMode: false
+      strictMode: false,
+      "locals": {
+        "buttonDisabled": "disabled"
+      }
     }    
   }
 }

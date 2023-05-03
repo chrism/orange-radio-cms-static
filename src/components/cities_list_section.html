@@ -1,7 +1,4 @@
 <section class="mb-4">
-  <if condition="typeof title !== 'undefined'">
-    <h2 class="mb-0">{{title}}</h2>
-  </if>  
   <table class="table align-middle">
     <thead>
       <tr>
@@ -17,9 +14,7 @@
             <if condition="typeof link !== 'undefined'">
               <a href="{{link}}">{{item.name}}</a>
             </if>
-            <else>
-              {{item.name}}
-            </else>
+            <else>{{item.name}}</else>
           </td>
           <td>{{item.lat}}</td>
           <td>{{item.long}}</td>

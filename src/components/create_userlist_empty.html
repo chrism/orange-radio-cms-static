@@ -10,11 +10,16 @@
     <div class="row g-3">
       <div>
         <label for="Name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="Name">
+        <input type="text" class="form-control" id="Name" />
       </div>
       <div>
         <label for="Identifier" class="form-label">Identifier</label>
-        <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
+        <input
+          type="text"
+          class="form-control"
+          id="Identifier"
+          value="api-radio-identifier-top-secret"
+        />
       </div>
     </div>
   </section>
@@ -30,47 +35,61 @@
         </select>
         <h2 class="pt-4">Countries</h2>
         <div>
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Add country",
             "buttonType": "",
             "buttonSize": "",
+            "buttonDisabled": "",
             "buttonAction": "parent.location=\"create_userlist_country_modal.html\""
-          }'></include>
-        </div>      
+          }'
+          ></include>
+        </div>
         <h2 class="pt-4">Genres</h2>
         <div>
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Add genre",
             "buttonType": "",
             "buttonSize": "",
+            "buttonDisabled": "",
             "buttonAction": "parent.location=\"create_userlist_genre_modal.html\""
-          }'></include>
-        </div>  
-      </div>          
+          }'
+          ></include>
+        </div>
+      </div>
       <div class="col-md-6">
         <h2>Cover image</h2>
         <div>
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Add image",
             "buttonType": "",
             "buttonSize": "",
+            "buttonDisabled": "",
             "buttonAction": "parent.location=\"create_userlist_cover_modal.html\""
-          }'></include>
+          }'
+          ></include>
         </div>
       </div>
     </div>
-
-
   </section>
   <section class="container">
     <div class="row py-4">
       <div class="col-auto">
-        <include src="./components/create_button.html" locals='{
+        <include
+          src="./components/create_button.html"
+          locals='{
           "buttonText": "Create userlist",
           "buttonType": "primary",
           "buttonSize": "large",
+          "buttonDisabled": "",
           "buttonAction": "parent.location=\"create_userlist.html\""
-        }'></include>
+        }'
+        ></include>
       </div>
     </div>
   </section>

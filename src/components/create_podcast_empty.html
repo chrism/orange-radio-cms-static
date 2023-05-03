@@ -7,35 +7,53 @@
   <section class="container pt-4">
     <h1>Essential information</h1>
     <div class="mb-3">
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add RSS feed URL",
         "buttonType": "",
         "buttonSize": "",
+        "buttonDisabled": "",
         "buttonAction": "parent.location=\"create_podcast_rss_modal.html\""
-      }'></include>
+      }'
+      ></include>
     </div>
     <div class="row g-3">
       <div class="col-md-6">
         <label for="Name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="Name" disabled>
+        <input type="text" class="form-control" id="Name" disabled />
       </div>
       <div class="col-md-6">
-        <label for="Short-Description" class="form-label">Short Description</label>
-        <input type="text" class="form-control" id="Short-Description" disabled>
+        <label for="Short-Description" class="form-label"
+          >Short Description</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="Short-Description"
+          disabled
+        />
       </div>
       <div class="col-md-6">
         <div class="mb-3">
           <label for="Website-Url" class="form-label">Website URL</label>
-          <input type="text" class="form-control" id="Website-Url" disabled>  
+          <input type="text" class="form-control" id="Website-Url" disabled />
         </div>
         <div class="mb-3">
-          <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
-          <input type="text" class="form-control" id="Keywords" disabled>
+          <label for="Keywords" class="form-label"
+            >Keywords (separated by ",")
+          </label>
+          <input type="text" class="form-control" id="Keywords" disabled />
         </div>
       </div>
       <div class="col-md-6">
         <label for="Description" class="form-label">Description</label>
-        <textarea class="form-control" id="Description" rows="8" disabled></textarea>
+        <textarea
+          class="form-control"
+          id="Description"
+          rows="8"
+          disabled
+        ></textarea>
       </div>
     </div>
     <h1>Cover image</h1>
@@ -43,25 +61,42 @@
       <div class="col-md-2">
         <label for="Image-URL" class="form-label">Image URL</label>
       </div>
-      <div class="col-md-10">        
-        <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" disabled>     
+      <div class="col-md-10">
+        <input
+          type="text"
+          class="form-control"
+          id="Image-URL"
+          aria-describedby="Image-URL-Help"
+          disabled
+        />
       </div>
     </div>
   </section>
   <section class="container pt-4">
     <h1>Genres</h1>
     <div>
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add a genre",
         "buttonType": "",
         "buttonSize": "",
-        "buttonDisabled": "disabled"
-      }'></include>
+        "buttonDisabled": "disabled",
+        "buttonAction": ""
+      }'
+      ></include>
     </div>
   </section>
   <section class="container pt-4">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked onchange="parent.location='create_podcast_manual.html'">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        checked
+        onchange="parent.location='create_podcast_manual.html'"
+      />
       <label class="form-check-label" for="flexCheckChecked">
         Keep this information automatically updated via the RSS feed
       </label>
@@ -70,36 +105,53 @@
   <section class="container pt-4">
     <h1>Locations</h1>
     <div>
-      <include src="./components/create_button.html" locals='{
+      <include
+        src="./components/create_button.html"
+        locals='{
         "buttonText": "Add a location",
         "buttonType": "",
         "buttonSize": "",
+        "buttonDisabled": "",
         "buttonAction": "parent.location=\"create_podcast_locations_modal.html\""
-      }'></include>
+      }'
+      ></include>
     </div>
   </section>
   <section class="container pt-4">
     <h1>Optional information</h1>
     <div class="row g-3">
       <div class="col-md-6">
-        <label for="Associated-Radio" class="form-label">Associated radio station</label>
-        <input class="form-control" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
+        <label for="Associated-Radio" class="form-label"
+          >Associated radio station</label
+        >
+        <input
+          class="form-control"
+          list="datalistOptions"
+          id="Associated-Radio"
+          placeholder="Type to search..."
+        />
         <datalist id="datalistOptions">
-          <option value="France Culture">
-          <option value="France Inter">
+          <option value="France Culture"></option>
+          <option value="France Inter"></option>
         </datalist>
+
         <div class="form-text">
-          The radio must have been added and available to select in the datalist.
+          The radio must have been added and available to select in the
+          datalist.
         </div>
       </div>
       <div class="col-md-6">
         <div class="mb-3">
-          <label for="Facebook-Address" class="form-label">Facebook Address</label>
-          <input type="text" class="form-control" id="Facebook-Address">
+          <label for="Facebook-Address" class="form-label"
+            >Facebook Address</label
+          >
+          <input type="text" class="form-control" id="Facebook-Address" />
         </div>
         <div>
-          <label for="Twitter-Address" class="form-label">Twitter Address</label>
-          <input type="text" class="form-control" id="Twitter-Address">
+          <label for="Twitter-Address" class="form-label"
+            >Twitter Address</label
+          >
+          <input type="text" class="form-control" id="Twitter-Address" />
         </div>
       </div>
     </div>
@@ -107,12 +159,16 @@
   <section class="container">
     <div class="row py-4">
       <div class="col-auto">
-        <include src="./components/create_button.html" locals='{
+        <include
+          src="./components/create_button.html"
+          locals='{
           "buttonText": "Create podcast",
           "buttonType": "primary",
           "buttonSize": "large",
+          "buttonDisabled": "",
           "buttonAction": "parent.location=\"podcasts.html\""
-        }'></include>
+        }'
+        ></include>
       </div>
     </div>
   </section>

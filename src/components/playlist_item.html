@@ -1,8 +1,8 @@
 <div class="d-flex justify-content-between align-items-center">
   <div>
-    <h4 class="mb-1">{{ url }}</h4>
+    <h4 class="mb-1">{{url}}</h4>
     <if condition="typeof lastUpdated !== 'undefined'">
-      <p>Last updated: <span class="fw-bold">{{ lastUpdated }}</span></p>
+      <p>Last updated: <span class="fw-bold">{{lastUpdated}}</span></p>
     </if>
   </div>
   <div class="btn-group" role="group" aria-label="Basic example">
@@ -12,7 +12,13 @@
     <if condition="withEdit === 1">
       <button type="button" class="btn btn-secondary">Add a stream</button>
       <button type="button" class="btn btn-secondary">Edit</button>
-      <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        onClick="parent.location='create_radio_delete_confirmation_modal.html'"
+      >
+        Delete
+      </button>
     </if>
   </div>
 </div>
