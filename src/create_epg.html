@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Create a new EPG</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "epgs"
-    }'></include>    
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -22,44 +25,95 @@
         <div class="row g-3">
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="Associated-Radio" class="form-label">Associated radio station</label>
-              <input class="form-control" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
+              <label for="Associated-Radio" class="form-label"
+                >Associated radio station</label
+              >
+              <input
+                class="form-control"
+                list="datalistOptions"
+                id="Associated-Radio"
+                placeholder="Type to search..."
+              />
               <datalist id="datalistOptions">
-                <option value="France Culture">
-                <option value="France Inter">
+                <option value="France Culture"></option>
+                <option value="France Inter"></option>
               </datalist>
+
               <div class="form-text">
-                The radio must have been added and available to select in the datalist.
+                The radio must have been added and available to select in the
+                datalist.
               </div>
             </div>
             <h6>Days</h6>
             <div class="mb-3 d-inline-flex">
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Mon" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Mon"
+                  checked
+                />
                 <label class="form-check-label" for="Mon">Mon</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Tue" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Tue"
+                  checked
+                />
                 <label class="form-check-label" for="Tue">Tue</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Wed" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Wed"
+                  checked
+                />
                 <label class="form-check-label" for="Wed">Wed</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Thu" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Thu"
+                  checked
+                />
                 <label class="form-check-label" for="Thu">Thu</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Fri" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Fri"
+                  checked
+                />
                 <label class="form-check-label" for="Fri">Fri</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Sat" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Sat"
+                  checked
+                />
                 <label class="form-check-label" for="Sat">Sat</label>
               </div>
               <div class="form-check me-3">
-                <input class="form-check-input" type="checkbox" value="" id="Sun" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Sun"
+                  checked
+                />
                 <label class="form-check-label" for="Sun">Sun</label>
               </div>
             </div>
@@ -257,20 +311,27 @@
           <div class="col-md-6">
             <div class="mb-3">
               <label for="Name" class="form-label">Name</label>
-              <input class="form-control" list="nameOptions" id="Name" placeholder="Type to search...">
+              <input
+                class="form-control"
+                list="nameOptions"
+                id="Name"
+                placeholder="Type to search..."
+              />
               <datalist id="nameOptions">
-                <option value="Les Essentiels de...">
-                <option value="L’heure du crime">
-                <option value="Les Grosses Têtes">
-                <option value="RTL Petit Matin">
-                <option value="RTL Matin">
-                <option value="RTL Week-end">
-                <option value="Ca peut vous arriver">
-                <option value="Stop ou Encore">
-                <option value="À la Bonne Heure !">
+                <option value="Les Essentiels de..."></option>
+                <option value="L’heure du crime"></option>
+                <option value="Les Grosses Têtes"></option>
+                <option value="RTL Petit Matin"></option>
+                <option value="RTL Matin"></option>
+                <option value="RTL Week-end"></option>
+                <option value="Ca peut vous arriver"></option>
+                <option value="Stop ou Encore"></option>
+                <option value="À la Bonne Heure !"></option>
               </datalist>
+
               <div class="form-text">
-                Either choose an existing name for the episode or create a new one.
+                Either choose an existing name for the episode or create a new
+                one.
               </div>
             </div>
             <label for="Description" class="form-label">Description</label>
@@ -281,12 +342,15 @@
       <section class="container">
         <div class="row py-4">
           <div class="col-auto">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Create EPG",
               "buttonType": "primary",
               "buttonSize": "large",
               "buttonAction": "parent.location=\"epgs.html\""
-            }'></include>
+            }'
+            ></include>
           </div>
         </div>
       </section>
@@ -294,10 +358,14 @@
 
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

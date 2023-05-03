@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Create a new radio</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "podcasts"
-    }'></include>    
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -24,26 +27,16 @@
             <table class="table align-middle">
               <thead>
                 <tr>
-                  <th scope="col">
-                    RSS Feed URL
-                  </th>
-                  <th scope="col">
-                    Uptime
-                  </th>
-                  <th scope="col">
-                    History
-                  </th>
-                  <th class="text-nowrap" scope="col">
-                    Last updated
-                  </th>
+                  <th scope="col">RSS Feed URL</th>
+                  <th scope="col">Uptime</th>
+                  <th scope="col">History</th>
+                  <th class="text-nowrap" scope="col">Last updated</th>
                   <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td scope="col">
-                    https://feeds.simplecast.com/eew_vyNL
-                  </td>
+                  <td scope="col">https://feeds.simplecast.com/eew_vyNL</td>
                   <td scope="col">
                     <span class="text-functional-green fw-bold">100%</span>
                   </td>
@@ -81,14 +74,25 @@
                       <div class="text-functional-green">■</div>
                     </div>
                   </td>
-                  <td class="text-nowrap" scope="col">
-                    10 Jan 2022
-                  </td>
+                  <td class="text-nowrap" scope="col">10 Jan 2022</td>
                   <td scope="col" class="text-end">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-secondary text-nowrap">Scrape now</button>
-                      <button type="button" class="btn btn-secondary">Edit</button>
-                      <button type="button" class="btn btn-secondary">Delete</button>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-nowrap"
+                      >
+                        Scrape now
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        Edit
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        Delete
+                      </button>
                     </div>
                   </td>
                 </tr>
@@ -99,25 +103,54 @@
         <div class="row g-3">
           <div class="col-md-6">
             <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name" value="Design Details" disabled>
+            <input
+              type="text"
+              class="form-control"
+              id="Name"
+              value="Design Details"
+              disabled
+            />
           </div>
           <div class="col-md-6">
-            <label for="Short-Description" class="form-label">Short Description</label>
-            <input type="text" class="form-control" id="Short-Description" disabled>
+            <label for="Short-Description" class="form-label"
+              >Short Description</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="Short-Description"
+              disabled
+            />
           </div>
           <div class="col-md-6">
             <div class="mb-3">
               <label for="Website-Url" class="form-label">Website URL</label>
-              <input type="text" class="form-control" id="Website-Url" value="https://designdetails.fm" disabled>  
+              <input
+                type="text"
+                class="form-control"
+                id="Website-Url"
+                value="https://designdetails.fm"
+                disabled
+              />
             </div>
             <div>
-              <label for="Keywords" class="form-label">Keywords (separated by ",") </label>
-              <input type="text" class="form-control" id="Keywords" value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock" disabled>
+              <label for="Keywords" class="form-label"
+                >Keywords (separated by ",")
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="Keywords"
+                value="product design, ui design, software design, ux design, design, design details, technology, brian lovin, Marshall Bock"
+                disabled
+              />
             </div>
           </div>
           <div class="col-md-6">
             <label for="Description" class="form-label">Description</label>
-            <textarea class="form-control" id="Description" rows="8" disabled>A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea>
+            <textarea class="form-control" id="Description" rows="8" disabled>
+A weekly conversation about design process and culture. Hosted by Marshall Bock and Brian Lovin.</textarea
+            >
           </div>
         </div>
         <h1>Cover image</h1>
@@ -125,8 +158,15 @@
           <div class="col-md-2">
             <label for="Image-URL" class="form-label">Image URL</label>
           </div>
-          <div class="col-md-10">        
-            <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" value="https://image.simplecastcdn.com/images/56e415f0-1911-44b3-9b1c-99551f7146c3/993ebed2-9e1d-4455-8d97-fa64f173572f/3000x3000/1471485006-artwork.jpg?aid=rss_feed" disabled>     
+          <div class="col-md-10">
+            <input
+              type="text"
+              class="form-control"
+              id="Image-URL"
+              aria-describedby="Image-URL-Help"
+              value="https://image.simplecastcdn.com/images/56e415f0-1911-44b3-9b1c-99551f7146c3/993ebed2-9e1d-4455-8d97-fa64f173572f/3000x3000/1471485006-artwork.jpg?aid=rss_feed"
+              disabled
+            />
           </div>
         </div>
       </section>
@@ -135,60 +175,85 @@
           <div class="col-md-6">
             <h1>Genres</h1>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add a genre",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_podcast_genres_modal.html\""
-              }'></include>
+              }'
+              ></include>
             </div>
           </div>
           <div class="col-md-6">
             <h1>Locations</h1>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add a location",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_podcast_locations_modal.html\""
-              }'></include>
+              }'
+              ></include>
             </div>
           </div>
         </div>
       </section>
       <section class="container pt-4">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
           <label class="form-check-label" for="flexCheckChecked">
             Keep this information automatically updated via the RSS feed
           </label>
         </div>
       </section>
       <section class="container pt-4">
-        <include src="./components/episodes_list.html"></include>        
+        <include src="./components/episodes_list.html"></include>
       </section>
       <section class="container pt-4">
         <h1>Optional information</h1>
         <div class="row g-3">
           <div class="col-md-6">
-            <label for="Associated-Radio" class="form-label">Associated radio station</label>
-            <input class="form-control" list="datalistOptions" id="Associated-Radio" placeholder="Type to search...">
+            <label for="Associated-Radio" class="form-label"
+              >Associated radio station</label
+            >
+            <input
+              class="form-control"
+              list="datalistOptions"
+              id="Associated-Radio"
+              placeholder="Type to search..."
+            />
             <datalist id="datalistOptions">
-              <option value="France Culture">
-              <option value="France Inter">
+              <option value="France Culture"></option>
+              <option value="France Inter"></option>
             </datalist>
+
             <div class="form-text">
-              The radio must have been added and available to select in the datalist.
+              The radio must have been added and available to select in the
+              datalist.
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-3">
-              <label for="Facebook-Address" class="form-label">Facebook Address</label>
-              <input type="text" class="form-control" id="Facebook-Address">
+              <label for="Facebook-Address" class="form-label"
+                >Facebook Address</label
+              >
+              <input type="text" class="form-control" id="Facebook-Address" />
             </div>
             <div>
-              <label for="Twitter-Address" class="form-label">Twitter Address</label>
-              <input type="text" class="form-control" id="Twitter-Address">
+              <label for="Twitter-Address" class="form-label"
+                >Twitter Address</label
+              >
+              <input type="text" class="form-control" id="Twitter-Address" />
             </div>
           </div>
         </div>
@@ -196,12 +261,15 @@
       <section class="container">
         <div class="row py-4">
           <div class="col-auto">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Create podcast",
               "buttonType": "primary",
               "buttonSize": "large",
               "buttonAction": "parent.location=\"podcasts.html\""
-            }'></include>
+            }'
+            ></include>
           </div>
         </div>
       </section>
@@ -209,10 +277,14 @@
 
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

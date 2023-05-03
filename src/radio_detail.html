@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Radios > Design Details</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "radios"
-    }'></include>
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -20,7 +23,9 @@
 
       <section class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="pt-4 col d-flex justify-content-center justify-content-md-start">
+          <div
+            class="pt-4 col d-flex justify-content-center justify-content-md-start"
+          >
             <div class="d-flex">
               <div class="me-4">
                 <h6 class="fw-normal mb-1">Date Created</h6>
@@ -32,7 +37,9 @@
               </div>
               <div class="me-4">
                 <h6 class="fw-normal mb-1">Status</h6>
-                <h4 class="text-functional-green mb-0"><include src="./icons/tick.html"></include>&nbsp; Up</h4>
+                <h4 class="text-functional-green mb-0">
+                  <include src="./icons/tick.html"></include>&nbsp; Up
+                </h4>
               </div>
               <div class="me-4">
                 <h6 class="fw-normal mb-1">Audience</h6>
@@ -42,22 +49,35 @@
                 <h6 class="fw-normal mb-1">Language</h6>
                 <h4 class="mb-0">French</h4>
               </div>
-            </div>            
+            </div>
           </div>
-          <div class="pt-4 col d-flex justify-content-center justify-content-md-end">
-            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary"><include src="./icons/pencil.html"></include>&nbsp;Edit</button>
-              <button type="button" class="btn btn-secondary"><include src="./icons/cross.html"></include>&nbsp;Delete</button>
-            </div>            
+          <div
+            class="pt-4 col d-flex justify-content-center justify-content-md-end"
+          >
+            <div
+              class="btn-group btn-group-lg"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-secondary">
+                <include src="./icons/pencil.html"></include>&nbsp;Edit
+              </button>
+              <button type="button" class="btn btn-secondary">
+                <include src="./icons/cross.html"></include>&nbsp;Delete
+              </button>
+            </div>
           </div>
         </div>
 
         <div class="pt-4 row row-cols-1 row-cols-md-2">
           <div class="col mb-3">
-            <include src="./components/image_grid.html" locals='{
+            <include
+              src="./components/image_grid.html"
+              locals='{
               "type": "radios",
               "imageName": "rtl"
-            }'></include>
+            }'
+            ></include>
           </div>
           <div class="col">
             <h1>RTL</h1>
@@ -66,10 +86,22 @@
                 <h4 class="mb-0 me-4">All catalogues</h4>
               </div>
               <div>
-                <h4 class="mb-0 me-4"><include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>&nbsp; EPG</h4>
+                <h4 class="mb-0 me-4">
+                  <include
+                    src="./icons/tick.html"
+                    locals='{"color": "text-functional-green"}'
+                  ></include
+                  >&nbsp; EPG
+                </h4>
               </div>
               <div>
-                <h4 class="mb-0 me-4"><include src="./icons/tick.html" locals='{"color": "text-functional-green"}'></include>&nbsp; Live</h4>
+                <h4 class="mb-0 me-4">
+                  <include
+                    src="./icons/tick.html"
+                    locals='{"color": "text-functional-green"}'
+                  ></include
+                  >&nbsp; Live
+                </h4>
               </div>
             </div>
             <div class="my-3 justify-content-center justify-content-md-start">
@@ -96,29 +128,35 @@
                 </div>
               </div>
             </div>
-            <h4 class="mb-0"><a href="mailto:contact@rtl.fr">contact@rtl.fr</a></h4>
+            <h4 class="mb-0">
+              <a href="mailto:contact@rtl.fr">contact@rtl.fr</a>
+            </h4>
             <div class="row pt-2">
               <div class="col-md-6">
                 <table class="table align-middle">
                   <tbody>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">Talk</span>
+                        <span class="text-muted">All Talk Radios &rsaquo;</span>
+                        <span class="fw-bold">Talk</span>
                       </td>
                     </tr>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">Sports</span>
+                        <span class="text-muted">All Talk Radios &rsaquo;</span>
+                        <span class="fw-bold">Sports</span>
                       </td>
                     </tr>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">Business & Economics</span>
+                        <span class="text-muted">All Talk Radios &rsaquo;</span>
+                        <span class="fw-bold">Business & Economics</span>
                       </td>
                     </tr>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">News</span>
+                        <span class="text-muted">All Talk Radios &rsaquo;</span>
+                        <span class="fw-bold">News</span>
                       </td>
                     </tr>
                   </tbody>
@@ -129,7 +167,10 @@
                   <tbody>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">Europe &rsaquo; France &rsaquo;</span> <span class="fw-bold">Marseille</span>
+                        <span class="text-muted"
+                          >Europe &rsaquo; France &rsaquo;</span
+                        >
+                        <span class="fw-bold">Marseille</span>
                       </td>
                     </tr>
                   </tbody>
@@ -137,33 +178,48 @@
               </div>
             </div>
             <h3>News & Informations de la première radio de France</h3>
-            <p>Toute l'actualité en direct et en vidéo sur RTL.fr : politique, international, faits divers...</p>
+            <p>
+              Toute l'actualité en direct et en vidéo sur RTL.fr : politique,
+              international, faits divers...
+            </p>
             <p><a href="http://www.rtl.fr">http://www.rtl.fr</a></p>
             <div class="my-3">
               <span class="badge rounded-pill bg-light">Talk Public Radio</span>
             </div>
-            <a href="#" class="btn btn-icon btn-social btn-twitter"><span class="visually-hidden">Twitter</span></a>
-            <a href="#" class="btn btn-icon btn-social btn-facebook"><span class="visually-hidden">Facebook</span></a>
+            <a href="#" class="btn btn-icon btn-social btn-twitter"
+              ><span class="visually-hidden">Twitter</span></a
+            >
+            <a href="#" class="btn btn-icon btn-social btn-facebook"
+              ><span class="visually-hidden">Facebook</span></a
+            >
           </div>
         </div>
 
         <section class="container pt-4">
           <h1>Streams</h1>
           <h3>With playlist</h3>
-          <include src="components/playlist_item.html" locals='{
+          <include
+            src="components/playlist_item.html"
+            locals='{
             "url": "http://www.url.com/somethingelse/radio_playlist.m3u",
             "lastUpdated": "17 Aug 2020",
             "withEdit": 0,
             "withRefresh": 1
-          }'></include>
+          }'
+          ></include>
           <div class="row">
             <div class="col-md-12">
               <table class="table align-middle">
-                <include src="components/stream_table_header.html" locals='{
+                <include
+                  src="components/stream_table_header.html"
+                  locals='{
                   "withUptimeHistory": 1
-                }'></include>
+                }'
+                ></include>
                 <tbody>
-                  <include src="components/stream_table_row.html" locals='{
+                  <include
+                    src="components/stream_table_row.html"
+                    locals='{
                     "transport": "http",
                     "url": "http://www.url.com/somethingelse/streamaddress_from_playlist.mp3",
                     "bitrate": "128",
@@ -173,7 +229,8 @@
                     "lastChecked": "10 Jan 2022",
                     "withEdit": 0,
                     "withUptimeHistory": 1
-                  }'></include>
+                  }'
+                  ></include>
                 </tbody>
               </table>
             </div>
@@ -182,11 +239,16 @@
           <div class="row">
             <div class="col-md-12">
               <table class="table align-middle">
-                <include src="components/stream_table_header.html" locals='{
+                <include
+                  src="components/stream_table_header.html"
+                  locals='{
                   "withUptimeHistory": 1
-                }'></include>
+                }'
+                ></include>
                 <tbody>
-                  <include src="components/stream_table_row.html" locals='{
+                  <include
+                    src="components/stream_table_row.html"
+                    locals='{
                     "transport": "http",
                     "url": "http://icecast.rtl.fr/rtl-1-44-128?listen=webBAIOCwsGDQQBAgsBBAUHAQ",
                     "bitrate": "128",
@@ -196,7 +258,8 @@
                     "lastChecked": "24 Feb 2022",
                     "withEdit": 0,
                     "withUptimeHistory": 1
-                  }'></include>
+                  }'
+                  ></include>
                 </tbody>
               </table>
             </div>
@@ -207,12 +270,23 @@
           <div class="accordion accordion-lg">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOneLarge">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneLarge" aria-expanded="false" aria-controls="collapseOneLarge">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOneLarge"
+                  aria-expanded="false"
+                  aria-controls="collapseOneLarge"
+                >
                   Userlists
                 </button>
               </h2>
               <!-- Add collapse class to close once done -->
-              <div id="collapseOneLarge" class="accordion-collapse collapse" aria-labelledby="headingOneLarge">
+              <div
+                id="collapseOneLarge"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOneLarge"
+              >
                 <table class="table align-middle">
                   <thead>
                     <tr>
@@ -223,71 +297,132 @@
                     </tr>
                   </thead>
                   <tbody class="userlist-list">
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection Top"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection test anthony2"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios FR"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection orangeradio-tv-infostalksport"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios RE"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios SN"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios SC"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios AL"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios AD"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios AM"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios AZ"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios BA"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios GE"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios LI"
-                    }'></include>
-                    <include src="./components/radio_detail_userlist_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/radio_detail_userlist_table_row.html"
+                      locals='{
                       "title": "Selection TOP Radios MC"
-                    }'></include>         
+                    }'
+                    ></include>
                   </tbody>
-                </table>     
+                </table>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwoLarge">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoLarge" aria-expanded="false" aria-controls="collapseTwoLarge">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwoLarge"
+                  aria-expanded="false"
+                  aria-controls="collapseTwoLarge"
+                >
                   Podcasts
                 </button>
               </h2>
               <!-- Add collapse class to close once done -->
-              <div id="collapseTwoLarge" class="accordion-collapse collapse" aria-labelledby="headingTwoLarge">
+              <div
+                id="collapseTwoLarge"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwoLarge"
+              >
                 <table class="table align-middle">
                   <thead>
-                    <include src="./components/podcast_table_header.html" locals='{
+                    <include
+                      src="./components/podcast_table_header.html"
+                      locals='{
                       "selected": "Last Modified"
-                    }'></include>
+                    }'
+                    ></include>
                   </thead>
                   <tbody class="podcast-list">
-                    <include src="./components/podcast_table_row.html" locals='{
+                    <include
+                      src="./components/podcast_table_row.html"
+                      locals='{
                       "image": "http://images.radio.orange.com/podcasts/large_laurent-gerra.png",
                       "name": "Laurent Gerra",
                       "desc": "tick",
@@ -295,8 +430,11 @@
                       "uptime": 100,
                       "audience": "16,028",
                       "modified": "11 Jan 2022"
-                    }'></include>
-                    <include src="./components/podcast_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/podcast_table_row.html"
+                      locals='{
                       "image": "http://images.radio.orange.com/podcasts/large_l-invite-de-rtl.png",
                       "name": "L’invité de RTL",
                       "desc": "tick",
@@ -304,8 +442,11 @@
                       "uptime": 100,
                       "audience": "143",
                       "modified": "11 Jan 2022"
-                    }'></include>
-                    <include src="./components/podcast_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/podcast_table_row.html"
+                      locals='{
                       "image": "http://images.radio.orange.com/podcasts/large_on-refait-le-monde.png",
                       "name": "On refait le monde",
                       "desc": "tick",
@@ -313,8 +454,11 @@
                       "uptime": 0,
                       "audience": "769",
                       "modified": "11 Jan 2022"
-                    }'></include>
-                    <include src="./components/podcast_table_row.html" locals='{
+                    }'
+                    ></include>
+                    <include
+                      src="./components/podcast_table_row.html"
+                      locals='{
                       "image": "http://images.radio.orange.com/podcasts/large_les-grosses-tetes.png",
                       "name": "Les Grosses Têtes",
                       "desc": "tick",
@@ -322,17 +466,21 @@
                       "uptime": 100,
                       "audience": "39,835",
                       "modified": "11 Jan 2022"
-                    }'></include>
+                    }'
+                    ></include>
                   </tbody>
                 </table>
                 <div class="mb-3">
-                  <include src="./components/create_button.html" locals='{
+                  <include
+                    src="./components/create_button.html"
+                    locals='{
                     "buttonText": "Create a new podcast",
                     "buttonType": "",
                     "buttonSize": "",
                     "buttonAction": "parent.location=\"create_podcast.html\""
-                  }'></include>
-                </div>   
+                  }'
+                  ></include>
+                </div>
               </div>
             </div>
           </div>
@@ -342,10 +490,14 @@
 
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS — Image uploads</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
@@ -10,25 +10,48 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../img/svg/orange-logo.svg" width="50" height="50" role="img" alt="Orange Logo" loading="lazy">
+          <img
+            src="../img/svg/orange-logo.svg"
+            width="50"
+            height="50"
+            role="img"
+            alt="Orange Logo"
+            loading="lazy"
+          />
           <span class="h1">Orange Radio Back Office</span>
         </a>
       </div>
     </nav>
     <section class="container mb-5">
       <h1 class="display-2 mt-5">Image uploads</h1>
-      <p class="lead">This example is taken from the Create Radio screen but applies to Userlists as well.</p>
-      <p class="lead">Podcasts are a little bit different because the image is often generated from the RSS feed — but we could add this as a "Custom image" block to make every image upload consistent?</p>
+      <p class="lead">
+        This example is taken from the Create Radio screen but applies to
+        Userlists as well.
+      </p>
+      <p class="lead">
+        Podcasts are a little bit different because the image is often generated
+        from the RSS feed — but we could add this as a "Custom image" block to
+        make every image upload consistent?
+      </p>
 
       <section class="mt-5">
         <h2>1. Initial state when there is no image</h2>
-        <p>Note that the "Add image button" is initially disabled until either a file or a URL has been added.</p>
+        <p>
+          Note that the "Add image button" is initially disabled until either a
+          file or a URL has been added.
+        </p>
         <section class="mt-5">
           <h1>Cover images</h1>
           <div class="row g-3 align-items-center">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
                 <label class="form-check-label" for="flexRadioDefault2">
                   Remote URL
                 </label>
@@ -36,45 +59,79 @@
             </div>
             <div class="col-md-10">
               <label for="Image-URL" class="form-label">Image URL</label>
-              <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
-              <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+              <input
+                type="text"
+                class="form-control"
+                id="Image-URL"
+                aria-describedby="Image-URL-Help"
+                placeholder="https://www.yoursite.com/image.png"
+              />
+              <div id="Image-URL-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
           <div class="row g-3 align-items-center pt-3">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
                 <label class="form-check-label" for="flexRadioDefault2">
                   Local file
                 </label>
               </div>
             </div>
             <div class="col-md-10">
-              <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled>
-              <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+              <input
+                type="file"
+                class="form-control"
+                id="Local-File-Help"
+                aria-describedby="Image-URL-Help"
+                disabled
+              />
+              <div id="Local-File-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
-      
+
           <div class="pt-3">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Add image",
               "buttonType": "",
               "buttonSize": "",
               "buttonDisabled": "disabled"
-            }'></include>
+            }'
+            ></include>
           </div>
         </section>
       </section>
 
       <section class="mt-5">
         <h2>2a. State after a URL has been added</h2>
-        <p>Now that a URL has been inputted the "Add image button" is now active.</p>
+        <p>
+          Now that a URL has been inputted the "Add image button" is now active.
+        </p>
         <section class="mt-5">
           <h1>Cover images</h1>
           <div class="row g-3 align-items-center">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault3"
+                  id="flexRadioDefault3"
+                  checked
+                />
                 <label class="form-check-label" for="flexRadioDefault3">
                   Remote URL
                 </label>
@@ -82,44 +139,81 @@
             </div>
             <div class="col-md-10">
               <label for="Image-URL" class="form-label">Image URL</label>
-              <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" value="https://www.realurl.com/myimage.png">
-              <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+              <input
+                type="text"
+                class="form-control"
+                id="Image-URL"
+                aria-describedby="Image-URL-Help"
+                value="https://www.realurl.com/myimage.png"
+              />
+              <div id="Image-URL-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
           <div class="row g-3 align-items-center pt-3">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
                 <label class="form-check-label" for="flexRadioDefault2">
                   Local file
                 </label>
               </div>
             </div>
             <div class="col-md-10">
-              <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled>
-              <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+              <input
+                type="file"
+                class="form-control"
+                id="Local-File-Help"
+                aria-describedby="Image-URL-Help"
+                disabled
+              />
+              <div id="Local-File-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
-      
+
           <div class="pt-3">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Add image",
               "buttonType": "",
               "buttonSize": ""
-            }'></include>
+            }'
+            ></include>
           </div>
         </section>
       </section>
 
       <section class="mt-5">
-        <h2>2b. State after a file has been selected from the local file system</h2>
-        <p>Note that this cannot be mocked exactly as it should be for security reasons — there should also be a filename in the input that has been selected by the user.</p>
+        <h2>
+          2b. State after a file has been selected from the local file system
+        </h2>
+        <p>
+          Note that this cannot be mocked exactly as it should be for security
+          reasons — there should also be a filename in the input that has been
+          selected by the user.
+        </p>
         <section class="mt-5">
           <h1>Cover images</h1>
           <div class="row g-3 align-items-center">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault3"
+                  id="flexRadioDefault3"
+                />
                 <label class="form-check-label" for="flexRadioDefault3">
                   Remote URL
                 </label>
@@ -127,52 +221,91 @@
             </div>
             <div class="col-md-10">
               <label for="Image-URL" class="form-label">Image URL</label>
-              <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png" disabled>
-              <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+              <input
+                type="text"
+                class="form-control"
+                id="Image-URL"
+                aria-describedby="Image-URL-Help"
+                placeholder="https://www.yoursite.com/image.png"
+                disabled
+              />
+              <div id="Image-URL-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
           <div class="row g-3 align-items-center pt-3">
             <div class="col-md-2">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault5"
+                  id="flexRadioDefault5"
+                  checked
+                />
                 <label class="form-check-label" for="flexRadioDefault5">
                   Local file
                 </label>
               </div>
             </div>
             <div class="col-md-10">
-              <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help">
-              <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+              <input
+                type="file"
+                class="form-control"
+                id="Local-File-Help"
+                aria-describedby="Image-URL-Help"
+              />
+              <div id="Local-File-Help" class="form-text">
+                Max filesize 3MB, JPG or PNG formats, transparency supported for
+                PNG.
+              </div>
             </div>
           </div>
-      
+
           <div class="pt-3">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Add image",
               "buttonType": "",
               "buttonSize": ""
-            }'></include>
+            }'
+            ></include>
           </div>
         </section>
       </section>
 
       <section class="mt-5">
         <h2>3. After the "Add image" button has been pressed</h2>
-        <p>This should immediately process the image from either the local filesystem or URL and present the images to verify that they are correct.</p>
+        <p>
+          This should immediately process the image from either the local
+          filesystem or URL and present the images to verify that they are
+          correct.
+        </p>
         <section class="pt-5">
           <h1>Cover images</h1>
           <div class="mb-3">
-            <include src="./components/image_grid_horizontal.html" locals='{
+            <include
+              src="./components/image_grid_horizontal.html"
+              locals='{
               "type": "radios",
               "imageName": "france_inter"
-            }'></include>
+            }'
+            ></include>
           </div>
-          <button type="button" class="btn btn-secondary large" onClick="parent.location='update_radio_no_image.html'">Remove image</button>
+          <button
+            type="button"
+            class="btn btn-secondary large"
+            onClick="parent.location='update_radio_no_image.html'"
+          >
+            Remove image
+          </button>
         </section>
       </section>
-
     </section>
-    
-    <script src="./index.js"></script>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

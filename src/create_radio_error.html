@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Create a new radio</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "radios"
-    }'></include>    
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -19,7 +22,9 @@
       </section>
       <section class="container pt-4">
         <div class="alert alert-danger" role="alert">
-          <span class="alert-icon"><span class="visually-hidden">Error</span></span>
+          <span class="alert-icon"
+            ><span class="visually-hidden">Error</span></span
+          >
           <p>6 errors prevented this radio from being created.</p>
         </div>
       </section>
@@ -28,34 +33,62 @@
         <div class="row g-3">
           <div class="col-md-6">
             <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control is-valid" id="Name" value="Radio Station">
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="Name"
+              value="Radio Station"
+            />
           </div>
           <div class="col-md-6">
-            <label for="Short-Description" class="form-label">Short Description</label>
-            <input type="text" class="form-control is-valid" id="Short-Description" value="This is a radio station description.">
+            <label for="Short-Description" class="form-label"
+              >Short Description</label
+            >
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="Short-Description"
+              value="This is a radio station description."
+            />
           </div>
           <div class="col-md-6">
             <label for="Contact" class="form-label">Contact</label>
-            <input type="email" class="form-control is-invalid" id="Contact" aria-describedby="validationContact" required>
+            <input
+              type="email"
+              class="form-control is-invalid"
+              id="Contact"
+              aria-describedby="validationContact"
+              required
+            />
             <div id="validationContact" class="invalid-feedback">
               Must include a contact email address.
             </div>
             <div class="row align-items-center">
               <div class="col-md-4 pt-3">
-                <label for="Radio-Catalogues" class="form-label">Radio Catalogues</label>
+                <label for="Radio-Catalogues" class="form-label"
+                  >Radio Catalogues</label
+                >
                 <select class="form-select" aria-label="Radio Catalogues">
                   <option selected>All catalogues</option>
-                </select>          
+                </select>
               </div>
               <div class="col-md-4 pt-3">
-                <label for="Radio-Status" class="form-label">Radio Status</label>
+                <label for="Radio-Status" class="form-label"
+                  >Radio Status</label
+                >
                 <select class="form-select" aria-label="Radio-Status">
                   <option selected>Up</option>
-                </select>          
+                </select>
               </div>
               <div class="col-md-4">
                 <div class="form-check pt-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
                   <label class="form-check-label" for="flexCheckChecked">
                     Live streaming
                   </label>
@@ -67,19 +100,24 @@
                 <label for="Language" class="form-label">Language</label>
                 <select class="form-select" aria-label="Language">
                   <option selected>French</option>
-                </select>          
+                </select>
               </div>
               <div class="col-md-4 pt-3">
                 <label for="Metadata" class="form-label">Metadata</label>
                 <select class="form-select" aria-label="Metadata">
                   <option selected>No metadata</option>
-                </select>          
+                </select>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <label for="Description" class="form-label">Description</label>
-            <textarea class="form-control is-invalid" id="Description" rows="8" aria-describedby="validationDescription"></textarea>
+            <textarea
+              class="form-control is-invalid"
+              id="Description"
+              rows="8"
+              aria-describedby="validationDescription"
+            ></textarea>
             <div id="validationDescription" class="invalid-feedback">
               Must include a description.
             </div>
@@ -89,15 +127,24 @@
       <section class="container pt-4">
         <h1>Streams</h1>
         <div>
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Add an audio stream",
             "buttonType": "",
             "buttonSize": "",
             "buttonAction": "parent.location=\"create_radio_streams_modal.html\""
-          }'></include>
+          }'
+          ></include>
         </div>
         <div class="pt-3">
-          <input type="hidden" class="form-control is-invalid" id="Streams" aria-describedby="validationStreams" required>
+          <input
+            type="hidden"
+            class="form-control is-invalid"
+            id="Streams"
+            aria-describedby="validationStreams"
+            required
+          />
           <div id="validationStreams" class="invalid-feedback">
             Must include at least one stream.
           </div>
@@ -108,7 +155,13 @@
         <div class="row g-3 align-items-center">
           <div class="col-md-2">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
               <label class="form-check-label" for="flexRadioDefault2">
                 Remote URL
               </label>
@@ -116,35 +169,67 @@
           </div>
           <div class="col-md-10">
             <label for="Image-URL" class="form-label">Image URL</label>
-            <input type="text" class="form-control" id="Image-URL" aria-describedby="Image-URL-Help" placeholder="https://www.yoursite.com/image.png">
-            <div id="Image-URL-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>         
+            <input
+              type="text"
+              class="form-control"
+              id="Image-URL"
+              aria-describedby="Image-URL-Help"
+              placeholder="https://www.yoursite.com/image.png"
+            />
+            <div id="Image-URL-Help" class="form-text">
+              Max filesize 3MB, JPG or PNG formats, transparency supported for
+              PNG.
+            </div>
           </div>
         </div>
         <div class="row g-3 align-items-center pt-3">
           <div class="col-md-2">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
               <label class="form-check-label" for="flexRadioDefault2">
                 Local file
               </label>
             </div>
           </div>
           <div class="col-md-10">
-            <input type="file" class="form-control" id="Local-File-Help" aria-describedby="Image-URL-Help" disabled>
-            <div id="Local-File-Help" class="form-text">Max filesize 3MB, JPG or PNG formats, transparency supported for PNG.</div>
+            <input
+              type="file"
+              class="form-control"
+              id="Local-File-Help"
+              aria-describedby="Image-URL-Help"
+              disabled
+            />
+            <div id="Local-File-Help" class="form-text">
+              Max filesize 3MB, JPG or PNG formats, transparency supported for
+              PNG.
+            </div>
           </div>
         </div>
 
         <div class="pt-3">
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Add image",
             "buttonType": "",
             "buttonSize": "",
             "buttonDisabled": "disabled"
-          }'></include>
+          }'
+          ></include>
         </div>
         <div class="pt-3">
-          <input type="hidden" class="form-control is-invalid" id="Images" aria-describedby="validationImages" required>
+          <input
+            type="hidden"
+            class="form-control is-invalid"
+            id="Images"
+            aria-describedby="validationImages"
+            required
+          />
           <div id="validationImages" class="invalid-feedback">
             Must include a cover image.
           </div>
@@ -155,15 +240,24 @@
           <div class="col-md-6">
             <h1>Genres</h1>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add a genre",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_radio_genres_modal.html\""
-              }'></include>
+              }'
+              ></include>
             </div>
             <div class="pt-3">
-              <input type="hidden" class="form-control is-invalid" id="Genres" aria-describedby="validationGenres" required>
+              <input
+                type="hidden"
+                class="form-control is-invalid"
+                id="Genres"
+                aria-describedby="validationGenres"
+                required
+              />
               <div id="validationGenres" class="invalid-feedback">
                 Must include at least one genre.
               </div>
@@ -172,15 +266,24 @@
           <div class="col-md-6">
             <h1>Locations</h1>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add a location",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_radio_locations_modal.html\""
-              }'></include>
+              }'
+              ></include>
             </div>
             <div class="pt-3">
-              <input type="hidden" class="form-control is-invalid" id="Locations" aria-describedby="validationLocations" required>
+              <input
+                type="hidden"
+                class="form-control is-invalid"
+                id="Locations"
+                aria-describedby="validationLocations"
+                required
+              />
               <div id="validationLocations" class="invalid-feedback">
                 Must include at least one location.
               </div>
@@ -193,67 +296,84 @@
         <div class="row g-3">
           <div class="col-md-3">
             <label for="PS-Name" class="form-label">PS Name</label>
-            <input type="text" class="form-control" id="PS-Name">
+            <input type="text" class="form-control" id="PS-Name" />
           </div>
           <div class="col-md-3">
             <label for="PI-Code" class="form-label">PI Code</label>
-            <input type="text" class="form-control" id="PI-Code">
+            <input type="text" class="form-control" id="PI-Code" />
           </div>
           <div class="col-md-3">
             <label for="Sid" class="form-label">Sid</label>
-            <input type="text" class="form-control" id="Sid">
+            <input type="text" class="form-control" id="Sid" />
           </div>
           <div class="col-md-3">
             <label for="Service-Label" class="form-label">Service Label</label>
-            <input type="text" class="form-control" id="Service-Label">
+            <input type="text" class="form-control" id="Service-Label" />
           </div>
         </div>
         <div class="row g-3 pt-3">
           <div class="col-md-6">
-            <label for="Website-Address" class="form-label">Website Address</label>
-            <input type="text" class="form-control" id="Website-Address">
+            <label for="Website-Address" class="form-label"
+              >Website Address</label
+            >
+            <input type="text" class="form-control" id="Website-Address" />
           </div>
           <div class="col-md-6">
-            <label for="iTunes-Address" class="form-label">iTunes Address</label>
-            <input type="text" class="form-control" id="iTunes-Address">
+            <label for="iTunes-Address" class="form-label"
+              >iTunes Address</label
+            >
+            <input type="text" class="form-control" id="iTunes-Address" />
           </div>
         </div>
         <div class="row g-3 pt-3">
           <div class="col-md-6">
-            <label for="Facebook-Address" class="form-label">Facebook Address</label>
-            <input type="text" class="form-control" id="Facebook-Address">
+            <label for="Facebook-Address" class="form-label"
+              >Facebook Address</label
+            >
+            <input type="text" class="form-control" id="Facebook-Address" />
           </div>
           <div class="col-md-6">
-            <label for="Twitter-Address" class="form-label">Twitter Address</label>
-            <input type="text" class="form-control" id="Twitter-Address">
+            <label for="Twitter-Address" class="form-label"
+              >Twitter Address</label
+            >
+            <input type="text" class="form-control" id="Twitter-Address" />
           </div>
         </div>
         <div class="row g-3 pt-3">
           <div class="col-md-12">
-            <label for="Keywords" class="form-label">Keywords (separated by ",")</label>
-            <input type="text" class="form-control" id="Keywords">
+            <label for="Keywords" class="form-label"
+              >Keywords (separated by ",")</label
+            >
+            <input type="text" class="form-control" id="Keywords" />
           </div>
         </div>
       </section>
       <section class="container">
         <div class="row py-4">
           <div class="col-auto">
-            <include src="./components/create_button.html" locals='{
+            <include
+              src="./components/create_button.html"
+              locals='{
               "buttonText": "Create radio",
               "buttonType": "primary",
               "buttonSize": "large",
               "buttonAction": "parent.location=\"create_radio.html\""
-            }'></include>
+            }'
+            ></include>
           </div>
         </div>
       </section>
     </main>
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

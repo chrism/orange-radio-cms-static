@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Update userlist</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "userlists"
-    }'></include>
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -22,11 +25,21 @@
         <div class="row g-3">
           <div>
             <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name" value="Example French Editorial Userlist">
+            <input
+              type="text"
+              class="form-control"
+              id="Name"
+              value="Example French Editorial Userlist"
+            />
           </div>
           <div>
             <label for="Identifier" class="form-label">Identifier</label>
-            <input type="text" class="form-control" id="Identifier" value="api-radio-identifier-top-secret">
+            <input
+              type="text"
+              class="form-control"
+              id="Identifier"
+              value="api-radio-identifier-top-secret"
+            />
           </div>
         </div>
       </section>
@@ -45,54 +58,91 @@
               <tbody>
                 <tr>
                   <td scope="col">
-                    <span class="fi fi-fr"></span> <span class="fw-bold">France</span>
+                    <span class="fi fi-fr"></span>
+                    <span class="fw-bold">France</span>
                   </td>
                   <td scope="col" class="text-end">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-secondary">Delete</button>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button type="button" class="btn btn-secondary">
+                        Delete
+                      </button>
                     </div>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add country",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_userlist_country_modal.html\""
-              }'></include>
-            </div>      
+              }'
+              ></include>
+            </div>
             <h2 class="pt-4">Genres</h2>
             <table class="table align-middle">
               <tbody>
                 <tr>
                   <td scope="col">
-                    <span class="text-muted">All Music Radios &rsaquo;</span> <span class="fw-bold">Dance & Electro</span>
+                    <span class="text-muted">All Music Radios &rsaquo;</span>
+                    <span class="fw-bold">Dance & Electro</span>
                   </td>
                   <td scope="col" class="text-end">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-secondary" onClick="parent.location='create_radio_delete_confirmation_modal.html'">Delete</button>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onClick="parent.location='create_radio_delete_confirmation_modal.html'"
+                      >
+                        Delete
+                      </button>
                     </div>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div>
-              <include src="./components/create_button.html" locals='{
+              <include
+                src="./components/create_button.html"
+                locals='{
                 "buttonText": "Add genre",
                 "buttonType": "",
                 "buttonSize": "",
                 "buttonAction": "parent.location=\"create_userlist_genre_modal.html\""
-              }'></include>
+              }'
+              ></include>
             </div>
-          </div>     
+          </div>
           <div class="col-md-6">
             <h3>Cover image</h3>
-            <img class="w-100 h-auto border border-1 border-light" src="../img/covers/userlist-cover.png" width="1280" height="720" role="img" alt="Example French Editorial Userlist cover" loading="lazy">
-            <p class="pt-3">Dimensions: <strong>1280 x 720</strong>, Format: <strong>PNG</strong>, Filesize: <strong>825kb</strong></p>
+            <img
+              class="w-100 h-auto border border-1 border-light"
+              src="../img/covers/userlist-cover.png"
+              width="1280"
+              height="720"
+              role="img"
+              alt="Example French Editorial Userlist cover"
+              loading="lazy"
+            />
+            <p class="pt-3">
+              Dimensions: <strong>1280 x 720</strong>, Format:
+              <strong>PNG</strong>, Filesize: <strong>825kb</strong>
+            </p>
             <div class="pt-3">
-              <button type="button" class="btn btn-secondary large">Remove image</button>
+              <button type="button" class="btn btn-secondary large">
+                Remove image
+              </button>
             </div>
           </div>
         </div>
@@ -100,7 +150,9 @@
       <section class="container">
         <div class="row py-4">
           <div class="col-auto">
-            <button type="button" class="btn btn-primary large">Update userlist</button>
+            <button type="button" class="btn btn-primary large">
+              Update userlist
+            </button>
           </div>
         </div>
       </section>
@@ -108,10 +160,14 @@
 
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

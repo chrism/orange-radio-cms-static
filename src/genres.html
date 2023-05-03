@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Genres</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
@@ -18,39 +18,60 @@
 
       <section class="container mt-4 d-flex align-items-end">
         <div class="flex-grow-1">
-          <include src="./components/genre_list_section.html" locals='{
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Music Radios",
             "genres": ["Adult Contemporary", "Blues / Jazz", "Children’s Music", "Classical & Opera", "Dance & Electro", "Rock & co", "Urban", "World Music"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Talk Radios",
             "genres": ["Arts & Education", "Business & Economics", "Comedy", "Local", "News", "Religion", "Sports", "Talk"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Arts & Culture Podcasts",
             "genres": ["Art & entertainment", "Cinema, TV & Media", "Music"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Entertainment Podcasts",
             "genres": ["Comedy", "Games & Hobbies", "Sports & Recreation"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Knowing & Learning Podcasts",
             "genres": ["Education", "Nature & environment", "Religion & Spirituality", "Science & Technology"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All Lifestyle Podcasts",
             "genres": ["Children & Family", "Food & Drinks", "Health & Wellbeing", "Travel"]
-          }'></include>
-          <include src="./components/genre_list_section.html" locals='{
+          }'
+          ></include>
+          <include
+            src="./components/genre_list_section.html"
+            locals='{
             "title": "All News Podcasts",
             "genres": ["Business", "Consumer", "News", "Politics"]
-          }'></include>
+          }'
+          ></include>
         </div>
       </section>
     </main>
 
     <include src="./components/footer.html"></include>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

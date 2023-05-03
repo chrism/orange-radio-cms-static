@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Cities / France</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
@@ -20,13 +20,19 @@
         <div class="flex-grow-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="localisations-continents.html">Continents</a></li>
-              <li class="breadcrumb-item"><a href="localisations-europe.html">Europe</a></li>
+              <li class="breadcrumb-item">
+                <a href="localisations-continents.html">Continents</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="localisations-europe.html">Europe</a>
+              </li>
               <li class="breadcrumb-item active" aria-current="page">France</li>
             </ol>
           </nav>
 
-          <include src="./components/cities_list_section.html" locals='{
+          <include
+            src="./components/cities_list_section.html"
+            locals='{
             "localisations": [
               {"name": "Agen", "lat": "44.203142", "long": "0.616363"},
               {"name": "Aigues-Mortes", "lat": "43.567172", "long": "4.1925869"},
@@ -52,12 +58,13 @@
               {"name": "Arles", "lat": "43.676647", "long": "4.6277769"},
               {"name": "Arras", "lat": "50.291002", "long": "2.777535"}
             ]
-          }'></include>
+          }'
+          ></include>
         </div>
       </section>
     </main>
 
     <include src="./components/footer.html"></include>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

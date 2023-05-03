@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Podcasts > Design Details</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "podcasts"
-    }'></include>
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="bg-dark border-top border-dark border-1">
@@ -20,7 +23,9 @@
 
       <section class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="pt-4 col d-flex justify-content-center justify-content-md-start">
+          <div
+            class="pt-4 col d-flex justify-content-center justify-content-md-start"
+          >
             <div class="d-flex">
               <div class="me-4">
                 <h6 class="fw-normal mb-1">Date Created</h6>
@@ -34,22 +39,39 @@
                 <h6 class="fw-normal mb-1">Last updated</h6>
                 <h4 class="mb-0">11 Jan 2022</h4>
               </div>
-            </div>            
+            </div>
           </div>
-          <div class="pt-4 col d-flex justify-content-center justify-content-md-end">
-            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary" onClick="parent.location='update_podcast.html'"><include src="./icons/pencil.html"></include>&nbsp;Edit</button>
-              <button type="button" class="btn btn-secondary"><include src="./icons/cross.html"></include>&nbsp;Delete</button>
-            </div>            
+          <div
+            class="pt-4 col d-flex justify-content-center justify-content-md-end"
+          >
+            <div
+              class="btn-group btn-group-lg"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onClick="parent.location='update_podcast.html'"
+              >
+                <include src="./icons/pencil.html"></include>&nbsp;Edit
+              </button>
+              <button type="button" class="btn btn-secondary">
+                <include src="./icons/cross.html"></include>&nbsp;Delete
+              </button>
+            </div>
           </div>
         </div>
 
         <div class="pt-4 row row-cols-1 row-cols-md-2">
           <div class="col mb-3">
-            <include src="./components/image_grid.html" locals='{
+            <include
+              src="./components/image_grid.html"
+              locals='{
               "type": "podcasts",
               "imageName": "les-grosses-tetes"
-            }'></include>
+            }'
+            ></include>
           </div>
           <div class="col">
             <h1>Les Grosses Têtes</h1>
@@ -103,7 +125,8 @@
                   <tbody>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">All Talk Radios &rsaquo;</span> <span class="fw-bold">Comedy</span>
+                        <span class="text-muted">All Talk Radios &rsaquo;</span>
+                        <span class="fw-bold">Comedy</span>
                       </td>
                     </tr>
                   </tbody>
@@ -114,7 +137,8 @@
                   <tbody>
                     <tr>
                       <td scope="col">
-                        <span class="text-muted">Europe &rsaquo;</span> <span class="fw-bold">France</span>
+                        <span class="text-muted">Europe &rsaquo;</span>
+                        <span class="fw-bold">France</span>
                       </td>
                     </tr>
                   </tbody>
@@ -123,10 +147,26 @@
             </div>
             <h3>Les Grosses Têtes</h3>
             <div id="detailDescription" class="mb-3">
-              <p class="collapse" id="showMoreToggle" aria-expanded="false">Du lundi au vendredi de 15h30 à 18h, retrouvez Laurent Ruquier, chef d'orchestre de l'émission. Entouré de ses fidèles Grosses Têtes, il imprime sa marque à ce programme culte de la radio tout en restant fidèle à ses fondamentaux.</p>
-              <button class="btn btn-secondary btn-sm collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#showMoreToggle" aria-expanded="false" aria-controls="showMoreToggle"></button>
+              <p class="collapse" id="showMoreToggle" aria-expanded="false">
+                Du lundi au vendredi de 15h30 à 18h, retrouvez Laurent Ruquier,
+                chef d'orchestre de l'émission. Entouré de ses fidèles Grosses
+                Têtes, il imprime sa marque à ce programme culte de la radio
+                tout en restant fidèle à ses fondamentaux.
+              </p>
+              <button
+                class="btn btn-secondary btn-sm collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#showMoreToggle"
+                aria-expanded="false"
+                aria-controls="showMoreToggle"
+              ></button>
             </div>
-            <p><a href="https://www.rtl.fr/emission/les-grosses-tetes">https://www.rtl.fr/emission/les-grosses-tetes</a></p>
+            <p>
+              <a href="https://www.rtl.fr/emission/les-grosses-tetes"
+                >https://www.rtl.fr/emission/les-grosses-tetes</a
+              >
+            </p>
             <div class="my-3">
               <span class="badge rounded-pill bg-light">Divertissement</span>
               <span class="badge rounded-pill bg-light">RTL</span>
@@ -138,8 +178,12 @@
               <span class="badge rounded-pill bg-light">insolite</span>
               <span class="badge rounded-pill bg-light">culture</span>
             </div>
-            <a href="#" class="btn btn-icon btn-social btn-twitter"><span class="visually-hidden">Twitter</span></a>
-            <a href="#" class="btn btn-icon btn-social btn-facebook"><span class="visually-hidden">Facebook</span></a>
+            <a href="#" class="btn btn-icon btn-social btn-twitter"
+              ><span class="visually-hidden">Twitter</span></a
+            >
+            <a href="#" class="btn btn-icon btn-social btn-facebook"
+              ><span class="visually-hidden">Facebook</span></a
+            >
           </div>
         </div>
 
@@ -148,18 +192,10 @@
             <table class="table align-middle">
               <thead>
                 <tr>
-                  <th scope="col">
-                    RSS Feed URL
-                  </th>
-                  <th scope="col">
-                    Uptime
-                  </th>
-                  <th scope="col">
-                    History
-                  </th>
-                  <th class="text-nowrap" scope="col">
-                    Last updated
-                  </th>
+                  <th scope="col">RSS Feed URL</th>
+                  <th scope="col">Uptime</th>
+                  <th scope="col">History</th>
+                  <th class="text-nowrap" scope="col">Last updated</th>
                   <th></th>
                 </tr>
               </thead>
@@ -205,12 +241,19 @@
                       <div class="text-functional-green">■</div>
                     </div>
                   </td>
-                  <td class="text-nowrap" scope="col">
-                    10 Jan 2022
-                  </td>
+                  <td class="text-nowrap" scope="col">10 Jan 2022</td>
                   <td scope="col" class="text-end">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-secondary text-nowrap">Scrape now</button>
+                    <div
+                      class="btn-group btn-group-sm"
+                      role="group"
+                      aria-label="Basic example"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-nowrap"
+                      >
+                        Scrape now
+                      </button>
                     </div>
                   </td>
                 </tr>
@@ -224,87 +267,142 @@
           <thead>
             <tr>
               <th class="table-column-widest-possible" scope="col">
-                <a class="text-nowrap text-decoration-none" href="#">Title<span class="dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+                <a class="text-nowrap text-decoration-none" href="#"
+                  >Title<span
+                    class="dropdown-toggle table-header"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                  ></span
+                ></a>
               </th>
               <th class="text-nowrap" scope="col">
-                <a class="text-nowrap text-decoration-none" href="#">Published<span class="dropdown-toggle table-header active" href="#" role="button" aria-expanded="false"></span></a>
+                <a class="text-nowrap text-decoration-none" href="#"
+                  >Published<span
+                    class="dropdown-toggle table-header active"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                  ></span
+                ></a>
               </th>
               <th scope="col">
-                <a class="text-nowrap text-decoration-none" href="#">Duration<span class="dropdown-toggle table-header" href="#" role="button" aria-expanded="false"></span></a>
+                <a class="text-nowrap text-decoration-none" href="#"
+                  >Duration<span
+                    class="dropdown-toggle table-header"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                  ></span
+                ></a>
               </th>
             </tr>
           </thead>
           <tbody class="episode-list">
-            <include src="./components/episode_table_row.html" locals='{
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17358930",
               "title": "INÉDIT - La blague du mardi 11 janvier 2022",
               "published": "11 Jan 2022",
               "duration": "1 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355900",
               "title": "INÉDIT - Le débrief de l’émission par Chantal Ladesou",
               "published": "10 Jan 2022",
               "duration": "1 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355617",
               "title": "L’INTÉGRALE - Émission du lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "1 h 39 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355618",
               "title": "PÉPITE - Chantal Ladesou revient après avoir eu la Covid-19",
               "published": "10 Jan 2022",
               "duration": "4 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355619",
               "title": "LES COUPS DE FIL DE L’ACTU - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "6 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355620",
               "title": "FAKE NEWS - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355621",
               "title": "LE LIVRE DU JOUR - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355622",
               "title": "QUI EST QUI, QUI FAIT QUOI - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
-            }'></include>
-            <include src="./components/episode_table_row.html" locals='{
+            }'
+            ></include>
+            <include
+              src="./components/episode_table_row.html"
+              locals='{
               "id": "17355623",
               "title": "INVITÉ MYSTÈRE - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "12 min"
-            }'></include>
+            }'
+            ></include>
           </tbody>
         </table>
         <div class="mt-3 mb-5">
-          <include src="./components/pagination.html" locals='{
+          <include
+            src="./components/pagination.html"
+            locals='{
             "pages": [1,2,3,4,5,6,7,8]
-          }'></include>
-        </div> 
+          }'
+          ></include>
+        </div>
       </section>
     </main>
 
     <include src="./components/footer.html"></include>
     <nav aria-label="Fixed back to top example" class="back-to-top">
-      <a href="#top" class="back-to-top-link position-fixed btn btn-icon btn-secondary" data-o-label="Back to top">
+      <a
+        href="#top"
+        class="back-to-top-link position-fixed btn btn-icon btn-secondary"
+        data-o-label="Back to top"
+      >
         <span class="visually-hidden">Back to top</span>
       </a>
     </nav>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -1,20 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Radios</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
   <body class="d-flex flex-column h-100">
-    <include src="./components/navigation.html" locals='{
+    <include
+      src="./components/navigation.html"
+      locals='{
       "selected": "radios"
-    }'></include>    
+    }'
+    ></include>
 
-    <include src="./components/search.html" locals='{
+    <include
+      src="./components/search.html"
+      locals='{
       "placeholder": "Search for a radio...",
       "searchTerm": "france"
-    }'></include>     
+    }'
+    ></include>
 
     <main class="flex-grow-1">
       <section class="container mt-4 d-flex align-items-end">
@@ -22,11 +28,14 @@
           <h1 class="mb-0">385 radios</h1>
         </div>
         <div>
-          <include src="./components/create_button.html" locals='{
+          <include
+            src="./components/create_button.html"
+            locals='{
             "buttonText": "Create a new radio",
             "buttonType": "primary",
             "buttonSize": "large"
-          }'></include>
+          }'
+          ></include>
         </div>
       </section>
       <section class="container mt-4">
@@ -41,13 +50,16 @@
         </table>
       </section>
       <section class="container mt-5 mb-5">
-        <include src="./components/pagination.html" locals='{
+        <include
+          src="./components/pagination.html"
+          locals='{
           "pages": [1,2,3,4,5,6,7,8,9,10]
-        }'></include>
+        }'
+        ></include>
       </section>
     </main>
 
     <include src="./components/footer.html"></include>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

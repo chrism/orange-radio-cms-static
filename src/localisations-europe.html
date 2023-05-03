@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orange Radio CMS > Countries / Europe</title>
     <link rel="stylesheet" href="../scss/index.scss" />
   </head>
@@ -20,12 +20,16 @@
         <div class="flex-grow-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="localisations-continents.html">Continents</a></li>
+              <li class="breadcrumb-item">
+                <a href="localisations-continents.html">Continents</a>
+              </li>
               <li class="breadcrumb-item active" aria-current="page">Europe</li>
             </ol>
           </nav>
 
-          <include src="./components/localisations_list_section.html" locals='{
+          <include
+            src="./components/localisations_list_section.html"
+            locals='{
             "link": "localisations-france.html",
             "localisations": [
               {"code": "AL", "name": "Albania"},
@@ -63,12 +67,13 @@
               {"code": "ME", "name": "Montenegro"},
               {"code": "NL", "name": "Netherlands"}
             ]
-          }'></include>
+          }'
+          ></include>
         </div>
       </section>
     </main>
 
     <include src="./components/footer.html"></include>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
