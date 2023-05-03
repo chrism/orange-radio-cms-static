@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html",
     "prebuild": "npx rimraf ./docs",
-    "build": "parcel build . src/index.html --public-url $PUBLIC_URL --no-content-hash --dist-dir docs"
+    "build": "parcel build . src/index.html --no-content-hash --dist-dir docs --public-url ./"
   },
   "targets": {
     "browser": {
