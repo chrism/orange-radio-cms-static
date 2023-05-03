@@ -4,7 +4,8 @@
   "description": "Static screens for Orange Radio CMS using boosted",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "parcel build . src/index.html --no-content-hash --dist-dir docs"
+    "prebuild": "npx rimraf ./docs",
+    "build": "parcel build . src/index.html --public-url $PUBLIC_URL --no-content-hash --dist-dir docs"
   },
   "targets": {
     "browser": {
