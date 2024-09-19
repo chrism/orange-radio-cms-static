@@ -261,135 +261,137 @@
             </table>
           </div>
         </div>
-
-        <h1>Episodes</h1>
-        <table class="table align-middle">
-          <thead>
-            <tr>
-              <th class="table-column-widest-possible" scope="col">
-                <a class="text-nowrap text-decoration-none" href="#"
-                  >Title<span
-                    class="dropdown-toggle table-header"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                  ></span
-                ></a>
-              </th>
-              <th class="text-nowrap" scope="col">
-                <a class="text-nowrap text-decoration-none" href="#"
-                  >Published<span
-                    class="dropdown-toggle table-header active"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                  ></span
-                ></a>
-              </th>
-              <th scope="col">
-                <a class="text-nowrap text-decoration-none" href="#"
-                  >Duration<span
-                    class="dropdown-toggle table-header"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                  ></span
-                ></a>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="episode-list">
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+        <include src="./components/blocked_countries_list.html"></include>
+        <section class="container pt-4">
+          <h1>Episodes</h1>
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th class="table-column-widest-possible" scope="col">
+                  <a class="text-nowrap text-decoration-none" href="#"
+                    >Title<span
+                      class="dropdown-toggle table-header"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                    ></span
+                  ></a>
+                </th>
+                <th class="text-nowrap" scope="col">
+                  <a class="text-nowrap text-decoration-none" href="#"
+                    >Published<span
+                      class="dropdown-toggle table-header active"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                    ></span
+                  ></a>
+                </th>
+                <th scope="col">
+                  <a class="text-nowrap text-decoration-none" href="#"
+                    >Duration<span
+                      class="dropdown-toggle table-header"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                    ></span
+                  ></a>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="episode-list">
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17358930",
               "title": "INÉDIT - La blague du mardi 11 janvier 2022",
               "published": "11 Jan 2022",
               "duration": "1 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355900",
               "title": "INÉDIT - Le débrief de l’émission par Chantal Ladesou",
               "published": "10 Jan 2022",
               "duration": "1 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355617",
               "title": "L’INTÉGRALE - Émission du lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "1 h 39 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355618",
               "title": "PÉPITE - Chantal Ladesou revient après avoir eu la Covid-19",
               "published": "10 Jan 2022",
               "duration": "4 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355619",
               "title": "LES COUPS DE FIL DE L’ACTU - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "6 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355620",
               "title": "FAKE NEWS - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355621",
               "title": "LE LIVRE DU JOUR - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355622",
               "title": "QUI EST QUI, QUI FAIT QUOI - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "7 min"
             }'
-            ></include>
-            <include
-              src="./components/episode_table_row.html"
-              locals='{
+              ></include>
+              <include
+                src="./components/episode_table_row.html"
+                locals='{
               "id": "17355623",
               "title": "INVITÉ MYSTÈRE - Lundi 10 janvier 2022",
               "published": "10 Jan 2022",
               "duration": "12 min"
             }'
-            ></include>
-          </tbody>
-        </table>
-        <div class="mt-3 mb-5">
-          <include
-            src="./components/pagination.html"
-            locals='{
+              ></include>
+            </tbody>
+          </table>
+          <div class="mt-3 mb-5">
+            <include
+              src="./components/pagination.html"
+              locals='{
             "pages": [1,2,3,4,5,6,7,8]
           }'
-          ></include>
-        </div>
+            ></include>
+          </div>
+        </section>
       </section>
     </main>
 

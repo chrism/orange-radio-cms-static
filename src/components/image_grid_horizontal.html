@@ -1,19 +1,46 @@
 <div class="bg-dark p-4 d-flex justify-content-around">
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/large_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "large",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-light">Large (256x256)</p>
   </div>
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/medium_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "medium",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-light">Medium (128x128)</p>
   </div>
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/small_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "small",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-light">Small (64x64)</p>
   </div>
@@ -21,19 +48,46 @@
 <div class="border border-light border-1 p-4 d-flex justify-content-around">
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/large_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "large",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-muted">Large (256x256)</p>
   </div>
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/medium_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "medium",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-muted">Medium (128x128)</p>
   </div>
   <div class="align-self-stretch d-flex flex-column align-items-center">
     <div class="flex-fill d-flex align-items-center">
-      <img src="http://images.radio.orange.com/{{type}}/small_{{imageName}}.png" alt="">
+      <include
+        src="./components/cover_image.html"
+        locals='{
+        "class": "",
+        "type": "{{ type }}",
+        "size": "small",
+        "imageName": "{{ imageName }}",
+        "alt": ""
+      }'
+      ></include>
     </div>
     <p class="pt-2 text-muted">Small (64x64)</p>
   </div>
