@@ -12,20 +12,6 @@ There is some very limited build tooling required and the built screens are loca
 
 They can be [viewed online from an index screen here](http://chrism.github.io/orange-radio-cms-static/)
 
-Alternatively these are links to the individual screens and their current progress
-
-- [x] [Sign In](http://chrism.github.io/orange-radio-cms-static/sign_in.html)
-- [x] Radios
-  - [x] [Default](http://chrism.github.io/orange-radio-cms-static/radios.html)
-  - [x] [Searching for "france"](http://chrism.github.io/orange-radio-cms-static/radios_france.html)
-- [x] Create a radio
-  - [x] [Default](http://chrism.github.io/orange-radio-cms-static/create_radio.html)
-  - [x] [Completed](http://chrism.github.io/orange-radio-cms-static/create_radio_completed.html)
-  - [x] [Error](http://chrism.github.io/orange-radio-cms-static/create_radio_error.html)
-  - [x] [Streams modal](http://chrism.github.io/orange-radio-cms-static/create_radio_streams_modal.html)
-  - [x] [Genres modal](http://chrism.github.io/orange-radio-cms-static/create_radio_genres_modal.html)
-  - [x] [Locations modal](http://chrism.github.io/orange-radio-cms-static/create_radio_locations_modal.html)
-
 ## Build Tooling
 
 [Parcel](https://parceljs.org/) is used following the [recommended Boosted guidelines](https://boosted.orange.com/docs/5.0/getting-started/parcel/).
