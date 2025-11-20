@@ -10,22 +10,21 @@ The UI is based closely on the [Boosted](https://boosted.orange.com/) Orange bra
 
 There is some very limited build tooling required and the built screens are located in the `/docs` directory which is also published to Github Pages.
 
-They can be [viewed online from an index screen here](http://chrismasters.net/orange-radio-cms-static/)
+They can be [viewed online from an index screen here](http://chrism.github.io/orange-radio-cms-static/)
 
 Alternatively these are links to the individual screens and their current progress
 
-- [x] [Sign In](http://chrismasters.net/orange-radio-cms-static/sign_in.html)
+- [x] [Sign In](http://chrism.github.io/orange-radio-cms-static/sign_in.html)
 - [x] Radios
-  - [x] [Default](http://chrismasters.net/orange-radio-cms-static/radios.html)
-  - [x] [Searching for "france"](http://chrismasters.net/orange-radio-cms-static/radios_france.html)
+  - [x] [Default](http://chrism.github.io/orange-radio-cms-static/radios.html)
+  - [x] [Searching for "france"](http://chrism.github.io/orange-radio-cms-static/radios_france.html)
 - [x] Create a radio
-  - [x] [Default](http://chrismasters.net/orange-radio-cms-static/create_radio.html)
-  - [x] [Completed](http://chrismasters.net/orange-radio-cms-static/create_radio_completed.html)
-  - [x] [Error](http://chrismasters.net/orange-radio-cms-static/create_radio_error.html)
-  - [x] [Streams modal](http://chrismasters.net/orange-radio-cms-static/create_radio_streams_modal.html)
-  - [x] [Genres modal](http://chrismasters.net/orange-radio-cms-static/create_radio_genres_modal.html)
-  - [x] [Locations modal](http://chrismasters.net/orange-radio-cms-static/create_radio_locations_modal.html)
-
+  - [x] [Default](http://chrism.github.io/orange-radio-cms-static/create_radio.html)
+  - [x] [Completed](http://chrism.github.io/orange-radio-cms-static/create_radio_completed.html)
+  - [x] [Error](http://chrism.github.io/orange-radio-cms-static/create_radio_error.html)
+  - [x] [Streams modal](http://chrism.github.io/orange-radio-cms-static/create_radio_streams_modal.html)
+  - [x] [Genres modal](http://chrism.github.io/orange-radio-cms-static/create_radio_genres_modal.html)
+  - [x] [Locations modal](http://chrism.github.io/orange-radio-cms-static/create_radio_locations_modal.html)
 
 ## Build Tooling
 
